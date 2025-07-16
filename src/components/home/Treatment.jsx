@@ -9,12 +9,30 @@ const SpecialitiesSlider = () => {
   const [slidesPerScreen, setSlidesPerScreen] = useState(3); // Initially set to 3 for desktop
 
   const slides = [
-    // {
-    //   id: 1,
-    //   description: "Psychiatry",
-    //   image: "/pictures/psychiatry.jpeg",
-    //   href: "/depression",
-    // },
+    {
+      id: 1,
+      description: "Demo",
+      image: "https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg",
+      href: "/demo",
+    },
+    {
+      id: 1,
+      description: "Demo",
+      image: "https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg",
+      href: "/demo",
+    },
+    {
+      id: 1,
+      description: "Demo",
+      image: "https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg",
+      href: "/demo",
+    },
+    {
+      id: 1,
+      description: "Demo",
+      image: "https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg",
+      href: "/demo",
+    },
     // {
     //   id: 2,
     //   description: " Counselling and therapy",

@@ -140,6 +140,7 @@ const handleNavbarDropdownHoverservices = () => {
                       d="m1 1 4 4 4-4"
                     />
                   </svg>
+                  
                 </button>
 
                 <div
@@ -231,6 +232,12 @@ const handleNavbarDropdownHoverservices = () => {
                   </ul>
                 </div>
               </li>
+              <Link
+                  to="/about"
+                  className="block py-2 px-3 text-black hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-800 md:p-0"
+                >
+                  Blog
+                </Link>
               {/* <li>
                 <Link
                   to="/management"
@@ -270,7 +277,9 @@ const handleNavbarDropdownHoverservices = () => {
                 d="M4 6h16M4 12h16M4 18h16"
               />
             </svg>
+            
           </button>
+          
         </div>
 
         {/* ✅ Desktop Mega Menu */}
@@ -288,13 +297,13 @@ const handleNavbarDropdownHoverservices = () => {
                       to="/psychiatry"
                       className="font-semibold text-md  hover:text-blue-700"
                     >
-                      Psychiatry treatment
+                      Demo
                     </Link>
                     <Link
                       to="/depression"
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
                     >
-                      Depression
+                      Demo
                     </Link>
                     <Link
                       to="/anxiety"

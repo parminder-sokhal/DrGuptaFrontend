@@ -7,6 +7,12 @@ const OurApproach = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const data = [
+    {
+      title: "Demo",
+      description:
+        "gbhj ghj gtbhnj vgbhnj vbhn",
+      image: "https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg",
+    },
     // {
     //   title: "Motivational Enhance Therapy",
     //   description:
@@ -85,7 +91,7 @@ const OurApproach = () => {
                   For more information, call
                 </span>
                 <span className="text-lg text-black flex  hover:text-blue-900 transition-colors ">
-                  +91 9815015212
+                  +91 9999XXXXXX
                 </span>
               </div>
             </Link>

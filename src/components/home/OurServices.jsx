@@ -8,6 +8,24 @@ const OurServices = () => {
   const [slidesPerScreen, setSlidesPerScreen] = useState(3);
 
   const slides = [
+    {
+      id: 1,
+      description: "Demo",
+      image: "https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg",
+      href: "/demo",
+    },
+    {
+      id: 2,
+      description: "Demo",
+      image: "https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg",
+      href: "/demo",
+    },
+    {
+      id: 3,
+      description: "Demo",
+      image: "https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg",
+      href: "/demo",
+    },
     // {
     //   id: 1,
     //   description: "Psychiatric Care",

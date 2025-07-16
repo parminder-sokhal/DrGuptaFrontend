@@ -93,7 +93,7 @@ const AboutHeading = () => {
 
           <div className="lg:w-1/2 flex justify-center mx-auto">
             <img
-              src="/pictures/memberships.jpeg"
+              src="https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg"
               alt="Memberships and Affiliations"
               className="w-auto h-92 rounded shadow-md object-fit"
             />

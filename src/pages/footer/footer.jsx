@@ -153,16 +153,16 @@ const Footer = () => {
                   <span>
                     At the back of community centre, <br />
                     behind raghunath mandir Parking area, <br />
-                    Sector 15, Panchkula, Haryana, India
+                    Panchkula, Haryana, India
                   </span>
                 </Link>
 
                 <Link
-                  to="tel:+919815015212"
+                  to="tel:+91999999999"
                   className="flex items-center space-x-2 hover:text-[#DB8E00]"
                 >
                   <FaPhoneAlt className="text-lg" />
-                  <span>+91 9815015212</span>
+                  <span>+91 9999999999</span>
                 </Link>
                 <Link
                   to="mailto:Loonahospital@gmail.com"

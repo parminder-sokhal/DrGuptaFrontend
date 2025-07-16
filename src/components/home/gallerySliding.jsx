@@ -3,9 +3,12 @@ import { useSwipeCarousel } from "../hook/useSwipeCarousel";
 
 const GallerySliding = () => {
   const images = [
-    "/pictures/LoonaFront1.jpeg",
-    "/pictures/LoonaFront.jpeg",
-    "/pictures/LoonaGate.jpeg",
+    "https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg",
+    "https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg",
+    "https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg",
+    // "/pictures/LoonaFront1.jpeg",
+    // "/pictures/LoonaFront.jpeg",
+    // "/pictures/LoonaGate.jpeg",
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

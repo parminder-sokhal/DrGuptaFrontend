@@ -9,12 +9,30 @@ const OurFacility = () => {
   const [flippedCard, setFlippedCard] = useState(null);
 
   const facilities = [
-    // {
-    //   id: 1,
-    //   heading: "Therapy",
-    //   description: "Elegance and comfort redefined.",
-    //   image: "/pictures/DSC01694.jpg",
-    // },
+    {
+      id: 1,
+      heading: "Demo",
+      description: "Demo",
+      image: "https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg",
+    },
+    {
+      id: 2,
+      heading: "Demo",
+      description: "Demo",
+      image: "https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg",
+    },
+    {
+      id: 3,
+      heading: "Demo",
+      description: "Demo",
+      image: "https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg",
+    },
+    {
+      id: 4,
+      heading: "Demo",
+      description: "Demo",
+      image: "https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg",
+    },
     // {
     //   id: 2,
     //   heading: "Equipment",
