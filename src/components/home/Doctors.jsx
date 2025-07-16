@@ -60,7 +60,7 @@ const Doctors = () => {
   return (
     <div className="container mx-auto my-10 lg:px-30 sm:px-14 md:px-18">
       <div className="flex justify-between items-center mb-4 px-5">
-        <h2 className="sm:text-3xl text-2xl">Our Team of Experts</h2>
+        <h2 className="sm:text-3xl text-2xl">Doctors</h2>
         <Link to="/doctors">
           <h3 className="hover:underline underline-offset-10 hover:text-blue-600 decoration-2 decoration-yellow-600">
             View all

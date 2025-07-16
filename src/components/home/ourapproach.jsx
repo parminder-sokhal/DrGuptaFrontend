@@ -67,7 +67,7 @@ const OurApproach = () => {
       <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between">
         {/* Left Section - Centered vertically */}
         <div className="w-full md:w-2/5 flex flex-col justify-center items-start space-y-4 mb-8 md:mb-0 sm:px-10 px-4">
-          <h2 className="text-3xl text-black">Our Approach</h2>
+          <h2 className="text-3xl text-black">Our Vision</h2>
           <p className="text-lg text-black text-start flex items-center ">
             Transform Your Life Today!
             <br /> Are you or a loved one struggling with mental health issues,
