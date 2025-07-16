@@ -94,8 +94,8 @@ const Footer = () => {
             <div className="flex flex-col items-center space-y-4  sm:w-1/3 transform hover:scale-105 transition duration-300 ease-in-out  lg:border-x-2  py-10 hover:border-x-[#DB8E00]">
               <div className="w-4/5 justify-center">
                 <img
-                  src="/logo/loonahospitalwhite.png"
-                  alt="Hospital Logo"
+                  // src="/logo/loonahospitalwhite.png"
+                  alt="DrRobinGupta Logo"
                   className="w-full"
                 />
               </div>
@@ -103,21 +103,21 @@ const Footer = () => {
                 <h3 className="text-2xl font-semibold">Social Media</h3>
                 <div className="flex justify-center space-x-4">
                   <Link
-                    to="https://www.youtube.com/@loonahospital"
+                    to="https://www.youtube.com/@"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <FaYoutube className="text-white text-xl hover:text-red-600" />
                   </Link>
                   <Link
-                    to="https://www.facebook.com/drneerajloona"
+                    to="https://www.facebook.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <FaFacebook className="text-white text-xl hover:text-blue-600 hover:bg-white rounded-3xl" />
                   </Link>
                   <Link
-                    to="https://www.instagram.com/loonahospital/"
+                    to="https://www.instagram.com//"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -144,7 +144,7 @@ const Footer = () => {
               <div className="flex flex-col space-y-2 gap-4">
                 <h3 className="text-2xl font-semibold">Contact Info</h3>
                 <Link
-                  to="https://maps.app.goo.gl/qiHc2LCpLXkAJtdy6"
+                  to="https://maps.app.goo.gl/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center space-x-2 hover:text-[#DB8E00]"
@@ -169,14 +169,14 @@ const Footer = () => {
                   className="flex items-center space-x-2 hover:text-[#DB8E00]"
                 >
                   <FaEnvelope className="text-lg" />
-                  <span>Loonahospital@gmail.com</span>
+                  <span>demo@gmail.com</span>
                 </Link>
               </div>
 
               <div className="space-y-2 py-5">
                 <h3 className="text-xl font-semibold">About Hospital</h3>
                 <p className="text-sm w-4/5 hover:text-[#DB8E00]">
-                  Loona Hospital is a dedicated mental health and wellness
+                  DrRobinGupta is a dedicated mental health and wellness
                   center offering expert care in psychiatry, sexual wellness,
                   and de-addiction. Our experienced team provides personalized
                   treatment in a safe, supportive environment—helping you heal,
@@ -190,7 +190,7 @@ const Footer = () => {
         </div>
         <div className="flex w-full text-center justify-center bg-white text-black">
           <p className="sm:text-sm px-4 py-2">
-            <Link to="/dashboard">Loona Hospital</Link>© 2025 All Rights
+            <Link to="/dashboard">DrRobinGupta</Link>© 2025 All Rights
             Reserved. | Designed & Developed by:&nbsp;
             <a
               href="https://quantivisiontech.com"

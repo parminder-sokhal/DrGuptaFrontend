@@ -8,24 +8,24 @@ const OurServices = () => {
   const [slidesPerScreen, setSlidesPerScreen] = useState(3);
 
   const slides = [
-    {
-      id: 1,
-      description: "Psychiatric Care",
-      image: "/pictures/psychiatrycare.jpeg",
-      href: "/psychiatric-care",
-    },
-    {
-      id: 2,
-      description: "Sexual Wellness Services",
-      image: "/pictures/sexualWellness.jpeg",
-      href: "/sexual-wellness",
-    },
-    {
-      id: 3,
-      description: "De-addiction Programs",
-      image: "/pictures/De-addictionS.jpeg",
-      href: "/deaddiction",
-    },
+    // {
+    //   id: 1,
+    //   description: "Psychiatric Care",
+    //   image: "/pictures/psychiatrycare.jpeg",
+    //   href: "/psychiatric-care",
+    // },
+    // {
+    //   id: 2,
+    //   description: "Sexual Wellness Services",
+    //   image: "/pictures/sexualWellness.jpeg",
+    //   href: "/sexual-wellness",
+    // },
+    // {
+    //   id: 3,
+    //   description: "De-addiction Programs",
+    //   image: "/pictures/De-addictionS.jpeg",
+    //   href: "/deaddiction",
+    // },
   ];
 
   const totalSlides = slides.length;

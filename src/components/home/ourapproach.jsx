@@ -7,30 +7,30 @@ const OurApproach = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const data = [
-    {
-      title: "Motivational Enhance Therapy",
-      description:
-        "Motivational Enhancement Therapy (MET) is a client-centered counseling approach that helps individuals strengthen their motivation and commitment to change.",
-      image: "/pictures/motivationaltherapy.jpeg",
-    },
-    {
-      title: "Yoga & Meditation",
-      description:
-        "Yoga and meditation therapy combines physical postures, breath control, and mindfulness practices to promote relaxation, reduce stress, and enhance overall mental well-being.",
-      image: "/pictures/Yoga.jpeg",
-    },
-    {
-      title: "Gym ",
-      description:
-        "Gym therapy involves structured physical exercise in a gym setting to improve mental health, boost mood, and enhance overall well-being through physical activity and social interaction.",
-      image: "/pictures/gym.jpeg",
-    },
-    {
-      title: "Recreational activities",
-      description:
-        "Recreational activities engage individuals in enjoyable pastimes to promote relaxation, social interaction, and mental well-being while reducing stress and enhancing overall life satisfaction.",
-      image: "/pictures/recreational.jpeg",
-    },
+    // {
+    //   title: "Motivational Enhance Therapy",
+    //   description:
+    //     "Motivational Enhancement Therapy (MET) is a client-centered counseling approach that helps individuals strengthen their motivation and commitment to change.",
+    //   image: "/pictures/motivationaltherapy.jpeg",
+    // },
+    // {
+    //   title: "Yoga & Meditation",
+    //   description:
+    //     "Yoga and meditation therapy combines physical postures, breath control, and mindfulness practices to promote relaxation, reduce stress, and enhance overall mental well-being.",
+    //   image: "/pictures/Yoga.jpeg",
+    // },
+    // {
+    //   title: "Gym ",
+    //   description:
+    //     "Gym therapy involves structured physical exercise in a gym setting to improve mental health, boost mood, and enhance overall well-being through physical activity and social interaction.",
+    //   image: "/pictures/gym.jpeg",
+    // },
+    // {
+    //   title: "Recreational activities",
+    //   description:
+    //     "Recreational activities engage individuals in enjoyable pastimes to promote relaxation, social interaction, and mental well-being while reducing stress and enhancing overall life satisfaction.",
+    //   image: "/pictures/recreational.jpeg",
+    // },
   ];
 
   const itemsPerPage = 2;

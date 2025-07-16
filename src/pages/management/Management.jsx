@@ -2,23 +2,23 @@ import React from "react";
 
 const managementData = [
   {
-    name: "Mr. xyz xyzxyz - Founder of Loona Hospital",
-    description: `Founder of ROAR, Mr. Madhav Singh is fully dedicated to the therapeutic and facility management at Loona Hospital. With over 14 years of experience helping individuals recover from addiction, he has changed countless lives through the Roar Addiction and Rehabilitation Centre, Asola, New Delhi.`,
+    name: "Mr. xyz xyzxyz - Founder of DrRobinGupta",
+    description: `Founder of ROAR, Mr. Madhav Singh is fully dedicated to the therapeutic and facility management at DrRobinGupta. With over 14 years of experience helping individuals recover from addiction, he has changed countless lives through the Roar Addiction and Rehabilitation Centre, Asola, New Delhi.`,
     image: "/images/doctor2.jpeg",
   },
   {
     name: "Dr. Rina Kapoor - Chief Psychiatrist",
-    description: `With 20+ years of experience in psychiatry, Dr. Rina Kapoor is committed to personalized mental health care. She specializes in both adolescent and adult mental wellness, and leads the psychiatric team at Loona Hospital.`,
+    description: `With 20+ years of experience in psychiatry, Dr. Rina Kapoor is committed to personalized mental health care. She specializes in both adolescent and adult mental wellness, and leads the psychiatric team at DrRobinGupta.`,
     image: "/images/doctor3.jpeg",
   },
   {
-    name: "Mr. xyz xyzxyz - Founder of Loona Hospital",
-    description: `Founder of ROAR, Mr. Madhav Singh is fully dedicated to the therapeutic and facility management at Loona Hospital. With over 14 years of experience helping individuals recover from addiction, he has changed countless lives through the Roar Addiction and Rehabilitation Centre, Asola, New Delhi.`,
+    name: "Mr. xyz xyzxyz - Founder of DrRobinGupta",
+    description: `Founder of ROAR, Mr. Madhav Singh is fully dedicated to the therapeutic and facility management at DrRobinGupta. With over 14 years of experience helping individuals recover from addiction, he has changed countless lives through the Roar Addiction and Rehabilitation Centre, Asola, New Delhi.`,
     image: "/images/doctor2.jpeg",
   },
   {
     name: "Dr. Rina Kapoor - Chief Psychiatrist",
-    description: `With 20+ years of experience in psychiatry, Dr. Rina Kapoor is committed to personalized mental health care. She specializes in both adolescent and adult mental wellness, and leads the psychiatric team at Loona Hospital.`,
+    description: `With 20+ years of experience in psychiatry, Dr. Rina Kapoor is committed to personalized mental health care. She specializes in both adolescent and adult mental wellness, and leads the psychiatric team at DrRobinGupta.`,
     image: "/images/doctor3.jpeg",
   },
 ];

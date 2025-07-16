@@ -9,30 +9,30 @@ const OurFacility = () => {
   const [flippedCard, setFlippedCard] = useState(null);
 
   const facilities = [
-    {
-      id: 1,
-      heading: "Therapy",
-      description: "Elegance and comfort redefined.",
-      image: "/pictures/DSC01694.jpg",
-    },
-    {
-      id: 2,
-      heading: "Equipment",
-      description: "Recovery through exercise",
-      image: "/pictures/DSC01710.jpg",
-    },
-    {
-      id: 3,
-      heading: "Lounge",
-      description: "Comfortable care for healing",
-      image: "/pictures/DSC01698.jpg",
-    },
-    {
-      id: 4,
-      heading: "Lounge",
-      description: "Elegance and comfort redefined.",
-      image: "/pictures/DSC01697.jpg",
-    },
+    // {
+    //   id: 1,
+    //   heading: "Therapy",
+    //   description: "Elegance and comfort redefined.",
+    //   image: "/pictures/DSC01694.jpg",
+    // },
+    // {
+    //   id: 2,
+    //   heading: "Equipment",
+    //   description: "Recovery through exercise",
+    //   image: "/pictures/DSC01710.jpg",
+    // },
+    // {
+    //   id: 3,
+    //   heading: "Lounge",
+    //   description: "Comfortable care for healing",
+    //   image: "/pictures/DSC01698.jpg",
+    // },
+    // {
+    //   id: 4,
+    //   heading: "Lounge",
+    //   description: "Elegance and comfort redefined.",
+    //   image: "/pictures/DSC01697.jpg",
+    // },
   ];
 
   const totalSlides = facilities.length;

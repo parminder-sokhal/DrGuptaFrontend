@@ -9,54 +9,54 @@ const SpecialitiesSlider = () => {
   const [slidesPerScreen, setSlidesPerScreen] = useState(3); // Initially set to 3 for desktop
 
   const slides = [
-    {
-      id: 1,
-      description: "Psychiatry",
-      image: "/pictures/psychiatry.jpeg",
-      href: "/depression",
-    },
-    {
-      id: 2,
-      description: " Counselling and therapy",
-      image: "/pictures/counsellingTherapy.jpeg",
-      href: "/counselling-and-therapy",
-    },
-    {
-      id: 3,
-      description: " Mental health issues",
-      image: "/pictures/mentalHealth.jpeg",
-      href: "/mental-health-children",
-    },
-    {
-      id: 4,
-      description: "De-addiction programme",
-      image: "/pictures/De-addictionS.jpeg",
-      href: "/De-addictionProgramme",
-    },
-    {
-      id: 5,
-      description: "sexual wellness program",
-      image: "/pictures/sexualWellness.jpeg",
-      href: "/sexual-wellness-program",
-    },
-    {
-      id: 6,
-      description: "Headache clinic",
-      image: "/pictures/headAche.jpeg",
-      href: "/headache-clinic",
-    },
-    {
-      id: 7,
-      description: "Epilepsy clinic",
-      image: "/pictures/epilepsyClinic.jpeg",
-      href: "/epilepsy-clinic",
-    },
-    {
-      id: 8,
-      description: " Sleep clinic ",
-      image: "/pictures/sleepClinic.jpeg",
-      href: "/sleep-clinic",
-    },
+    // {
+    //   id: 1,
+    //   description: "Psychiatry",
+    //   image: "/pictures/psychiatry.jpeg",
+    //   href: "/depression",
+    // },
+    // {
+    //   id: 2,
+    //   description: " Counselling and therapy",
+    //   image: "/pictures/counsellingTherapy.jpeg",
+    //   href: "/counselling-and-therapy",
+    // },
+    // {
+    //   id: 3,
+    //   description: " Mental health issues",
+    //   image: "/pictures/mentalHealth.jpeg",
+    //   href: "/mental-health-children",
+    // },
+    // {
+    //   id: 4,
+    //   description: "De-addiction programme",
+    //   image: "/pictures/De-addictionS.jpeg",
+    //   href: "/De-addictionProgramme",
+    // },
+    // {
+    //   id: 5,
+    //   description: "sexual wellness program",
+    //   image: "/pictures/sexualWellness.jpeg",
+    //   href: "/sexual-wellness-program",
+    // },
+    // {
+    //   id: 6,
+    //   description: "Headache clinic",
+    //   image: "/pictures/headAche.jpeg",
+    //   href: "/headache-clinic",
+    // },
+    // {
+    //   id: 7,
+    //   description: "Epilepsy clinic",
+    //   image: "/pictures/epilepsyClinic.jpeg",
+    //   href: "/epilepsy-clinic",
+    // },
+    // {
+    //   id: 8,
+    //   description: " Sleep clinic ",
+    //   image: "/pictures/sleepClinic.jpeg",
+    //   href: "/sleep-clinic",
+    // },
   ];
 
   const totalSlides = slides.length;

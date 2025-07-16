@@ -5,7 +5,7 @@ const AboutHeading = () => {
     <div className="bg-white px-6 sm:px-8 md:px-12 py-5 flex flex-col items-center justify-center">
       <div className="max-w-6xl w-full">
         <p className="text-gray-600 text-lg leading-relaxed mb-6">
-          <strong>Loona Hospital</strong> is a dedicated mental health and
+          <strong>DrRobinGupta</strong> is a dedicated mental health and
           wellness center offering expert care in psychiatry, sexual wellness,
           and de-addiction. Our experienced team provides personalized treatment
           in a safe & supportive environment—helping you heal, grow, and thrive.
@@ -19,10 +19,10 @@ const AboutHeading = () => {
         </p>
 
         <h3 className="text-3xl font-bold text-blue-600 mb-4">
-          Welcome to Loona Hospital
+          Welcome to DrRobinGupta
         </h3>
         <p className="text-gray-600 text-lg leading-relaxed mb-12">
-          At Loona Hospital, we prioritize mental health above all else. Our
+          At DrRobinGupta, we prioritize mental health above all else. Our
           dedicated hospital is committed to providing compassionate care and
           comprehensive treatment for individuals facing a wide range of mental
           health challenges. With a focus on creating a supportive and healing
@@ -102,7 +102,7 @@ const AboutHeading = () => {
 
         <h3 className="text-3xl font-bold text-blue-600 mb-4">Recognitions</h3>
         <p className="text-gray-600 text-lg leading-relaxed mb-12">
-          Loona Hospital has been recognized for its commitment to mental health
+          DrRobinGupta has been recognized for its commitment to mental health
           care. We are honored to have received an award from the honorable Dr.
           Balbir Singh, Health Minister of Punjab, acknowledging our efforts in
           promoting mental wellness in the community.
@@ -112,7 +112,7 @@ const AboutHeading = () => {
           Your Journey to Wellness
         </h3>
         <p className="text-gray-600 text-lg leading-relaxed mb-4">
-          At Loona Hospital, we understand that seeking help for mental health
+          At DrRobinGupta, we understand that seeking help for mental health
           challenges can be daunting. Our team is here to support you every step
           of the way, ensuring that you feel safe, understood, and empowered
           throughout your treatment journey.

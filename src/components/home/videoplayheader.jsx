@@ -12,7 +12,7 @@ const VideoPlayHeader = () => {
         className="w-full h-full object-cover"
       >
         <source
-          src="https://www.dropbox.com/scl/fi/6nrif2ivlzc1shm2a6fst/bgvideo.mp4?rlkey=1majbp4e125q8olv89e0zvzbt&st=f12sztmx&raw=1"
+          // src="https://www.dropbox.com/scl/fi/6nrif2ivlzc1shm2a6fst/bgvideo.mp4?rlkey=1majbp4e125q8olv89e0zvzbt&st=f12sztmx&raw=1"
           type="video/mp4"
         />
         Your browser does not support the video tag.
