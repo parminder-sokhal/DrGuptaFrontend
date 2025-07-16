@@ -80,11 +80,12 @@ const handleNavbarDropdownHoverservices = () => {
             to="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <img
+            DrRobinGupta
+            {/* <img
               src="/logo/loonalogo.png"
               className="h-16"
               alt="Loonahospital Logo"
-            />
+            /> */}
           </Link>
 
           {/* Desktop Navbar */}
@@ -125,7 +126,7 @@ const handleNavbarDropdownHoverservices = () => {
                   onClick={toggleNavbarDropdownservices}
                   className="flex items-center justify-between w-full py-2 px-3 text-black hover:bg-gray-100 md:hover:bg-transparent md:p-0"
                 >
-                  Services
+                  Procedure
                   <svg
                     className={`w-2.5 h-2.5 ms-2.5 transition-transform duration-200 ${isDropdownNavbarOpenservices ? "rotate-180" : ""}`}
                     fill="none"
@@ -139,6 +140,7 @@ const handleNavbarDropdownHoverservices = () => {
                       d="m1 1 4 4 4-4"
                     />
                   </svg>
+                  
                 </button>
 
                 <div
@@ -230,6 +232,12 @@ const handleNavbarDropdownHoverservices = () => {
                   </ul>
                 </div>
               </li>
+              <Link
+                  to="/about"
+                  className="block py-2 px-3 text-black hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-800 md:p-0"
+                >
+                  Blog
+                </Link>
               {/* <li>
                 <Link
                   to="/management"
@@ -269,7 +277,9 @@ const handleNavbarDropdownHoverservices = () => {
                 d="M4 6h16M4 12h16M4 18h16"
               />
             </svg>
+            
           </button>
+          
         </div>
 
         {/* ✅ Desktop Mega Menu */}
@@ -287,13 +297,13 @@ const handleNavbarDropdownHoverservices = () => {
                       to="/psychiatry"
                       className="font-semibold text-md  hover:text-blue-700"
                     >
-                      Psychiatry treatment
+                      Demo
                     </Link>
                     <Link
                       to="/depression"
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
                     >
-                      Depression
+                      Demo
                     </Link>
                     <Link
                       to="/anxiety"

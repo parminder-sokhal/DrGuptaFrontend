@@ -17,19 +17,19 @@ const Headertop = () => {
         {/* Left Section: Mobile View */}
         <div className="flex items-center space-x-6 text-sm sm:block md:flex lg:hidden">
           <Link
-              to="tel:+919815015212"
+              to="tel:+91999999999"
             className="flex items-center space-x-2 hover:text-[#DB8E00]"
           >
             <FaPhoneAlt className="text-xl" />
           </Link>
           <Link
-            to="mailto:Loonahospital@gmail.com"
+            to="mailto:demo@gmail.com"
             className="flex items-center space-x-2 hover:text-[#DB8E00]"
           >
             <FaEnvelope className="text-xl" />
           </Link>
           <Link
-            to="https://www.instagram.com/loonahospital/"
+            to="https://www.instagram.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -45,45 +45,45 @@ const Headertop = () => {
               className="flex items-center space-x-2 hover:text-[#DB8E00]"
             >
               <FaPhoneAlt className="text-xl" />
-              <span>+91 9815015212</span>
+              <span>+91 54555515</span>
             </Link>
             <Link
               to="mailto:Loonahospital@gmail.com"
               className="flex items-center space-x-2 hover:text-[#DB8E00]"
             >
               <FaEnvelope className="text-xl" />
-              <span>Loonahospital@gmail.com</span>
+              <span>demo@gmail.com</span>
             </Link>
             <Link
-              to="https://maps.app.goo.gl/qiHc2LCpLXkAJtdy6"
+              to=""
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-2 hover:text-[#DB8E00]"
             >
               <FaMapMarkerAlt className="text-xl" />
               <span>
-                Sector 15, Panchkula (HR)
+                 Panchkula (HR)
               </span>
             </Link>
           </div>
 
           <div className="flex items-center space-x-4">
             <Link
-              to="https://www.youtube.com/@loonahospital"
+              to="https://www.youtube.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaYoutube className="text-white text-xl hover:text-red-600" />
             </Link>
             <Link
-              to="https://www.facebook.com/drneerajloona"
+              to="https://www.facebook.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaFacebook className="text-white text-xl hover:text-blue-600" />
             </Link>
             <Link
-              to="https://www.instagram.com/loonahospital/"
+              to="https://www.instagram.com/"
               target="_blank"
               rel="noopener noreferrer"
             >

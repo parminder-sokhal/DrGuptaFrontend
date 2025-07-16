@@ -10,22 +10,40 @@ const OurServices = () => {
   const slides = [
     {
       id: 1,
-      description: "Psychiatric Care",
-      image: "/pictures/psychiatrycare.jpeg",
-      href: "/psychiatric-care",
+      description: "Demo",
+      image: "https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg",
+      href: "/demo",
     },
     {
       id: 2,
-      description: "Sexual Wellness Services",
-      image: "/pictures/sexualWellness.jpeg",
-      href: "/sexual-wellness",
+      description: "Demo",
+      image: "https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg",
+      href: "/demo",
     },
     {
       id: 3,
-      description: "De-addiction Programs",
-      image: "/pictures/De-addictionS.jpeg",
-      href: "/deaddiction",
+      description: "Demo",
+      image: "https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg",
+      href: "/demo",
     },
+    // {
+    //   id: 1,
+    //   description: "Psychiatric Care",
+    //   image: "/pictures/psychiatrycare.jpeg",
+    //   href: "/psychiatric-care",
+    // },
+    // {
+    //   id: 2,
+    //   description: "Sexual Wellness Services",
+    //   image: "/pictures/sexualWellness.jpeg",
+    //   href: "/sexual-wellness",
+    // },
+    // {
+    //   id: 3,
+    //   description: "De-addiction Programs",
+    //   image: "/pictures/De-addictionS.jpeg",
+    //   href: "/deaddiction",
+    // },
   ];
 
   const totalSlides = slides.length;

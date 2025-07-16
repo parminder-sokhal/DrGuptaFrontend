@@ -8,15 +8,22 @@ function Pictures() {
 
   // Corrected URLs for Google Drive
   const photos = [
-    "/pictures/gallery.jpeg",
-    "/pictures/gallery2.jpeg",
-    "/pictures/gallery6.jpeg",
-    "/pictures/gallery8.jpeg",
-    "/pictures/gallery10.jpeg",
-    "/pictures/gallery12.jpeg",
-    "/pictures/gallery13.jpeg",
-    "/pictures/gallery14.jpeg",
-    "/pictures/gallery15.jpeg",
+    "https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg",
+    "https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg",
+    "https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg",
+    "https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg",
+    "https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg",
+    "https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg",
+    "https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg",
+    // "/pictures/gallery.jpeg",
+    // "/pictures/gallery2.jpeg",
+    // "/pictures/gallery6.jpeg",
+    // "/pictures/gallery8.jpeg",
+    // "/pictures/gallery10.jpeg",
+    // "/pictures/gallery12.jpeg",
+    // "/pictures/gallery13.jpeg",
+    // "/pictures/gallery14.jpeg",
+    // "/pictures/gallery15.jpeg",
     
   ];
 
@@ -46,13 +53,13 @@ const handlers = useSwipeCarousel({
   });
   return (
     <>
-      <div className="flex justify-center  w-full mt-34 sm:h-92 h-52 bg-cover bg-no-repeat bg-center bg-[url('/pictures/Background.jpeg')]">
+      <div className="flex justify-center  w-full mt-34 sm:h-92 h-52 bg-cover bg-no-repeat bg-center bg-[url('https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg')]">
         <span className="flex justify-center items-center sm:text-8xl text-5xl font-semibold text-white">Image Gallery </span>
       </div>
       <div className="container mx-auto lg:px-30 px-15 py-20 " {...handlers}>
         <div className="text-center flex flex-col justify-between mb-8">
           <h1 className="sm:text-6xl text-2xl justify-start flex text-black">
-            Loona Hospital
+            DrRobinGupta
           </h1>
           
         </div>

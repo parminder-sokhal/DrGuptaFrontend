@@ -8,14 +8,21 @@ const PhotoGallery = () => {
 
   // Corrected URLs for Google Drive
   const photos = [
-    "/pictures/gallery.jpeg",
-    "/pictures/gallery2.jpeg",
-    "/pictures/gallery6.jpeg",
-    "/pictures/gallery8.jpeg",
-    "/pictures/gallery10.jpeg",
-    "/pictures/gallery14.jpeg",
-    "/pictures/Playground.jpeg",
-    "/pictures/Garden.jpeg",
+    "https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg",
+    "https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg",
+    "https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg",
+    "https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg",
+    "https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg",
+    "https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg",
+    "https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg",
+    // "/pictures/gallery.jpeg",
+    // "/pictures/gallery2.jpeg",
+    // "/pictures/gallery6.jpeg",
+    // "/pictures/gallery8.jpeg",
+    // "/pictures/gallery10.jpeg",
+    // "/pictures/gallery14.jpeg",
+    // "/pictures/Playground.jpeg",
+    // "/pictures/Garden.jpeg",
   ];
 
   const handleOpen = (index) => {
@@ -43,11 +50,11 @@ const PhotoGallery = () => {
     onPrev: handlePrev,
   });
   return (
-    <div className="bg-fixed bg-cover bg-[url(/pictures/Background.jpeg)]">
+    <div className="bg-fixed bg-cover bg-[url(https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg)]">
       <div className="container mx-auto lg:px-20 px-15 py-20 " {...handlers}>
         <div className="text-center flex flex-col justify-between mb-8">
           <h1 className="text-4xl justify-start flex text-black">
-            Loona Hospital
+            DrRobinGupta
           </h1>
           <h2 className="text-2xl justify-start flex text-gray-800">
             Image Gallery
