@@ -19,8 +19,8 @@ function Home() {
     <Treatment/>
     <OurApproach/>
     {/* <SpecialitiesSlider/>    */}
-    <OurServices/>
     <Doctors/>
+    <OurServices/>
     <PatientReview/>
     <OurFacility/>
     <PhotoGallery/> 
