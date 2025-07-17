@@ -70,10 +70,7 @@ const OurApproach = () => {
           <h2 className="text-3xl text-black">Our Vision</h2>
           <p className="text-lg text-black text-start flex items-center ">
             Transform Your Life Today!
-            <br /> Are you or a loved one struggling with mental health issues,
-            addiction, or sexual wellness challenges? Our specialized hospital
-            is here to help you reclaim your life and achieve lasting
-            well-being.
+            <br /> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, aspernatur quam aperiam accusamus, sed cupiditate voluptas minima dolor dignissimos optio repellendus quidem labore commodi officiis quaerat deleniti nemo?
           </p>
           <div className="flex items-center flex-row space-x-2">
             <Link
