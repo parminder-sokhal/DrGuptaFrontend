@@ -151,27 +151,27 @@ const handleNavbarDropdownHoverservices = () => {
                   <ul className="py-2 text-sm text-black">
                     <li>
                       <Link
-                        to="/psychiatric-care"
+                        to="/psychiatric"
                         className="block px-4 py-2 hover:bg-gray-100"
                       >
-                       Psychiatric Care
+                       Demo1
                       </Link>
                     </li>
                     <li>
                       <Link
-                        to="/deaddiction"
+                        to="/deaddictn"
                         className="block px-4 py-2 hover:bg-gray-100"
                       >
-                        De-addiction Programs
+                        Demo2
                       </Link>
                     </li>
 
                     <li>
                       <Link
-                        to="/sexual-wellness"
+                        to="/sexual"
                         className="block px-4 py-2 hover:bg-gray-100"
                       >
-                        Sexual Wellness Services
+                        Demo3
                       </Link>
                     </li>
                   </ul>
@@ -212,14 +212,14 @@ const handleNavbarDropdownHoverservices = () => {
                         Pictures Gallery
                       </Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link
                         to="/Youtube"
                         className="block px-4 py-2 hover:bg-gray-100"
                       >
                         Video Gallery
                       </Link>
-                    </li>
+                    </li> */}
 
                     <li>
                       <Link
@@ -233,7 +233,7 @@ const handleNavbarDropdownHoverservices = () => {
                 </div>
               </li>
               <Link
-                  to="/about"
+                  to="/abou"
                   className="block py-2 px-3 text-black hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-800 md:p-0"
                 >
                   Blog
@@ -294,40 +294,40 @@ const handleNavbarDropdownHoverservices = () => {
                 <ul>
                   <li>
                     <Link
-                      to="/psychiatry"
+                      to="/psychiatr"
                       className="font-semibold text-md  hover:text-blue-700"
                     >
-                      Demo
+                      Demo1
                     </Link>
                     <Link
                       to="/depression"
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
                     >
-                      Demo
+                      Demo2
                     </Link>
                     <Link
-                      to="/anxiety"
+                      to="/anxiey"
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
                     >
-                      Anxiety
+                      Demo3
                     </Link>
                     <Link
-                      to="/bipolar-disorder"
+                      to="/bipolar"
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
                     >
-                      Bipolar Disorder
+                      D4
                     </Link>
                     <Link
-                      to="/schizophrenia"
+                      to="/schizophrena"
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
                     >
-                      Schizophrenia
+                      D5
                     </Link>
                     <Link
-                      to="/ocd"
+                      to="/od"
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
                     >
-                      OCD
+                      D6
                     </Link>
                   </li>
                 </ul>
@@ -339,49 +339,49 @@ const handleNavbarDropdownHoverservices = () => {
                       to="/counselling-and-therapy"
                       className="font-semibold text-md  hover:text-blue-700"
                     >
-                      Counselling and Therapy
+                      Demo Heading
                     </Link>
                     <Link
-                      to="/cbt"
+                      to="/ct"
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
                     >
-                      CBT
+                      D1
                     </Link>
                     <Link
-                      to="/dbt"
+                      to="/dt"
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
                     >
-                      DBT
+                      D2
                     </Link>
                     <Link
-                      to="/individual-counselling"
+                      to="/individual"
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
                     >
-                      Individual Counselling
+                      D3
                     </Link>
                     <Link
-                      to="/stress-management"
+                      to="/stress"
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
                     >
-                      Stress Management
+                      D4
                     </Link>
                     <Link
-                      to="/behaviour-therapy"
+                      to="/therapy"
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
                     >
-                      Behaviour Therapy
+                      D5
                     </Link>
                     <Link
-                      to="/relaxation-therapy"
+                      to="/relaxation"
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
                     >
-                      Relaxation Therapy
+                      D6
                     </Link>
                     <Link
-                      to="/social-skills-training"
+                      to="/social-skillsining"
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
                     >
-                      Social Skills Training
+                      D7
                     </Link>
                   </li>
                 </ul>
@@ -390,18 +390,18 @@ const handleNavbarDropdownHoverservices = () => {
                 <ul>
                   <li>
                     <Link
-                      to="/mental-health-children"
+                      to="/mental-health"
                       className="font-semibold text-md  hover:text-blue-700"
                     >
-                      Mental Health Issues and Children
+                      Demo Heading
                     </Link>
                     <Link
-                      to="/adhd"
+                      to="/add"
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
                     >
-                      ADHD
+                      Demo
                     </Link>
-                    <Link
+                    {/* <Link
                       to="/autism"
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
                     >
@@ -430,7 +430,7 @@ const handleNavbarDropdownHoverservices = () => {
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
                     >
                       Learning Disability
-                    </Link>
+                    </Link> */}
                   </li>
                 </ul>
 
@@ -438,18 +438,18 @@ const handleNavbarDropdownHoverservices = () => {
                 <ul>
                   <li>
                     <Link
-                      to="/De-addictionProgramme"
+                      to="/De-addictionProgr"
                       className="font-semibold text-md  hover:text-blue-700"
                     >
-                      De-addiction Programme
+                      Demo Heading
                     </Link>
                     <Link
-                      to="/motivation-enhancement"
+                      to="/motivation"
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
                     >
-                      Motivation Enhancement Therapy
+                      De12
                     </Link>
-                    <Link
+                    {/* <Link
                       to="/relapse-prevention"
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
                     >
@@ -466,7 +466,7 @@ const handleNavbarDropdownHoverservices = () => {
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
                     >
                       Motivation Enhancement By Hypnosis
-                    </Link>
+                    </Link> */}
                   </li>
                 </ul>
 
@@ -474,18 +474,18 @@ const handleNavbarDropdownHoverservices = () => {
                 <ul>
                   <li>
                     <Link
-                      to="/sexual-wellness-program"
+                      to="/sexual-wellness"
                       className="font-semibold text-md  hover:text-blue-700"
                     >
-                      Sexual Wellness Program
+                      Demo Heading
                     </Link>
                     <Link
-                      to="/premature-ejaculation"
+                      to="/premature"
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
                     >
-                      Premature Ejaculation
+                      Dee334
                     </Link>
-                    <Link
+                    {/* <Link
                       to="/erectile-dysfunction"
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
                     >
@@ -508,7 +508,7 @@ const handleNavbarDropdownHoverservices = () => {
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
                     >
                       DHAT Syndrome
-                    </Link>
+                    </Link> */}
                   </li>
                 </ul>
 
@@ -516,18 +516,18 @@ const handleNavbarDropdownHoverservices = () => {
                 <ul>
                   <li>
                     <Link
-                      to="/sleep-clinic"
+                      to="/sleep"
                       className="font-semibold text-md  hover:text-blue-700"
                     >
-                      Sleep Clinic
+                      Demo Heading
                     </Link>
                     <Link
-                      to="/insomnia"
+                      to="/insoia"
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
                     >
-                      Insomnia
+                      test1
                     </Link>
-                    <Link
+                    {/* <Link
                       to="/disturbed-sleep"
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
                     >
@@ -556,7 +556,7 @@ const handleNavbarDropdownHoverservices = () => {
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
                     >
                       Nightmares
-                    </Link>
+                    </Link> */}
                   </li>
                 </ul>
 
@@ -564,23 +564,23 @@ const handleNavbarDropdownHoverservices = () => {
                 <ul>
                   <li>
                     <Link
-                      to="/headache-clinic"
+                      to="/headache"
                       className="font-semibold text-md  hover:text-blue-700"
                     >
-                      Headache Clinic
+                      Demo Heading
                     </Link>
                     <Link
-                      to="/migraine"
+                      to="/migrai"
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
                     >
-                      Migraine
+                      Demmoooo
                     </Link>
-                    <Link
+                    {/* <Link
                       to="/tension-headache"
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
                     >
                       Tension Headache
-                    </Link>
+                    </Link> */}
                   </li>
                 </ul>
 
@@ -588,16 +588,16 @@ const handleNavbarDropdownHoverservices = () => {
                 <ul>
                   <li>
                     <Link
-                      to="/epilepsy-clinic"
+                      to="/epilepsy"
                       className="font-semibold text-md  hover:text-blue-700"
                     >
-                      Epilepsy Clinic
+                      Demoooooooo
                     </Link>
                     <Link
-                      to="/seizure"
+                      to="/seize"
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
                     >
-                      Seizure
+                      Demo
                     </Link>
                   </li>
                 </ul>

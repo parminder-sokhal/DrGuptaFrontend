@@ -19,73 +19,73 @@ const Footer = () => {
             <div className="flex justify-around gap-15 w-1/3 sm:flex-col md:flex-row lg:flex-row space-y-8 sm:space-y-0 transform hover:scale-105 transition duration-300 ease-in-out">
               {/* Speciality Links */}
               <div className="flex flex-col space-y-2 w-full">
-                <h3 className="text-2xl font-semibold">Services</h3>
+                <h3 className="text-2xl font-semibold">Procedure</h3>
                 <Link
-                  to="/psychiatric-care"
+                  to="/psychiatric"
                   className="text-md hover:text-[#DB8E00]"
                 >
-                  Psychiatric Care
+                  Demo
                 </Link>
                 <Link
-                  to="/deaddiction"
+                  to="/deaddictio"
                   className="text-sm hover:text-[#DB8E00]"
                 >
-                  De-addiction Programs
+                  Demo
                 </Link>
                 <Link
-                  to="/sexual-wellness"
+                  to="/sexual"
                   className="text-md hover:text-[#DB8E00]"
                 >
-                  Sexual Wellness Services
+                  Demo
                 </Link>
               </div>
               {/* Treatments Links */}
               <div className="flex flex-col space-y-2 w-full">
                 <h3 className="text-2xl font-semibold">Treatments</h3>
-                <Link to="/psychiatry" className="text-md hover:text-[#DB8E00]">
-                  Psychiatry
+                <Link to="/psychiat" className="text-md hover:text-[#DB8E00]">
+                  Demo
                 </Link>
                 <Link
-                  to="/counselling-and-therapy"
+                  to="/counselling"
                   className="text-md hover:text-[#DB8E00]"
                 >
-                  Counselling and therapy
+                  Demo
                 </Link>
                 <Link
-                  to="/mental-health-children"
+                  to="/mental-health"
                   className="text-md hover:text-[#DB8E00]"
                 >
-                  Mental health issues and children
+                  Demo
                 </Link>
                 <Link
-                  to="/deaddiction"
+                  to="/deaddictio"
                   className="text-md hover:text-[#DB8E00]"
                 >
-                  De-addiction programme
+                  Demo
                 </Link>
                 <Link
-                  to="/sexual-wellness-program"
+                  to="/sexual-wellness"
                   className="text-md hover:text-[#DB8E00]"
                 >
-                  sexual wellness program
+                  Demo
                 </Link>
                 <Link
-                  to="/headache-clinic"
+                  to="/headache"
                   className="text-md hover:text-[#DB8E00]"
                 >
-                  Headache clinic
+                  Demo
                 </Link>
                 <Link
-                  to="/epilepsy-clinic"
+                  to="/epilepsy"
                   className="text-md hover:text-[#DB8E00]"
                 >
-                  Epilepsy clinic
+                  Demo
                 </Link>
                 <Link
-                  to="/sleep-clinic"
+                  to="/sleep"
                   className="text-md hover:text-[#DB8E00]"
                 >
-                  Sleep clinic
+                  Demo
                 </Link>
               </div>
             </div>
@@ -127,14 +127,14 @@ const Footer = () => {
               </div>
               <div className="flex flex-col items-center mt-4 space-y-1 text-white">
                 <span className="text-md font-semibold">
-                  Having issues? Contact us
+                  Contact us
                 </span>
                 <Link
-                  to="tel:+919815490081"
+                  to="tel:+9199999XXXXX"
                   className="flex items-center space-x-2 hover:text-[#DB8E00]"
                 >
                   <FaPhoneAlt className="text-lg" />
-                  <span>+91 9815490081</span>
+                  <span>+91 99999XXXXX</span>
                 </Link>
               </div>
             </div>
@@ -151,9 +151,9 @@ const Footer = () => {
                 >
                   <FaMapMarkerAlt className="text-lg" />
                   <span>
-                    At the back of community centre, <br />
-                    behind raghunath mandir Parking area, <br />
-                    Panchkula, Haryana, India
+                    Lorem ipsum dolor sit amet., <br />
+                    Lorem ipsum dolor sit amet., <br />
+                    ghjrfg, India
                   </span>
                 </Link>
 
@@ -176,11 +176,7 @@ const Footer = () => {
               <div className="space-y-2 py-5">
                 <h3 className="text-xl font-semibold">About Hospital</h3>
                 <p className="text-sm w-4/5 hover:text-[#DB8E00]">
-                  DrRobinGupta is a dedicated mental health and wellness
-                  center offering expert care in psychiatry, sexual wellness,
-                  and de-addiction. Our experienced team provides personalized
-                  treatment in a safe, supportive environment—helping you heal,
-                  grow, and thrive
+                  DrRobinGupta Lorem ipsum, dolor sit amet consectetur adipisicing elit. In veniam illo maxime quod consectetur sapiente quam obcaecati! Sapiente, consequuntur doloremque.
                 </p>
               </div>
             </div>
