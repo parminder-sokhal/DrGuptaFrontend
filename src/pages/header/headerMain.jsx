@@ -4,44 +4,45 @@ import { Link } from "react-router-dom";
 function HeaderMain() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isDropdownNavbarOpen, setIsDropdownNavbarOpen] = useState(false);
-  const [isDropdownNavbarOpenservices, setIsDropdownNavbarOpenservices] = useState(false);
+  const [isDropdownNavbarOpenservices, setIsDropdownNavbarOpenservices] =
+    useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleDropdown = () => {
-  setIsDropdownOpen(!isDropdownOpen);
-  setIsDropdownNavbarOpen(false);
-  setIsDropdownNavbarOpenservices(false);
-};
+    setIsDropdownOpen(!isDropdownOpen);
+    setIsDropdownNavbarOpen(false);
+    setIsDropdownNavbarOpenservices(false);
+  };
 
-const toggleNavbarDropdownservices = () => {
-  setIsDropdownNavbarOpenservices(!isDropdownNavbarOpenservices);
-  setIsDropdownOpen(false);
-  setIsDropdownNavbarOpen(false);
-};
+  const toggleNavbarDropdownservices = () => {
+    setIsDropdownNavbarOpenservices(!isDropdownNavbarOpenservices);
+    setIsDropdownOpen(false);
+    setIsDropdownNavbarOpen(false);
+  };
 
-const toggleNavbarDropdown = () => {
-  setIsDropdownNavbarOpen(!isDropdownNavbarOpen);
-  setIsDropdownOpen(false);
-  setIsDropdownNavbarOpenservices(false);
-};
+  const toggleNavbarDropdown = () => {
+    setIsDropdownNavbarOpen(!isDropdownNavbarOpen);
+    setIsDropdownOpen(false);
+    setIsDropdownNavbarOpenservices(false);
+  };
 
-const handleDropdownHover = () => {
-  setIsDropdownOpen(true);
-  setIsDropdownNavbarOpen(false);
-  setIsDropdownNavbarOpenservices(false);
-};
+  const handleDropdownHover = () => {
+    setIsDropdownOpen(true);
+    setIsDropdownNavbarOpen(false);
+    setIsDropdownNavbarOpenservices(false);
+  };
 
-const handleNavbarDropdownHover = () => {
-  setIsDropdownNavbarOpen(true);
-  setIsDropdownOpen(false);
-  setIsDropdownNavbarOpenservices(false);
-};
+  const handleNavbarDropdownHover = () => {
+    setIsDropdownNavbarOpen(true);
+    setIsDropdownOpen(false);
+    setIsDropdownNavbarOpenservices(false);
+  };
 
-const handleNavbarDropdownHoverservices = () => {
-  setIsDropdownNavbarOpenservices(true);
-  setIsDropdownOpen(false);
-  setIsDropdownNavbarOpen(false);
-};
+  const handleNavbarDropdownHoverservices = () => {
+    setIsDropdownNavbarOpenservices(true);
+    setIsDropdownOpen(false);
+    setIsDropdownNavbarOpen(false);
+  };
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -62,8 +63,6 @@ const handleNavbarDropdownHoverservices = () => {
       document.removeEventListener("click", handleClickOutside);
     };
   }, []);
-
-  
 
   const handleNavbarDropdownLeave = () => {
     setIsDropdownNavbarOpen(false);
@@ -120,13 +119,13 @@ const handleNavbarDropdownHoverservices = () => {
                   </svg>
                 </button>
               </li>
-              
+
               <li onMouseEnter={handleNavbarDropdownHoverservices}>
                 <button
                   onClick={toggleNavbarDropdownservices}
                   className="flex items-center justify-between w-full py-2 px-3 text-black hover:bg-gray-100 md:hover:bg-transparent md:p-0"
                 >
-                  Procedure
+                  Procedures
                   <svg
                     className={`w-2.5 h-2.5 ms-2.5 transition-transform duration-200 ${isDropdownNavbarOpenservices ? "rotate-180" : ""}`}
                     fill="none"
@@ -140,7 +139,6 @@ const handleNavbarDropdownHoverservices = () => {
                       d="m1 1 4 4 4-4"
                     />
                   </svg>
-                  
                 </button>
 
                 <div
@@ -151,29 +149,102 @@ const handleNavbarDropdownHoverservices = () => {
                   <ul className="py-2 text-sm text-black">
                     <li>
                       <Link
-                        to="/psychiatric"
+                        to="/AllergyTestingImmunotherapy"
                         className="block px-4 py-2 hover:bg-gray-100"
                       >
-                       Demo1
+                        Allergy Testing & Immunotherapy
                       </Link>
                     </li>
                     <li>
                       <Link
-                        to="/deaddictn"
+                        to="/Bronchoscopy"
                         className="block px-4 py-2 hover:bg-gray-100"
                       >
-                        Demo2
+                        Bronchoscopy
                       </Link>
                     </li>
 
                     <li>
                       <Link
-                        to="/sexual"
+                        to="/Thoracoscopy"
                         className="block px-4 py-2 hover:bg-gray-100"
                       >
-                        Demo3
+                        Thoracoscopy
                       </Link>
                     </li>
+
+                    <li>
+                      <Link
+                        to="/PulmonaryFunction"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Pulmonary Function Testing
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/IntercostalDrainage "
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Intercostal Drainage Tube Insertion
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/LungBiopsy"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Lung Biopsy
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/PleuralBiopsy"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Pleural Biopsy
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/Pleurodesis"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Pleurodesis
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/EBUSTBNA"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        EBUS-TBNA
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/FENO"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        FENO(Breath Test)
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/TrachealStenting"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Tracheal Stenting
+                      </Link>
+                    </li>
+
                   </ul>
                 </div>
               </li>
@@ -233,11 +304,11 @@ const handleNavbarDropdownHoverservices = () => {
                 </div>
               </li>
               <Link
-                  to="/abou"
-                  className="block py-2 px-3 text-black hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-800 md:p-0"
-                >
-                  Blog
-                </Link>
+                to="/abou"
+                className="block py-2 px-3 text-black hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-800 md:p-0"
+              >
+                Blog
+              </Link>
               {/* <li>
                 <Link
                   to="/management"
@@ -277,9 +348,7 @@ const handleNavbarDropdownHoverservices = () => {
                 d="M4 6h16M4 12h16M4 18h16"
               />
             </svg>
-            
           </button>
-          
         </div>
 
         {/* ✅ Desktop Mega Menu */}
@@ -294,46 +363,100 @@ const handleNavbarDropdownHoverservices = () => {
                 <ul>
                   <li>
                     <Link
-                      to="/psychiatr"
+                      to="/Lung"
                       className="font-semibold text-md  hover:text-blue-700"
                     >
-                      Demo1
+                      Treatments
                     </Link>
                     <Link
-                      to="/depression"
+                      to="/LungCancer"
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
                     >
-                      Demo2
+                      Lung Cancer Treatment
                     </Link>
                     <Link
-                      to="/anxiey"
+                      to="/PneumoniaTreatment"
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
                     >
-                      Demo3
+                      Pneumonia Treatment
                     </Link>
                     <Link
-                      to="/bipolar"
+                      to="/BronchialAsthma"
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
                     >
-                      D4
+                      Bronchial Asthma Treatment
                     </Link>
                     <Link
-                      to="/schizophrena"
+                      to="/Tuberculosis"
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
                     >
-                      D5
+                      Tuberculosis (TB) Treatment
                     </Link>
                     <Link
-                      to="/od"
+                      to="/InterstitialLung"
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
                     >
-                      D6
+                      Interstitial Lung Disease Treatment
+                    </Link>
+                    <Link
+                      to="/DiabetesTreatment"
+                      className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
+                    >
+                      Diabetes Treatment
+                    </Link>
+                    <Link
+                      to="/Hypertension"
+                      className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
+                    >
+                      Hypertension Treatment
+                    </Link>
+                    <Link
+                      to="/PreventiveCardiology"
+                      className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
+                    >
+                      Preventive Cardiology Treatment
+                    </Link>
+                    <Link
+                      to="/SleepDisordered"
+                      className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
+                    >
+                      Sleep Disordered Breathing
+                    </Link>
+                    <Link
+                      to="/PleuralEffusion"
+                      className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
+                    >
+                      Pleural Effusion
+                    </Link>
+                    <Link
+                      to="/Fever"
+                      className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
+                    >
+                      Fever Treatment
+                    </Link>
+                    <Link
+                      to="/COPD"
+                      className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
+                    >
+                      Chronic Obstructive Pulmonary Disease(COPD)
+                    </Link>
+                    <Link
+                      to="/Sarcoidosis"
+                      className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
+                    >
+                      Sarcoidosis
+                    </Link>
+                    <Link
+                      to="/GeneralPhysician"
+                      className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
+                    >
+                      General Physician
                     </Link>
                   </li>
                 </ul>
 
                 {/* Counselling and Therapy */}
-                <ul>
+                {/* <ul>
                   <li>
                     <Link
                       to="/counselling-and-therapy"
@@ -384,10 +507,10 @@ const handleNavbarDropdownHoverservices = () => {
                       D7
                     </Link>
                   </li>
-                </ul>
+                </ul> */}
 
                 {/* Children Mental Health */}
-                <ul>
+                {/* <ul>
                   <li>
                     <Link
                       to="/mental-health"
@@ -400,7 +523,7 @@ const handleNavbarDropdownHoverservices = () => {
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
                     >
                       Demo
-                    </Link>
+                    </Link> */}
                     {/* <Link
                       to="/autism"
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
@@ -431,11 +554,11 @@ const handleNavbarDropdownHoverservices = () => {
                     >
                       Learning Disability
                     </Link> */}
-                  </li>
-                </ul>
+                  {/* </li> */}
+                {/* </ul> */}
 
                 {/* De-addiction Programme */}
-                <ul>
+                {/* <ul>
                   <li>
                     <Link
                       to="/De-addictionProgr"
@@ -448,7 +571,7 @@ const handleNavbarDropdownHoverservices = () => {
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
                     >
                       De12
-                    </Link>
+                    </Link> */}
                     {/* <Link
                       to="/relapse-prevention"
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
@@ -467,11 +590,11 @@ const handleNavbarDropdownHoverservices = () => {
                     >
                       Motivation Enhancement By Hypnosis
                     </Link> */}
-                  </li>
-                </ul>
+                  {/* </li>
+                </ul> */}
 
                 {/* Sexual Wellness */}
-                <ul>
+                {/* <ul>
                   <li>
                     <Link
                       to="/sexual-wellness"
@@ -484,7 +607,7 @@ const handleNavbarDropdownHoverservices = () => {
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
                     >
                       Dee334
-                    </Link>
+                    </Link> */}
                     {/* <Link
                       to="/erectile-dysfunction"
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
@@ -509,11 +632,11 @@ const handleNavbarDropdownHoverservices = () => {
                     >
                       DHAT Syndrome
                     </Link> */}
-                  </li>
-                </ul>
+                  {/* </li>
+                </ul> */}
 
                 {/* Sleep Clinic */}
-                <ul>
+                {/* <ul>
                   <li>
                     <Link
                       to="/sleep"
@@ -526,7 +649,7 @@ const handleNavbarDropdownHoverservices = () => {
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
                     >
                       test1
-                    </Link>
+                    </Link> */}
                     {/* <Link
                       to="/disturbed-sleep"
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
@@ -557,11 +680,11 @@ const handleNavbarDropdownHoverservices = () => {
                     >
                       Nightmares
                     </Link> */}
-                  </li>
-                </ul>
+                  {/* </li>
+                </ul> */}
 
                 {/* Headache Clinic */}
-                <ul>
+                {/* <ul>
                   <li>
                     <Link
                       to="/headache"
@@ -574,18 +697,18 @@ const handleNavbarDropdownHoverservices = () => {
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
                     >
                       Demmoooo
-                    </Link>
+                    </Link> */}
                     {/* <Link
                       to="/tension-headache"
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
                     >
                       Tension Headache
                     </Link> */}
-                  </li>
-                </ul>
+                  {/* </li>
+                </ul> */}
 
                 {/* Epilepsy Clinic */}
-                <ul>
+                {/* <ul>
                   <li>
                     <Link
                       to="/epilepsy"
@@ -600,7 +723,7 @@ const handleNavbarDropdownHoverservices = () => {
                       Demo
                     </Link>
                   </li>
-                </ul>
+                </ul> */}
               </div>
             </div>
           )}
@@ -651,7 +774,7 @@ const handleNavbarDropdownHoverservices = () => {
                   </svg>
                 </button>
               </li>
-              
+
               <li>
                 <button
                   onClick={toggleNavbarDropdownservices}
