@@ -2,127 +2,105 @@ import React from "react";
 
 const AboutHeading = () => {
   return (
-    <div className="bg-white px-6 sm:px-8 md:px-12 py-5 flex flex-col items-center justify-center">
-      <div className="max-w-6xl w-full">
-        <p className="text-gray-600 text-lg leading-relaxed mb-6">
-          <strong>DrRobinGupta</strong> is a dedicated mental health and
-          wellness center offering expert care in psychiatry, sexual wellness,
-          and de-addiction. Our experienced team provides personalized treatment
-          in a safe & supportive environment—helping you heal, grow, and thrive.
-        </p>
-        <p className="text-gray-600 text-lg leading-relaxed mb-12">
-          Our team consists of experienced psychiatrists, clinical
-          psychologists, therapists, and support staff who work collaboratively
-          to offer personalized treatment plans tailored to meet the unique
-          needs of each patient. We understand that every journey is different,
-          and we are here to support you every step of the way.
-        </p>
+    <div className="max-w-5xl mx-auto px-4 py-12">
+      <h1 className="text-3xl font-bold text-pink-700 mb-6">
+        About Dr. Robin Gupta – Your Trusted Pulmonologist in Panchkula
+      </h1>
 
-        <h3 className="text-3xl font-bold text-blue-600 mb-4">
-          Welcome to DrRobinGupta
-        </h3>
-        <p className="text-gray-600 text-lg leading-relaxed mb-12">
-          At DrRobinGupta, we prioritize mental health above all else. Our
-          dedicated hospital is committed to providing compassionate care and
-          comprehensive treatment for individuals facing a wide range of mental
-          health challenges. With a focus on creating a supportive and healing
-          environment, we aim to empower our patients on their journey toward
-          mental wellness.
-        </p>
+      <p className="text-gray-700 text-lg mb-6">
+        Welcome to Dr. Robin Gupta's Pulmonology Clinic, where your respiratory health is our top priority.
+        Located in the heart of Panchkula, our clinic is dedicated to providing comprehensive, personalized,
+        and state-of-the-art care for a wide range of respiratory conditions. At the helm is Dr. Robin Gupta,
+        a highly experienced and respected pulmonologist with a reputation for clinical excellence,
+        compassionate care, and holistic healing.
+      </p>
 
-        <h3 className="text-3xl font-bold text-blue-600 mb-4">
-          Comprehensive Services
-        </h3>
-        <ul className="list-disc pl-6 text-gray-700 text-lg leading-relaxed mb-12">
-          <li>
-            <span className="font-semibold text-black">
-              Individual Therapy:
-            </span>{" "}
-            Tailored sessions to address personal mental health issues.
-          </li>
-          <li>
-            <span className="font-semibold text-black">Group Therapy:</span>{" "}
-            Supportive group sessions fostering community and shared
-            experiences.
-          </li>
-          <li>
-            <span className="font-semibold text-black">
-              Medication Management:
-            </span>{" "}
-            Careful evaluation and management of psychiatric medications.
-          </li>
-          <li>
-            <span className="font-semibold text-black">Family Therapy:</span>{" "}
-            Involving family members in the treatment process to enhance support
-            systems.
-          </li>
-        </ul>
+      <h2 className="text-2xl font-semibold text-gray-800 mb-4">Meet Dr. Robin Gupta – A Leader in Respiratory Medicine</h2>
 
-        <h3 className="text-3xl font-bold text-blue-600 mb-4">
-          Training and Expertise
-        </h3>
-        <ul className="list-disc pl-6 text-gray-700 text-lg leading-relaxed mb-12">
-          <li>
-            <span className="font-semibold text-black">
-              Certified Training in Addiction Treatment:
-            </span>{" "}
-            Conducted by the NDDTC, AIIMS (New Delhi) in November 2023.
-          </li>
-          <li className="font-semibold text-black">
-            Internship program for psychology students
-          </li>
-        </ul>
+      <p className="text-gray-700 text-lg mb-6">
+        With decades of experience in the field of pulmonology, Dr. Robin Gupta brings deep expertise
+        and an unwavering commitment to improving the lung health of his patients. He is known for his
+        precise diagnosis, evidence-based treatments, and patient-first approach. Dr. Gupta’s training
+        from prestigious institutions and ongoing participation in national and international medical
+        forums ensure that his knowledge is always up-to-date with the latest advancements in
+        respiratory medicine.
+      </p>
 
-        <h3 className="text-3xl font-bold text-blue-600 mb-4">
-          Memberships and Affiliations
-        </h3>
-        <div className="flex flex-col lg:flex-row items-start lg:items-center gap-8 mb-12">
-          <div className="lg:w-1/2">
-            <ul className="list-disc pl-6 flex flex-col gap-5 text-gray-900 text-lg leading-relaxed">
-              <li>Indian Association for Sexology</li>
-              <li>
-                International Association of Sexual Medicine Practitioners
-                (IASMP-MM)
-              </li>
-              <li>Indian Psychiatric Society (IPS)</li>
-              <li>Indian Association of Private Psychiatry (IAPP)</li>
-              <li>Indian Medical Association (IMA)</li>
-              <li>Indian Psychiatric Society, North Zone</li>
-            </ul>
-          </div>
+      <h2 className="text-2xl font-semibold text-gray-800 mb-4">Our Services – Comprehensive Respiratory Care</h2>
 
-          <div className="lg:w-1/2 flex justify-center mx-auto">
-            <img
-              src="https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg"
-              alt="Memberships and Affiliations"
-              className="w-auto h-92 rounded shadow-md object-fit"
-            />
-          </div>
-        </div>
+      <ul className="list-disc list-inside text-gray-700 mb-6 space-y-4 text-base">
+        <li>
+          <strong>Diagnosis and Management of Asthma and Allergies:</strong> Specialized care to control
+          symptoms, improve lung function, and enhance quality of life.
+        </li>
+        <li>
+          <strong>Chronic Obstructive Pulmonary Disease (COPD) Treatment:</strong> Comprehensive COPD care
+          including medication, lifestyle guidance, and long-term management strategies.
+        </li>
+        <li>
+          <strong>Pulmonary Function Testing (PFT):</strong> Advanced lung function tests to accurately
+          diagnose and monitor respiratory conditions.
+        </li>
+        <li>
+          <strong>Sleep-Related Breathing Disorders:</strong> Evaluation and treatment of sleep apnea and
+          other disorders affecting nighttime breathing.
+        </li>
+        <li>
+          <strong>Post-COVID Lung Recovery Programs:</strong> Structured recovery plans for patients
+          experiencing lingering lung symptoms after COVID-19.
+        </li>
+        <li>
+          <strong>Smoking Cessation Support:</strong> Guidance and support to help individuals quit smoking
+          and reduce long-term lung damage.
+        </li>
+      </ul>
 
-        <h3 className="text-3xl font-bold text-blue-600 mb-4">Recognitions</h3>
-        <p className="text-gray-600 text-lg leading-relaxed mb-12">
-          DrRobinGupta has been recognized for its commitment to mental health
-          care. We are honored to have received an award from the honorable Dr.
-          Balbir Singh, Health Minister of Punjab, acknowledging our efforts in
-          promoting mental wellness in the community.
-        </p>
+      <h2 className="text-2xl font-semibold text-gray-800 mb-4">Why Choose Dr. Robin Gupta?</h2>
 
-        <h3 className="text-3xl font-bold text-blue-600 mb-4">
-          Your Journey to Wellness
-        </h3>
-        <p className="text-gray-600 text-lg leading-relaxed mb-4">
-          At DrRobinGupta, we understand that seeking help for mental health
-          challenges can be daunting. Our team is here to support you every step
-          of the way, ensuring that you feel safe, understood, and empowered
-          throughout your treatment journey.
-        </p>
-        <p className="text-gray-600 text-lg leading-relaxed mb-8">
-          Whether you are dealing with anxiety, depression, addiction, or any
-          other mental health issue, we are dedicated to helping you achieve a
-          healthier, happier life.
-        </p>
-      </div>
+      <ul className="list-disc list-inside text-gray-700 space-y-4 text-base">
+        <li>
+          <strong>✅ Vast Clinical Expertise:</strong> Years of hands-on experience in treating both common and complex pulmonary disorders.
+        </li>
+        <li>
+          <strong>✅ Patient-Centric Approach:</strong> Every patient is treated with empathy, respect, and personalized attention.
+          We believe in empowering patients through education and clear communication.
+        </li>
+        <li>
+          <strong>✅ Cutting-Edge Technology:</strong> We utilize the latest diagnostic and therapeutic tools
+          to ensure precise diagnosis and effective treatment outcomes.
+        </li>
+        <li>
+          <strong>✅ Seamless Access to Care:</strong> Our clinic is designed for efficiency — from easy
+          appointment booking to minimal wait times — making expert care more accessible than ever.
+        </li>
+        <li>
+          <strong>✅ Integrated Healthcare Network:</strong> When needed, patients are referred to a trusted
+          network of specialists, ensuring continuity of care under expert supervision.
+        </li>
+        <li>
+          <strong>✅ Holistic Healing Philosophy:</strong> Beyond just managing symptoms, we focus on enhancing
+          long-term lung health and overall well-being.
+        </li>
+        <li>
+          <strong>✅ Highly Recommended by Patients:</strong> Dr. Gupta’s commitment to excellence has earned
+          him the trust and gratitude of countless individuals and families.
+        </li>
+      </ul>
+
+      <p className="text-pink-700 font-semibold mt-10 text-lg">
+        Take a Breath of Relief – You're in Safe Hands
+      </p>
+
+      <p className="text-gray-700 text-lg mt-4">
+        At Dr. Robin Gupta’s Pulmonology Clinic, we believe that breathing well is living well.
+        Whether you're managing a chronic condition, seeking expert advice for troubling symptoms,
+        or recovering from a respiratory illness, you’ll receive unmatched care and support throughout your journey.
+      </p>
+
+      <p className="text-gray-700 text-lg mt-4">
+        Visit us in Panchkula and experience a new standard in respiratory care.
+        Your lungs deserve nothing but the best — and that’s exactly what we strive to provide every single day.
+      </p>
     </div>
   );
 };

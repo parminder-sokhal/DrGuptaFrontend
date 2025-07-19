@@ -69,12 +69,11 @@ const OurApproach = () => {
         <div className="w-full md:w-2/5 flex flex-col justify-center items-start space-y-4 mb-8 md:mb-0 sm:px-10 px-4">
           <h2 className="text-3xl text-black">Our Vision</h2>
           <p className="text-lg text-black text-start flex items-center ">
-            Transform Your Life Today!
-            <br /> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, aspernatur quam aperiam accusamus, sed cupiditate voluptas minima dolor dignissimos optio repellendus quidem labore commodi officiis quaerat deleniti nemo?
+            To provide compassionate, evidence-based respiratory care using the latest diagnostic and therapeutic technologies. Dr. Robin Gupta envisions making advanced pulmonary services like bronchoscopy, EBUS, and sleep medicine accessible to all, while educating patients and empowering them to manage chronic lung diseases with confidence and clarity.
           </p>
           <div className="flex items-center flex-row space-x-2">
             <Link
-              to="tel:+919815015212"
+              to="tel:+919888505080"
               className="flex items-center space-x-2"
             >
               <div className="flex items-center ">
@@ -83,12 +82,12 @@ const OurApproach = () => {
                   className="text-red-700 hover:text-blue-800"
                 />
               </div>
-              <div to="tel:+1234567890">
+              <div to="tel:+91 9888505080">
                 <span className="text-md text-black hover:text-blue-900 ">
                   For more information, call
                 </span>
                 <span className="text-lg text-black flex  hover:text-blue-900 transition-colors ">
-                  +91 9999XXXXXX
+                  +91 9888505080
                 </span>
               </div>
             </Link>

@@ -16,11 +16,11 @@ function Home() {
     <>
    
     <VideoPlayHeader/>
-    <Treatment/>
+    <OurServices/>
     <OurApproach/>
     {/* <SpecialitiesSlider/>    */}
     <Doctors/>
-    <OurServices/>
+    <Treatment/>
     <PatientReview/>
     <OurFacility/>
     <PhotoGallery/> 

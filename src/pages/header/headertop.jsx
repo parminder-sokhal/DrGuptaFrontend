@@ -17,19 +17,19 @@ const Headertop = () => {
         {/* Left Section: Mobile View */}
         <div className="flex items-center space-x-6 text-sm sm:block md:flex lg:hidden">
           <Link
-              to="tel:+91999999999"
+              to="tel:+919888505080"
             className="flex items-center space-x-2 hover:text-[#DB8E00]"
           >
             <FaPhoneAlt className="text-xl" />
           </Link>
           <Link
-            to="mailto:demo@gmail.com"
+            to="mailto:drrobingmc@yahoo.com"
             className="flex items-center space-x-2 hover:text-[#DB8E00]"
           >
             <FaEnvelope className="text-xl" />
           </Link>
           <Link
-            to="https://www.instagram.com/"
+            to="https://www.instagram.com/thepulmodrs?utm_source=ig_web_button_share_sheet&igsh=ZmE2MmYwY3g5bG1j"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -41,49 +41,49 @@ const Headertop = () => {
         <div className="container mx-auto items-center justify-around space-x-4 hidden lg:flex">
           <div className="flex items-center space-x-6 text-sm">
             <Link
-              to="tel:+919815015212"
+              to="tel:+919888505080"
               className="flex items-center space-x-2 hover:text-[#DB8E00]"
             >
               <FaPhoneAlt className="text-xl" />
-              <span>+91 54555515</span>
+              <span>+91 9888505080</span>
             </Link>
             <Link
               to="mailto:Loonahospital@gmail.com"
               className="flex items-center space-x-2 hover:text-[#DB8E00]"
             >
               <FaEnvelope className="text-xl" />
-              <span>demo@gmail.com</span>
+              <span>drrobingmc@yahoo.com</span>
             </Link>
             <Link
-              to=""
+              to="https://maps.app.goo.gl/VGXqSRZAQTNdRBZ86"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-2 hover:text-[#DB8E00]"
             >
               <FaMapMarkerAlt className="text-xl" />
               <span>
-                 Panchkula (HR)
+                 Dr Robin's Chest Clinic, DSS 272, Sector 20, Panchkula
               </span>
             </Link>
           </div>
 
           <div className="flex items-center space-x-4">
             <Link
-              to="https://www.youtube.com/"
+              to="http://www.youtube.com/@pulmonologychandigarh4634"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaYoutube className="text-white text-xl hover:text-red-600" />
             </Link>
             <Link
-              to="https://www.facebook.com/"
+              to="https://www.facebook.com/p/Dr-Robin-Gupta-Consultant-Pulmonologist-Paras-hospital-Panchkula-100063594323141/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaFacebook className="text-white text-xl hover:text-blue-600" />
             </Link>
             <Link
-              to="https://www.instagram.com/"
+              to="https://www.instagram.com/thepulmodrs?utm_source=ig_web_button_share_sheet&igsh=ZmE2MmYwY3g5bG1j"
               target="_blank"
               rel="noopener noreferrer"
             >
