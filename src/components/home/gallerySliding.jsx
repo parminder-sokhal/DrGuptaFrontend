@@ -3,12 +3,8 @@ import { useSwipeCarousel } from "../hook/useSwipeCarousel";
 
 const GallerySliding = () => {
   const images = [
-    "https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg",
-    "https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg",
-    "https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg",
-    // "/pictures/LoonaFront1.jpeg",
-    // "/pictures/LoonaFront.jpeg",
-    // "/pictures/LoonaGate.jpeg",
+    "/img/image.png",
+    "/img/Image3.jpeg",
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -43,7 +39,7 @@ const GallerySliding = () => {
       data-carousel="slide"
     >
       {/* Carousel wrapper */}
-      <div className="relative h-72 sm:h-[450px] md:h-[500px] overflow-hidden "  {...handlers}
+      <div className="relative h-72 sm:h-[450px] md:h-[600px] overflow-hidden "  {...handlers}
 >
         {images.map((image, index) => (
           <div

@@ -21,140 +21,8 @@ const Footer = () => {
                <div className="flex flex-col space-y-2 w-full">
                 <h3 className="text-2xl font-semibold">About Hospital</h3>
                 <p>Our hospital is dedicated to delivering compassionate, evidence-based respiratory care through state-of-the-art diagnostic and treatment technologies. We strive to make advanced services like bronchoscopy, EBUS, and sleep medicine accessible to everyone. Our mission is to educate and empower patients to confidently manage chronic lung conditions with clarity and support.</p>
-              {/*  <Link
-                  to="/AllergyTestingImmunotherapy"
-                  className="text-md hover:text-[#DB8E00]"
-                >
-                  Allergy Testing & Immunotherapy
-                </Link>
-
-                <Link
-                  to="/Bronchoscopy"
-                  className="text-sm hover:text-[#DB8E00]"
-                >
-                  Bronchoscopy
-                </Link>
-
-                <Link
-                  to="/Thoracoscopy"
-                  className="text-md hover:text-[#DB8E00]"
-                >
-                  Thoracoscopy
-                </Link>
-
-                <Link
-                  to="/PulmonaryFunction"
-                  className="text-md hover:text-[#DB8E00]"
-                >
-                  Pulmonary Function Testing
-                </Link>
-
-                <Link
-                  to="/IntercostalDrainage"
-                  className="text-md hover:text-[#DB8E00]"
-                >
-                  Intercostal Drainage Tube Insertion
-                </Link>
-
-                <Link
-                  to="/LungBiopsy"
-                  className="text-md hover:text-[#DB8E00]"
-                >
-                  Lung Biopsy
-                </Link>
-
-                <Link
-                  to="/PleuralBiopsy"
-                  className="text-md hover:text-[#DB8E00]"
-                >
-                  Pleural Biopsy
-                </Link>
-
-                <Link
-                  to="/Pleurodesis"
-                  className="text-md hover:text-[#DB8E00]"
-                >
-                  Pleurodesis
-                </Link>
-
-                <Link
-                  to="/EBUSTBNA"
-                  className="text-md hover:text-[#DB8E00]"
-                >
-                  EBUS-TBNA
-                </Link>
-                <Link
-                  to="/FENO"
-                  className="text-md hover:text-[#DB8E00]"
-                >
-                  FENO(Breath Test)
-                </Link>
-
-                <Link
-                  to="/TrachealStenting"
-                  className="text-md hover:text-[#DB8E00]"
-                >
-                  Tracheal Stenting
-                </Link>
-
-              </div> */}
-              {/* Treatments Links */}
-              {/* <div className="flex flex-col space-y-2 w-full">
-                <h3 className="text-2xl font-semibold">Treatments</h3>
-                <Link to="/psychiat" className="text-md hover:text-[#DB8E00]">
-                  Demo
-                </Link>
-                <Link
-                  to="/counselling"
-                  className="text-md hover:text-[#DB8E00]"
-                >
-                  Demo
-                </Link>
-                <Link
-                  to="/mental-health"
-                  className="text-md hover:text-[#DB8E00]"
-                >
-                  Demo
-                </Link>
-                <Link
-                  to="/deaddictio"
-                  className="text-md hover:text-[#DB8E00]"
-                >
-                  Demo
-                </Link>
-                <Link
-                  to="/sexual-wellness"
-                  className="text-md hover:text-[#DB8E00]"
-                >
-                  Demo
-                </Link>
-                <Link
-                  to="/headache"
-                  className="text-md hover:text-[#DB8E00]"
-                >
-                  Demo
-                </Link>
-                <Link
-                  to="/epilepsy"
-                  className="text-md hover:text-[#DB8E00]"
-                >
-                  Demo
-                </Link>
-                <Link
-                  to="/sleep"
-                  className="text-md hover:text-[#DB8E00]"
-                >
-                  Demo
-                </Link>*/}
               </div>
             </div>
-
-            {/* <div className="space-y-2 py-5">
-                <h3 className="text-xl font-semibold">About Hospital</h3>
-                <p className="text-sm w-4/5 hover:text-[#DB8E00]">
-                  DrRobinGupta Lorem ipsum, dolor sit amet consectetur adipisicing elit. In veniam illo maxime quod consectetur sapiente quam obcaecati! Sapiente, consequuntur doloremque. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias incidunt facere explicabo, fuga ullam, dolorum illo voluptate cumque natus vitae obcaecati facilis tenetur tempore omnis.
-                </p>
-              </div> */}
 
             {/* 2nd div - Logo and Contact Information */}
             <div className="flex flex-col items-center space-y-4  sm:w-1/3 transform hover:scale-105 transition duration-300 ease-in-out  lg:border-x-2  py-10 hover:border-x-[#DB8E00]">
@@ -238,13 +106,7 @@ const Footer = () => {
                   <span>drrobingmc@yahoo.com</span>
                 </Link>
               </div>
-
-              {/* <div className="space-y-2 py-5">
-                <h3 className="text-xl font-semibold">About Hospital</h3>
-                <p className="text-sm w-4/5 hover:text-[#DB8E00]">
-                  DrRobinGupta Lorem ipsum, dolor sit amet consectetur adipisicing elit. In veniam illo maxime quod consectetur sapiente quam obcaecati! Sapiente, consequuntur doloremque.
-                </p>
-              </div> */}
+              
             </div>
           </div>
 
