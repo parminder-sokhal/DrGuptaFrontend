@@ -1,9 +1,9 @@
 import React from "react";
 import { FaAngleRight } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-
+import pftImage from "../../../assets/procedures/pft.png";
 const data = {
-  bgImage: "/img/Pulmonary.jpeg", // Change this if you have a specific image for PFT
+  bgImage: pftImage, // Change this if you have a specific image for PFT
   sidebarLinks: [
     { title: "Allergy Testing & Immunotherapy", link: "/AllergyTestingImmunotherapy" },
     { title: "Bronchoscopy", link: "/Bronchoscopy" },
@@ -21,9 +21,9 @@ const data = {
 
 const PulmonaryFunction = () => {
   return (
-    <div className="w-full min-h-screen bg-white font-sans">
+    <div className="w-full min-h-screen bg-white font-sans flex flex-col  items-center">
       <div
-        className="w-full mt-34 h-80 sm:h-150 bg-cover bg-no-repeat bg-center"
+        className="w-[75rem] mt-34 h-80 sm:h-150 bg-cover bg-no-repeat bg-center"
         style={{ backgroundImage: `url(${data.bgImage})` }}
       ></div>
 

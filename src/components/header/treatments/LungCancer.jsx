@@ -1,9 +1,10 @@
 import React from "react";
 import { FaAngleRight } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import lungcancerImage  from "../../../assets/treatements/lungcancer.png"
 
 const data = {
-  bgImage: "/img/LungCancer.jpeg", // Replace with actual image path
+  bgImage: lungcancerImage, // Replace with actual image path
   sidebarLinks: [
     { title: "Lung Cancer Treatment", link: "/LungCancer" },
     { title: "Pneumonia Treatment", link: "/PneumoniaTreatment" },
@@ -24,10 +25,10 @@ const data = {
 
 const LungCancer = () => {
   return (
-    <div className="w-full min-h-screen bg-white font-sans">
+    <div className="w-full min-h-screen bg-white font-sans flex flex-col items-center">
       {/* ✅ Top Image Section */}
       <div
-        className="w-full mt-34 h-80 sm:h-150 bg-cover bg-no-repeat bg-center"
+        className="w-[75rem] mt-34 h-80 sm:h-150 bg-cover bg-no-repeat bg-center"
         style={{ backgroundImage: `url(${data.bgImage})` }}
       ></div>
 
