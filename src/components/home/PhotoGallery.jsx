@@ -8,21 +8,12 @@ const PhotoGallery = () => {
 
   // Corrected URLs for Google Drive
   const photos = [
-    "https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg",
-    "https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg",
-    "https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg",
-    "https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg",
-    "https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg",
-    "https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg",
-    "https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg",
-    // "/pictures/gallery.jpeg",
-    // "/pictures/gallery2.jpeg",
-    // "/pictures/gallery6.jpeg",
-    // "/pictures/gallery8.jpeg",
-    // "/pictures/gallery10.jpeg",
-    // "/pictures/gallery14.jpeg",
-    // "/pictures/Playground.jpeg",
-    // "/pictures/Garden.jpeg",
+    "/img/Image1.jpeg",
+    "/img/Image2.jpeg",
+    "/img/Image3.jpeg",
+    "/img/Image4.jpeg",
+    "/img/Image5.jpeg",
+    "/img/Image.jpeg",
   ];
 
   const handleOpen = (index) => {

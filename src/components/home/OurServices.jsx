@@ -10,40 +10,71 @@ const OurServices = () => {
   const slides = [
     {
       id: 1,
-      description: "Demo",
-      image: "https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg",
-      href: "/demo",
+      description: "Allergy Testing & Immunotherapy",
+      image: "/img/AllergyTesting.jpeg",
+      href: "/AllergyTestingImmunotherapy",
     },
     {
       id: 2,
-      description: "Demo",
-      image: "https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg",
-      href: "/demo",
+      description: "Bronchoscopy",
+      image: "/img/Bronchoscopy.jpeg",
+      href: "/Bronchoscopy",
     },
     {
       id: 3,
-      description: "Demo",
-      image: "https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg",
-      href: "/demo",
+      description: "Thoracoscopy",
+      image: "img/Thoracoscopy.jpeg",
+      href: "/Thoracoscopy",
     },
-    // {
-    //   id: 1,
-    //   description: "Psychiatric Care",
-    //   image: "/pictures/psychiatrycare.jpeg",
-    //   href: "/psychiatric-care",
-    // },
-    // {
-    //   id: 2,
-    //   description: "Sexual Wellness Services",
-    //   image: "/pictures/sexualWellness.jpeg",
-    //   href: "/sexual-wellness",
-    // },
-    // {
-    //   id: 3,
-    //   description: "De-addiction Programs",
-    //   image: "/pictures/De-addictionS.jpeg",
-    //   href: "/deaddiction",
-    // },
+    {
+      id: 4,
+      description: "Pulmonary Function Testing",
+      image: "img/Pulmonary.jpeg",
+      href: "/PulmonaryFunction",
+    },
+    {
+      id: 5,
+      description: "Intercostal Drainage Tube Insertion",
+      image: "img/Intercostal.jpeg",
+      href: "/IntercostalDrainage",
+    },
+    {
+      id: 6,
+      description: "Lung Biopsy",
+      image: "img/Lung.jpeg",
+      href: "/LungBiopsy",
+    },
+    {
+      id: 7,
+      description: "Pleural Biopsy",
+      image: "img/PleuralBiopsy.jpeg",
+      href: "/PleuralBiopsy",
+    },
+    {
+      id: 8,
+      description: "Pleurodesis",
+      image: "img/Pleurodesis.jpeg",
+      href: "/Pleurodesis",
+    },
+    {
+      id: 9,
+      description: "EBUS-TBNA",
+      image: "img/EBUSTBNA.jpeg",
+      href: "/EBUSTBNA",
+    },
+    {
+      id: 10,
+      description: "FENO(Breath Test)",
+      image: "img/FeNO.jpeg",
+      href: "/FENO",
+    },
+    {
+      id: 11,
+      description: "Tracheal Stenting",
+      image: "img/TrachealStenting.jpeg",
+      href: "/TrachealStenting",
+    },
+
   ];
 
   const totalSlides = slides.length;
