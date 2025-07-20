@@ -1,9 +1,10 @@
 import React from "react";
 import { FaAngleRight } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import fenoImage from "../../../assets/procedures/feno.jpg";
 
 const data = {
-  bgImage: "/img/FeNO.jpeg", // Replace with actual FeNO image if available
+  bgImage: fenoImage, // Replace with actual FeNO image if available
   sidebarLinks: [
     { title: "Allergy Testing & Immunotherapy", link: "/AllergyTestingImmunotherapy" },
     { title: "Bronchoscopy", link: "/Bronchoscopy" },
@@ -21,9 +22,9 @@ const data = {
 
 const FENO = () => {
   return (
-    <div className="w-full min-h-screen bg-white font-sans">
+    <div className="w-full min-h-screen bg-white font-sans flex flex-col  items-center">
       <div
-        className="w-full mt-34 h-80 sm:h-150 bg-cover bg-no-repeat bg-center"
+        className="w-[75rem] mt-34 h-80 sm:h-150 bg-cover bg-no-repeat bg-center"
         style={{ backgroundImage: `url(${data.bgImage})` }}
       ></div>
 
