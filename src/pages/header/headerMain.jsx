@@ -147,7 +147,7 @@ function HeaderMain() {
               </li> */}
 
               <li onMouseEnter={handleNavbarDropdownHoverservices}>
-                {/* <button
+                <button
                   onClick={toggleNavbarDropdownservices}
                   className="flex items-center justify-between w-full py-2 px-3 text-black hover:bg-gray-100 md:hover:bg-transparent md:p-0"
                 >
@@ -165,7 +165,7 @@ function HeaderMain() {
                       d="m1 1 4 4 4-4"
                     />
                   </svg>
-                </button> */}
+                </button>
 
                 <div
                   onMouseLeave={handleNavbarDropdownLeaveservices}
@@ -175,99 +175,123 @@ function HeaderMain() {
                   <ul className="py-2 text-sm text-black">
                     <li>
                       <Link
-                        to="/AllergyTestingImmunotherapy"
+                        to="/LungCancer"
                         className="block px-4 py-2 hover:bg-gray-100"
                       >
-                        Allergy Testing & Immunotherapy
+                        Lung Cancer
                       </Link>
                     </li>
                     <li>
                       <Link
-                        to="/Bronchoscopy"
+                        to="/PneumoniaTreatment"
                         className="block px-4 py-2 hover:bg-gray-100"
                       >
-                        Bronchoscopy
-                      </Link>
-                    </li>
-
-                    <li>
-                      <Link
-                        to="/Thoracoscopy"
-                        className="block px-4 py-2 hover:bg-gray-100"
-                      >
-                        Thoracoscopy
+                        Pneumonia Treatment
                       </Link>
                     </li>
 
                     <li>
                       <Link
-                        to="/PulmonaryFunction"
+                        to="/BronchialAsthma"
                         className="block px-4 py-2 hover:bg-gray-100"
                       >
-                        Pulmonary Function Testing
+                        Bronchial Asthma Treatment
                       </Link>
                     </li>
 
                     <li>
                       <Link
-                        to="/IntercostalDrainage "
+                        to="/Tuberculosis"
                         className="block px-4 py-2 hover:bg-gray-100"
                       >
-                        Intercostal Drainage Tube Insertion
+                        Tuberculosis (TB) Treatment
                       </Link>
                     </li>
 
                     <li>
                       <Link
-                        to="/LungBiopsy"
+                        to="/InterstitialLung "
                         className="block px-4 py-2 hover:bg-gray-100"
                       >
-                        Lung Biopsy
+                        Interstitial Lung Disease Treatment
                       </Link>
                     </li>
 
                     <li>
                       <Link
-                        to="/PleuralBiopsy"
+                        to="/DiabetesTreatment"
                         className="block px-4 py-2 hover:bg-gray-100"
                       >
-                        Pleural Biopsy
+                        Diabetes Treatment
                       </Link>
                     </li>
 
                     <li>
                       <Link
-                        to="/Pleurodesis"
+                        to="/Hypertension"
                         className="block px-4 py-2 hover:bg-gray-100"
                       >
-                        Pleurodesis
+                        Hypertension Treatment
                       </Link>
                     </li>
 
                     <li>
                       <Link
-                        to="/EBUSTBNA"
+                        to="/PreventiveCardiology"
                         className="block px-4 py-2 hover:bg-gray-100"
                       >
-                        EBUS-TBNA
+                        Preventive Cardiology Treatment
                       </Link>
                     </li>
 
                     <li>
                       <Link
-                        to="/FENO"
+                        to="/SleepDisordered"
                         className="block px-4 py-2 hover:bg-gray-100"
                       >
-                        FENO(Breath Test)
+                        Sleep Disordered Breathing
                       </Link>
                     </li>
 
                     <li>
                       <Link
-                        to="/TrachealStenting"
+                        to="/PleuralEffusion"
                         className="block px-4 py-2 hover:bg-gray-100"
                       >
-                        Tracheal Stenting
+                        Pleural Effusion
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/Fever"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Fever Treatment
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/COPD"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        COPD
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/Sarcoidosis"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Sarcoidosis
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/GeneralPhysician"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        General Physician
                       </Link>
                     </li>
                   </ul>
