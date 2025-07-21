@@ -96,7 +96,7 @@ function AddLinks() {
                   <td className="p-2">
                     <button
                       onClick={() => setConfirmDeleteId(link._id)}
-                      className="text-red-600 hover:text-red-800"
+                      className="text-blue-600 hover:text-blue-800"
                       title="Delete"
                     >
                       <FaTrash />
@@ -125,7 +125,7 @@ function AddLinks() {
             <div className="flex justify-end gap-2">
               <button
                 onClick={() => handleDelete(confirmDeleteId)}
-                className="bg-red-600 text-white px-4 py-2 rounded"
+                className="bg-blue-600 text-white px-4 py-2 rounded"
               >
                 Delete
               </button>

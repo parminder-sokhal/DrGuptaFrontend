@@ -79,12 +79,11 @@ function HeaderMain() {
             to="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            DrRobinGupta
-            {/* <img
-              src="/logo/loonalogo.png"
+            <img
+              src="/logo/Robinlogo1.jpg"
               className="h-16"
-              alt="Loonahospital Logo"
-            /> */}
+              alt="Dr.RobinGupta Logo"
+            />
           </Link>
 
           {/* Desktop Navbar */}

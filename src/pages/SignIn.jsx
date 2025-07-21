@@ -113,7 +113,7 @@ export default function SignIn() {
         </form>
 
         {error && (
-          <div className="mt-4 text-red-600 text-sm text-center border border-red-300 bg-red-50 p-2 rounded">
+          <div className="mt-4 text-blue-600 text-sm text-center border border-blue-300 bg-blue-50 p-2 rounded">
             {error}
           </div>
         )}

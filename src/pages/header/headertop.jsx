@@ -73,7 +73,7 @@ const Headertop = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaYoutube className="text-white text-xl hover:text-red-600" />
+              <FaYoutube className="text-white text-xl hover:text-blue-600" />
             </Link>
             <Link
               to="https://www.facebook.com/p/Dr-Robin-Gupta-Consultant-Pulmonologist-Paras-hospital-Panchkula-100063594323141/"

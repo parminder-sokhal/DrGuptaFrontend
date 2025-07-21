@@ -35,7 +35,7 @@ const OurServices = () => {
     {
       id: 5,
       description: "Intercostal Drainage Tube Insertion",
-      image: "img/Intercostal.jpeg",
+      image: "img/intercostal2.png",
       href: "/IntercostalDrainage",
     },
     {
@@ -59,7 +59,7 @@ const OurServices = () => {
     {
       id: 9,
       description: "EBUS-TBNA",
-      image: "img/EBUSTBNA.jpeg",
+      image: "img/ebus.jpg",
       href: "/EBUSTBNA",
     },
     {
@@ -74,7 +74,6 @@ const OurServices = () => {
       image: "img/TrachealStenting.jpeg",
       href: "/TrachealStenting",
     },
-
   ];
 
   const totalSlides = slides.length;
@@ -139,20 +138,43 @@ const OurServices = () => {
                   slidesPerScreen === 3 ? "w-full md:w-1/2 lg:w-1/3" : "w-full"
                 }`}
               >
-                <div className="bg-white rounded-lg  transition-all duration-300 flex flex-col items-center text-center h-full">
+                <div className="bg-white rounded-full w-64 h-64 mx-auto shadow-md hover:shadow-xl flex flex-col items-center justify-center text-center overflow-hidden transition-all duration-300">
                   <img
                     src={slide.image}
                     alt={`Service ${slide.id}`}
-                    className="w-full h-56 object-cover rounded-t-lg transition-transform duration-200 hover:scale-105"
+                    className="w-full h-full object-cover rounded-full"
                     loading="lazy"
                   />
-                  <div className="py-4 px-3">
-                    <h3 className="text-lg font-semibold text-gray-800">
-                      {slide.description}
-                    </h3>
-                  </div>
+                </div>
+                <div className="mt-3 text-center">
+                  <h3 className="text-md font-semibold text-gray-800">
+                    {slide.description}
+                  </h3>
                 </div>
               </Link>
+
+              // <Link
+              //   key={slide.id}
+              //   to={slide.href}
+              //   className={`carousel-slide flex-shrink-0 px-4 ${
+              //     slidesPerScreen === 3 ? "w-full md:w-1/2 lg:w-1/3" : "w-full"
+              //   }`}
+              // >
+              //   {/* <div className="bg-white rounded-lg transition-all duration-300 flex flex-col items-center text-center h-full"> */}
+              //   <div className="bg-white rounded-full transition-all duration-300 flex flex-col items-center text-center w-64 h-64 mx-auto shadow-md hover:shadow-xl">
+              //     <img
+              //       src={slide.image}
+              //       alt={`Service ${slide.id}`}
+              //       className="w-full h-56 object-cover rounded-t-lg transition-transform duration-200 hover:scale-105"
+              //       loading="lazy"
+              //     />
+              //     <div className="py-4 px-3">
+              //       <h3 className="text-lg font-semibold text-gray-800">
+              //         {slide.description}
+              //       </h3>
+              //     </div>
+              //   </div>
+              // </Link>
             ))}
           </div>
         </div>

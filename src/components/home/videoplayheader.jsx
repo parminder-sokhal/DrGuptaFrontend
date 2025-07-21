@@ -23,7 +23,7 @@ const VideoPlayHeader = () => {
           to="tel:+919999999999"
           className="flex items-center text-white space-x-2"
         >
-          <div className="icon text-red-700 hover:text-blue-700 hover:bg-red-700 bg-blue-500 rounded-full p-2 shadow-lg flex justify-center items-center">
+          <div className="icon text-blue-700 hover:text-blue-700 hover:bg-blue-700 bg-blue-500 rounded-full p-2 shadow-lg flex justify-center items-center">
             <FaPhoneAlt size={30} />
           </div>
           <div className="call lg:text-2xl sm:text-xl md:text-xl text-black hover:text-blue-700 font-semibold text-center flex flex-col gap-1 items-center">

@@ -50,7 +50,7 @@ const DoctorProfile = () => {
 
   if (loading)
     return <p className="text-center mt-10">Loading doctor info...</p>;
-  if (error) return <p className="text-center mt-10 text-red-600">{error}</p>;
+  if (error) return <p className="text-center mt-10 text-blue-600">{error}</p>;
 
   return (
     <div className="container mt-34 mx-auto my-10 px-4 sm:px-10 md:px-20 lg:px-40">

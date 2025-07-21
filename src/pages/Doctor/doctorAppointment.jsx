@@ -285,7 +285,7 @@ const DoctorAppointment = () => {
             className={`mt-4 p-4 rounded text-sm font-medium ${
               notification.type === "success"
                 ? "bg-green-100 text-green-700 border border-green-300"
-                : "bg-red-100 text-red-700 border border-red-300"
+                : "bg-blue-100 text-blue-700 border border-blue-300"
             }`}
           >
             {notification.message}
@@ -353,7 +353,7 @@ const DoctorAppointment = () => {
               </h3>
               <button
                 onClick={() => setShowModal(false)}
-                className="text-black   hover:text-red-500 text-4xl font-bold"
+                className="text-black   hover:text-blue-500 text-4xl font-bold"
               >
                 &times;
               </button>
@@ -370,11 +370,11 @@ const DoctorAppointment = () => {
                   value={formData.name}
                   onChange={handleChange}
                   className={`border px-3 py-2 rounded outline-blue-300 ${
-                    errors.name ? "border-red-500" : ""
+                    errors.name ? "border-blue-500" : ""
                   }`}
                 />
                 {errors.name && (
-                  <p className="text-red-500 text-xs">{errors.name}</p>
+                  <p className="text-blue-500 text-xs">{errors.name}</p>
                 )}
               </div>
 
@@ -389,11 +389,11 @@ const DoctorAppointment = () => {
                   value={formData.age}
                   onChange={handleChange}
                   className={`border px-3 py-2 rounded outline-blue-300 ${
-                    errors.age ? "border-red-500" : ""
+                    errors.age ? "border-blue-500" : ""
                   }`}
                 />
                 {errors.age && (
-                  <p className="text-red-500 text-xs">{errors.age}</p>
+                  <p className="text-blue-500 text-xs">{errors.age}</p>
                 )}
               </div>
 
@@ -410,10 +410,10 @@ const DoctorAppointment = () => {
                   onChange={(selectedOption) =>
                     handleSelectChange(selectedOption, "gender")
                   }
-                  className={`${errors.gender ? "border-red-500" : ""}`}
+                  className={`${errors.gender ? "border-blue-500" : ""}`}
                 />
                 {errors.gender && (
-                  <p className="text-red-500 text-xs">{errors.gender}</p>
+                  <p className="text-blue-500 text-xs">{errors.gender}</p>
                 )}
               </div>
 
@@ -429,11 +429,11 @@ const DoctorAppointment = () => {
                   onChange={handleChange}
                   maxLength="10"
                   className={`border px-3 py-2 rounded outline-blue-300 ${
-                    errors.phone ? "border-red-500" : ""
+                    errors.phone ? "border-blue-500" : ""
                   }`}
                 />
                 {errors.phone && (
-                  <p className="text-red-500 text-xs">{errors.phone}</p>
+                  <p className="text-blue-500 text-xs">{errors.phone}</p>
                 )}
               </div>
               {/* Email Field */}
@@ -460,11 +460,11 @@ const DoctorAppointment = () => {
                   value={formData.address}
                   onChange={handleChange}
                   className={`border px-3 py-2 rounded outline-blue-300 ${
-                    errors.address ? "border-red-500" : ""
+                    errors.address ? "border-blue-500" : ""
                   }`}
                 />
                 {errors.address && (
-                  <p className="text-red-500 text-xs">{errors.address}</p>
+                  <p className="text-blue-500 text-xs">{errors.address}</p>
                 )}
               </div>
 

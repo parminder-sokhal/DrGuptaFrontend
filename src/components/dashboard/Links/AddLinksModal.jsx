@@ -72,7 +72,7 @@ function AddLinksModal({ open, onClose }) {
           <h2 className="text-xl font-bold">Add New Link</h2>
           <button
             onClick={onClose}
-            className="text-gray-600 hover:text-red-600"
+            className="text-gray-600 hover:text-blue-600"
             title="Close"
           >
             <FaTimes />
@@ -89,10 +89,10 @@ function AddLinksModal({ open, onClose }) {
               value={categoryOptions.find(
                 (opt) => opt.value === formData.category
               )}
-              className={errors.category ? "border-red-500 rounded" : ""}
+              className={errors.category ? "border-blue-500 rounded" : ""}
             />
             {errors.category && (
-              <p className="text-red-500 text-sm mt-1">{errors.category}</p>
+              <p className="text-blue-500 text-sm mt-1">{errors.category}</p>
             )}
           </div>
 
@@ -105,11 +105,11 @@ function AddLinksModal({ open, onClose }) {
               onChange={handleChange}
               placeholder="https://example.com/profile"
               className={`w-full border p-2 rounded ${
-                errors.url ? "border-red-500" : ""
+                errors.url ? "border-blue-500" : ""
               }`}
               required
             />
-            {errors.url && <p className="text-red-500 text-sm">{errors.url}</p>}
+            {errors.url && <p className="text-blue-500 text-sm">{errors.url}</p>}
           </div>
 
           <div className="flex justify-end">

@@ -49,7 +49,7 @@ const handlers = useSwipeCarousel({
       <div className="container mx-auto lg:px-30 px-15 py-20 " {...handlers}>
         <div className="text-center flex flex-col justify-between mb-8">
           <h1 className="sm:text-6xl text-2xl justify-start flex text-black">
-            DrRobinGupta
+            Dr. Robin Gupta
           </h1>
           
         </div>

@@ -8,35 +8,18 @@ const OurApproach = () => {
 
   const data = [
     {
-      title: "Demo",
+      title: "Cough Management",
       description:
-        "gbhj ghj gtbhnj vgbhnj vbhn",
-      image: "https://static8.depositphotos.com/1012223/980/i/450/depositphotos_9803930-stock-photo-demo-cubes.jpg",
+        "We diagnose and treat chronic cough by identifying its root cause — whether allergy, infection, or reflux — and offer personalized treatment for lasting relief.",
+      image: "/img/Cough.jpg",
     },
-    // {
-    //   title: "Motivational Enhance Therapy",
-    //   description:
-    //     "Motivational Enhancement Therapy (MET) is a client-centered counseling approach that helps individuals strengthen their motivation and commitment to change.",
-    //   image: "/pictures/motivationaltherapy.jpeg",
-    // },
-    // {
-    //   title: "Yoga & Meditation",
-    //   description:
-    //     "Yoga and meditation therapy combines physical postures, breath control, and mindfulness practices to promote relaxation, reduce stress, and enhance overall mental well-being.",
-    //   image: "/pictures/Yoga.jpeg",
-    // },
-    // {
-    //   title: "Gym ",
-    //   description:
-    //     "Gym therapy involves structured physical exercise in a gym setting to improve mental health, boost mood, and enhance overall well-being through physical activity and social interaction.",
-    //   image: "/pictures/gym.jpeg",
-    // },
-    // {
-    //   title: "Recreational activities",
-    //   description:
-    //     "Recreational activities engage individuals in enjoyable pastimes to promote relaxation, social interaction, and mental well-being while reducing stress and enhancing overall life satisfaction.",
-    //   image: "/pictures/recreational.jpeg",
-    // },
+    {
+      title: "Asthma Care",
+      description:
+        "Our clinic provides expert asthma management with lung testing, trigger control, and tailored care plans to help patients breathe easier and live actively.",
+      image: "/img/Asthma.jpg",
+    },
+   
   ];
 
   const itemsPerPage = 2;
@@ -79,7 +62,7 @@ const OurApproach = () => {
               <div className="flex items-center ">
                 <FaPhoneAlt
                   size={30}
-                  className="text-red-700 hover:text-blue-800"
+                  className="text-blue-700 hover:text-blue-800"
                 />
               </div>
               <div to="tel:+91 9888505080">
