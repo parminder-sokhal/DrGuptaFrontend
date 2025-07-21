@@ -6,42 +6,67 @@ function HeaderMain() {
   const [isDropdownNavbarOpen, setIsDropdownNavbarOpen] = useState(false);
   const [isDropdownNavbarOpenservices, setIsDropdownNavbarOpenservices] =
     useState(false);
+  const [isDropdownNavbarOpenservicestwo, setIsDropdownNavbarOpenservicestwo] =
+    useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
     setIsDropdownNavbarOpen(false);
     setIsDropdownNavbarOpenservices(false);
-  };
-
-  const toggleNavbarDropdownservices = () => {
-    setIsDropdownNavbarOpenservices(!isDropdownNavbarOpenservices);
-    setIsDropdownOpen(false);
-    setIsDropdownNavbarOpen(false);
+    setIsDropdownNavbarOpenservicestwo(false);
   };
 
   const toggleNavbarDropdown = () => {
     setIsDropdownNavbarOpen(!isDropdownNavbarOpen);
     setIsDropdownOpen(false);
     setIsDropdownNavbarOpenservices(false);
+    setIsDropdownNavbarOpenservicestwo(false);
+  };
+
+  const toggleNavbarDropdownservices = () => {
+    setIsDropdownNavbarOpenservices(!isDropdownNavbarOpenservices);
+    setIsDropdownOpen(false);
+    setIsDropdownNavbarOpen(false);
+    setIsDropdownNavbarOpenservicestwo(false);
+  };
+  const toggleNavbarDropdownservicestwo = () => {
+    setIsDropdownNavbarOpenservicestwo(!isDropdownNavbarOpenservicestwo);
+    setIsDropdownOpen(false);
+    setIsDropdownNavbarOpen(false);
+    setIsDropdownNavbarOpenservices(false);
+  };
+
+  const handleNavbarDropdownHoverservicestwo = () => {
+    setIsDropdownNavbarOpenservicestwo(true);
+    setIsDropdownOpen(false);
+    setIsDropdownNavbarOpen(false);
+    setIsDropdownNavbarOpenservices(false);
+  };
+
+  const handleNavbarDropdownLeaveservicestwo = () => {
+    setIsDropdownNavbarOpenservicestwo(false);
   };
 
   const handleDropdownHover = () => {
     setIsDropdownOpen(true);
     setIsDropdownNavbarOpen(false);
     setIsDropdownNavbarOpenservices(false);
+    setIsDropdownNavbarOpenservicestwo(false);
   };
 
   const handleNavbarDropdownHover = () => {
     setIsDropdownNavbarOpen(true);
     setIsDropdownOpen(false);
     setIsDropdownNavbarOpenservices(false);
+    setIsDropdownNavbarOpenservicestwo(false);
   };
 
   const handleNavbarDropdownHoverservices = () => {
     setIsDropdownNavbarOpenservices(true);
     setIsDropdownOpen(false);
     setIsDropdownNavbarOpen(false);
+    setIsDropdownNavbarOpenservicestwo(false);
   };
 
   const toggleMobileMenu = () => {
@@ -55,6 +80,8 @@ function HeaderMain() {
       if (event.target.closest("nav") === null) {
         setIsDropdownOpen(false);
         setIsDropdownNavbarOpen(false);
+        setIsDropdownNavbarOpenservices(false);
+        setIsDropdownNavbarOpenservicestwo(false);
       }
     };
 
@@ -97,7 +124,7 @@ function HeaderMain() {
                   About
                 </Link>
               </li>
-              <li onMouseEnter={handleDropdownHover}>
+              {/* <li onMouseEnter={handleDropdownHover}>
                 <button
                   onClick={toggleDropdown}
                   className="flex items-center justify-between w-full py-2 px-3 text-black hover:bg-gray-100 md:hover:bg-transparent md:p-0"
@@ -117,7 +144,7 @@ function HeaderMain() {
                     />
                   </svg>
                 </button>
-              </li>
+              </li> */}
 
               <li onMouseEnter={handleNavbarDropdownHoverservices}>
                 <button
@@ -243,10 +270,138 @@ function HeaderMain() {
                         Tracheal Stenting
                       </Link>
                     </li>
-
                   </ul>
                 </div>
               </li>
+
+              <li onMouseEnter={handleNavbarDropdownHoverservicestwo}>
+                <button
+                  onClick={toggleNavbarDropdownservicestwo}
+                  className="flex items-center justify-between w-full py-2 px-3 text-black hover:bg-gray-100 md:hover:bg-transparent md:p-0"
+                >
+                  Procedures
+                  <svg
+                    className={`w-2.5 h-2.5 ms-2.5 transition-transform duration-200 ${isDropdownNavbarOpenservicestwo ? "rotate-180" : ""}`}
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </button>
+
+                <div
+                  onMouseLeave={handleNavbarDropdownLeaveservicestwo}
+                  onClick={handleNavbarDropdownLeaveservicestwo}
+                  className={`z-50 bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-auto px-2 absolute mt-2 ${isDropdownNavbarOpenservicestwo ? "block" : "hidden"}`}
+                >
+                  <ul className="py-2 text-sm text-black">
+                    <li>
+                      <Link
+                        to="/AllergyTestingImmunotherapy"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Allergy Testing & Immunotherapy
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/Bronchoscopy"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Bronchoscopy
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/Thoracoscopy"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Thoracoscopy
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/PulmonaryFunction"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Pulmonary Function Testing
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/IntercostalDrainage "
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Intercostal Drainage Tube Insertion
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/LungBiopsy"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Lung Biopsy
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/PleuralBiopsy"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Pleural Biopsy
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/Pleurodesis"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Pleurodesis
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/EBUSTBNA"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        EBUS-TBNA
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/FENO"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        FENO(Breath Test)
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/TrachealStenting"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Tracheal Stenting
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
               <li onMouseEnter={handleNavbarDropdownHover}>
                 <button
                   onClick={toggleNavbarDropdown}
@@ -523,7 +678,7 @@ function HeaderMain() {
                     >
                       Demo
                     </Link> */}
-                    {/* <Link
+                {/* <Link
                       to="/autism"
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
                     >
@@ -553,7 +708,7 @@ function HeaderMain() {
                     >
                       Learning Disability
                     </Link> */}
-                  {/* </li> */}
+                {/* </li> */}
                 {/* </ul> */}
 
                 {/* De-addiction Programme */}
@@ -571,7 +726,7 @@ function HeaderMain() {
                     >
                       De12
                     </Link> */}
-                    {/* <Link
+                {/* <Link
                       to="/relapse-prevention"
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
                     >
@@ -589,7 +744,7 @@ function HeaderMain() {
                     >
                       Motivation Enhancement By Hypnosis
                     </Link> */}
-                  {/* </li>
+                {/* </li>
                 </ul> */}
 
                 {/* Sexual Wellness */}
@@ -607,7 +762,7 @@ function HeaderMain() {
                     >
                       Dee334
                     </Link> */}
-                    {/* <Link
+                {/* <Link
                       to="/erectile-dysfunction"
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
                     >
@@ -631,7 +786,7 @@ function HeaderMain() {
                     >
                       DHAT Syndrome
                     </Link> */}
-                  {/* </li>
+                {/* </li>
                 </ul> */}
 
                 {/* Sleep Clinic */}
@@ -649,7 +804,7 @@ function HeaderMain() {
                     >
                       test1
                     </Link> */}
-                    {/* <Link
+                {/* <Link
                       to="/disturbed-sleep"
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
                     >
@@ -679,7 +834,7 @@ function HeaderMain() {
                     >
                       Nightmares
                     </Link> */}
-                  {/* </li>
+                {/* </li>
                 </ul> */}
 
                 {/* Headache Clinic */}
@@ -697,13 +852,13 @@ function HeaderMain() {
                     >
                       Demmoooo
                     </Link> */}
-                    {/* <Link
+                {/* <Link
                       to="/tension-headache"
                       className="block p-1 text-sm rounded-lg hover:bg-gray-100 hover:text-blue-700"
                     >
                       Tension Headache
                     </Link> */}
-                  {/* </li>
+                {/* </li>
                 </ul> */}
 
                 {/* Epilepsy Clinic */}
