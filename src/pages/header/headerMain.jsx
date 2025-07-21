@@ -48,12 +48,12 @@ function HeaderMain() {
     setIsDropdownNavbarOpenservicestwo(false);
   };
 
-  const handleDropdownHover = () => {
-    setIsDropdownOpen(true);
-    setIsDropdownNavbarOpen(false);
-    setIsDropdownNavbarOpenservices(false);
-    setIsDropdownNavbarOpenservicestwo(false);
-  };
+  // const handleDropdownHover = () => {
+  //   setIsDropdownOpen(true);
+  //   setIsDropdownNavbarOpen(false);
+  //   setIsDropdownNavbarOpenservices(false);
+  //   setIsDropdownNavbarOpenservicestwo(false);
+  // };
 
   const handleNavbarDropdownHover = () => {
     setIsDropdownNavbarOpen(true);
@@ -147,11 +147,11 @@ function HeaderMain() {
               </li> */}
 
               <li onMouseEnter={handleNavbarDropdownHoverservices}>
-                <button
+                {/* <button
                   onClick={toggleNavbarDropdownservices}
                   className="flex items-center justify-between w-full py-2 px-3 text-black hover:bg-gray-100 md:hover:bg-transparent md:p-0"
                 >
-                  Procedures
+                  Treatments
                   <svg
                     className={`w-2.5 h-2.5 ms-2.5 transition-transform duration-200 ${isDropdownNavbarOpenservices ? "rotate-180" : ""}`}
                     fill="none"
@@ -165,7 +165,7 @@ function HeaderMain() {
                       d="m1 1 4 4 4-4"
                     />
                   </svg>
-                </button>
+                </button> */}
 
                 <div
                   onMouseLeave={handleNavbarDropdownLeaveservices}

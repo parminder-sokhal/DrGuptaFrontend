@@ -11,7 +11,7 @@ const SpecialitiesSlider = () => {
   const slides = [
     {
       id: 1,
-      description: "LungCancer",
+      description: "Lung Cancer",
       image: "/img/LungCancer.jpeg",
       href: "/LungCancer",
     },
