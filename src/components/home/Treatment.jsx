@@ -138,7 +138,7 @@ const SpecialitiesSlider = () => {
   });
 
   return (
-    <div className="container mx-auto my-10 lg:px-40 sm:px-14 md:px-18 mt-35">
+    <div className="container mx-auto  lg:px-30 sm:px-14 md:px-18 my-15">
       <div className="flex justify-between items-center mb-4 px-5">
         <h2 className="text-4xl text-black">Treatments</h2>
       </div>

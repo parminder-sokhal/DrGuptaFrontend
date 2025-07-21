@@ -3,17 +3,17 @@ import { Link } from "react-router-dom";
 
 const VideoPlayHeader = () => {
   return (
-    <header className="relative w-full h-[400px] sm:h-[480px]  md:h-[600px] lg:h-[720px] mt-34">
+    <header className="relative w-full aspect-video mt-30">
       <video
         autoPlay
         loop
         playsInline
         muted
         preload="auto"
-        className="w-full h-full object-cover"
+        className="w-full h-full object-fit object-center"
       >
         <source
-          src="https://www.dropbox.com/scl/fi/xp6eauaeevmx1kx05gh7b/YouCut_20250721_123507765.mp4?rlkey=4ah03zrfxo0g8j6w6ta4gghjo&st=snxj6mgg&dl=1"
+          src="https://www.dropbox.com/scl/fi/j1dde2lole25nbn0ex8mu/drrobingupta.mp4?rlkey=f6tbr87ztusnfea7aw5t0t1rv&st=oiv8hukx&dl=1"
           type="video/mp4"
         />
         Your browser does not support the video tag.

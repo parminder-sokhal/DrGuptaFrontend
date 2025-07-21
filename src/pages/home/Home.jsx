@@ -20,8 +20,8 @@ function Home() {
     <OurApproach/>
     {/* <SpecialitiesSlider/>    */}
     <Doctors/>
-    <Treatment/>
     <PatientReview/>
+    <Treatment/>
     {/* <OurFacility/> */}
     <PhotoGallery/> 
     <TrendingYoutube/>

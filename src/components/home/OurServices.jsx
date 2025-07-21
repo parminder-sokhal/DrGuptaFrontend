@@ -116,7 +116,7 @@ const OurServices = () => {
   });
 
   return (
-    <section className="container mx-auto mt-10 mb-20 md:px-18 sm:px-14 lg:px-40">
+    <section className="container mx-auto mt-10 mb-20 md:px-18 sm:px-14 lg:px-30">
       <div className="text-center mb-10">
         <h2 className="text-4xl text-gray-800">Procedure</h2>
       </div>
@@ -138,16 +138,18 @@ const OurServices = () => {
                   slidesPerScreen === 3 ? "w-full md:w-1/2 lg:w-1/3" : "w-full"
                 }`}
               >
-                <div className="bg-white rounded-full w-64 h-64 mx-auto shadow-md hover:shadow-xl flex flex-col items-center justify-center text-center overflow-hidden transition-all duration-300">
-                  <img
-                    src={slide.image}
-                    alt={`Service ${slide.id}`}
-                    className="w-full h-full object-cover rounded-full"
-                    loading="lazy"
-                  />
+                <div className="w-64 h-64 mx-auto relative group">
+                  <div className="w-full h-full rounded-full overflow-hidden shadow-lg transition-transform duration-300 group-hover:scale-105">
+                    <img
+                      src={slide.image}
+                      alt={`Service ${slide.id}`}
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
+                  </div>
                 </div>
                 <div className="mt-3 text-center">
-                  <h3 className="text-md font-semibold text-gray-800">
+                  <h3 className="text-xl font-semibold text-gray-800">
                     {slide.description}
                   </h3>
                 </div>

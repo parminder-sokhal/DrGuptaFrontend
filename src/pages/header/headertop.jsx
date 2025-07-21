@@ -95,7 +95,7 @@ const Headertop = () => {
         {/* Book Appointment Button (Visible only on sm and md, hidden on lg and above) */}
         <div className="sm:block md:flex lg:hidden items-center justify-center space-x-4">
           <Link
-            to="/doctors"
+            to="/about#qualifications"
             className="bg-white text-black px-1.5 py-1 rounded-sm text-sm hover:bg-[#DB8E00] transition-all whitespace-nowrap"
           >
             OPD Timing

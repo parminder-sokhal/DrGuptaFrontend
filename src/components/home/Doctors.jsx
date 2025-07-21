@@ -29,7 +29,7 @@ const DoctorPage = () => {
 
         {/* Right: Doctor Info */}
         <div className="w-full lg:w-2/3">
-          <h2 className="text-2xl font-bold text-gray-900 mb-2">
+          <h2 className="text-4xl font-bold text-gray-900 mb-2">
             {doctor.name}
           </h2>
           <p className="text-lg font-semibold text-gray-700 mb-2">
@@ -41,13 +41,13 @@ const DoctorPage = () => {
           <div className="flex gap-4">
             <button
               onClick={() => navigate("/about#qualifications")}
-              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md text-sm"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md sm:text-lg"
             >
               View Profile
             </button>
             <button
               onClick={() => navigate("/about#qualifications")}
-              className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-md text-sm"
+              className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-md sm:text-lg"
             >
               OPD Timings
             </button>

@@ -107,7 +107,7 @@ function HeaderMain() {
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
             <img
-              src="/logo/Robinlogo1.jpg"
+              src="/logo/RobinlogoRemoveBG.png"
               className="h-16"
               alt="Dr.RobinGupta Logo"
             />
@@ -482,7 +482,7 @@ function HeaderMain() {
                 </div>
               </li>
               <Link
-                to="/abou"
+                to="/"
                 className="block py-2 px-3 text-black hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-800 md:p-0"
               >
                 Blog
@@ -501,7 +501,7 @@ function HeaderMain() {
           {/* Desktop CTA */}
           <div className="hidden lg:block text-xl">
             <Link
-              to="/doctors"
+              to="/about#qualifications"
               className="px-4 py-2 bg-blue-800 text-white rounded-lg hover:bg-blue-700 transition duration-300"
             >
               OPD Timing
@@ -931,7 +931,7 @@ function HeaderMain() {
                   About
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <button
                   onClick={toggleDropdown}
                   className="flex justify-between w-full py-2 px-3 text-black hover:bg-gray-100"
@@ -951,14 +951,163 @@ function HeaderMain() {
                     />
                   </svg>
                 </button>
-              </li>
+              </li> */}
 
+              <li>
+                <button
+                  onClick={toggleNavbarDropdownservicestwo}
+                  className="flex justify-between w-full py-2 px-3 text-black hover:bg-gray-100"
+                >
+                  Treatments
+                  <svg
+                    className={`w-2.5 h-2.5 ms-2.5 transition-transform duration-200 ${isDropdownNavbarOpenservicestwo ? "rotate-180" : ""}`}
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </button>
+                <div
+                  onClick={toggleMobileMenu}
+                  className={`z-10 bg-white divide-y divide-gray-100 rounded-lg shadow-sm  mt-2 ${isDropdownNavbarOpenservicestwo ? "block" : "hidden"}`}
+                >
+                  <ul className="py-2 text-sm text-gray-700">
+                    <li>
+                      <Link
+                        to="/LungCancer"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Lung Cancer
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/PneumoniaTreatment"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Pneumonia Treatment
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/BronchialAsthma"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Bronchial Asthma Treatment
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/Tuberculosis"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Tuberculosis (TB) Treatment
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/InterstitialLung "
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Interstitial Lung Disease Treatment
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/DiabetesTreatment"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Diabetes Treatment
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/Hypertension"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Hypertension Treatment
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/PreventiveCardiology"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Preventive Cardiology Treatment
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/SleepDisordered"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Sleep Disordered Breathing
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/PleuralEffusion"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Pleural Effusion
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/Fever"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Fever Treatment
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/COPD"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        COPD
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/Sarcoidosis"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Sarcoidosis
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/GeneralPhysician"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        General Physician
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </li>
               <li>
                 <button
                   onClick={toggleNavbarDropdownservices}
                   className="flex justify-between w-full py-2 px-3 text-black hover:bg-gray-100"
                 >
-                  Services
+                  Procedures
                   <svg
                     className={`w-2.5 h-2.5 ms-2.5 transition-transform duration-200 ${isDropdownNavbarOpenservices ? "rotate-180" : ""}`}
                     fill="none"
@@ -975,31 +1124,104 @@ function HeaderMain() {
                 </button>
                 <div
                   onClick={toggleMobileMenu}
-                  className={`z-10 bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 mt-2 ${isDropdownNavbarOpenservices ? "block" : "hidden"}`}
+                  className={`z-10 bg-white divide-y divide-gray-100 rounded-lg shadow-sm  mt-2 ${isDropdownNavbarOpenservices ? "block" : "hidden"}`}
                 >
                   <ul className="py-2 text-sm text-gray-700">
                     <li>
                       <Link
-                        to="/psychiatric-care"
+                        to="/AllergyTestingImmunotherapy"
                         className="block px-4 py-2 hover:bg-gray-100"
                       >
-                        Psychiatric Care
+                        Allergy Testing & Immunotherapy
                       </Link>
                     </li>
                     <li>
                       <Link
-                        to="/deaddiction"
+                        to="/Bronchoscopy"
                         className="block px-4 py-2 hover:bg-gray-100"
                       >
-                        De-addiction Programs
+                        Bronchoscopy
                       </Link>
                     </li>
+
                     <li>
                       <Link
-                        to="/sexual-wellness"
+                        to="/Thoracoscopy"
                         className="block px-4 py-2 hover:bg-gray-100"
                       >
-                        Sexual Wellness Services
+                        Thoracoscopy
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/PulmonaryFunction"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Pulmonary Function Testing
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/IntercostalDrainage "
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Intercostal Drainage Tube Insertion
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/LungBiopsy"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Lung Biopsy
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/PleuralBiopsy"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Pleural Biopsy
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/Pleurodesis"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Pleurodesis
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/EBUSTBNA"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        EBUS-TBNA
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/FENO"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        FENO(Breath Test)
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/TrachealStenting"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Tracheal Stenting
                       </Link>
                     </li>
                   </ul>
@@ -1038,7 +1260,7 @@ function HeaderMain() {
                         Pictures Gallery
                       </Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link
                         to="/youtube"
                         className="block px-4 py-2 hover:bg-gray-100"
@@ -1053,9 +1275,18 @@ function HeaderMain() {
                       >
                         Instagram
                       </Link>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
+              </li>
+              <li>
+                <Link
+                  to="/"
+                   onClick={toggleMobileMenu}
+                  className="block py-2 px-3 text-black hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-800 md:p-0"
+                >
+                  Blog
+                </Link>
               </li>
               {/* <li>
                 <Link
