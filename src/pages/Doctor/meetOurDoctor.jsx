@@ -44,7 +44,7 @@ const MeetOutDoctors = () => {
       {loading ? (
         <p className="text-center mt-8">Loading doctors...</p>
       ) : error ? (
-        <p className="text-center mt-8 text-red-600">{error}</p>
+        <p className="text-center mt-8 text-blue-600">{error}</p>
       ) : (
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-8 place-items-center">
           {filteredDoctors.map((doctor, index) => (

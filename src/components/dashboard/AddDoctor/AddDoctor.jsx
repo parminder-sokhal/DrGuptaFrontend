@@ -149,7 +149,7 @@ function AddDoctor() {
                         className={`cursor-pointer inline-block px-3 py-1 text-xs font-semibold rounded-full border transition duration-300 ${
                           doctor.availability === "available"
                             ? "bg-green-800 text-white border-green-700 hover:bg-green-700"
-                            : "bg-red-600 text-white border-red-500 hover:bg-red-500"
+                            : "bg-blue-600 text-white border-blue-500 hover:bg-blue-500"
                         }`}
                       >
                         {doctor.availability === "available"
@@ -176,7 +176,7 @@ function AddDoctor() {
                       </button>
                       <button
                         onClick={() => setConfirmDeleteId(doctor._id)}
-                        className="text-red-600 hover:text-red-800 transition"
+                        className="text-blue-600 hover:text-blue-800 transition"
                         title="Delete"
                       >
                         <FaTrash />
@@ -239,7 +239,7 @@ function AddDoctor() {
             <div className="flex justify-end gap-2">
               <button
                 onClick={() => handleDelete(confirmDeleteId)}
-                className="bg-red-600 text-white px-4 py-2 rounded"
+                className="bg-blue-600 text-white px-4 py-2 rounded"
               >
                 Delete
               </button>

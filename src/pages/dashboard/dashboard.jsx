@@ -66,7 +66,7 @@ export default function Dashboard() {
                   dispatch(logout());
                   navigate("/"); 
                 }}
-                className={`flex w-full items-center p-2 rounded-md text-sm font-medium transition-colors text-black hover:text-white hover:bg-red-600`}
+                className={`flex w-full items-center p-2 rounded-md text-sm font-medium transition-colors text-black hover:text-white hover:bg-blue-600`}
               >
                 <FaChalkboardTeacher />
                 <span className="ml-3">Logout</span>

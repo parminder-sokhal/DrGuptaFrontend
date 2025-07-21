@@ -60,7 +60,7 @@ function Videos() {
                         loading="lazy"
                       />
                       <div className="absolute inset-0 flex items-center justify-center bg-opacity-50 transition duration-300">
-                        <FaYoutube className="text-red-600 text-6xl" />
+                        <FaYoutube className="text-blue-600 text-6xl" />
                       </div>
                     </div>
                   ) : (
@@ -102,7 +102,7 @@ function Videos() {
                         loading="lazy"
                       />
                       <div className="absolute inset-0 flex items-center justify-center bg-opacity-50 transition duration-300">
-                        <FaYoutube className="text-red-600 text-6xl" />
+                        <FaYoutube className="text-blue-600 text-6xl" />
                       </div>
                     </div>
                   ) : (

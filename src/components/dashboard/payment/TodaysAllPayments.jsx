@@ -199,7 +199,7 @@ function TodaysAllPayments() {
               payment.status === "completed"
                 ? "bg-green-500 text-white"
                 : payment.status === "created"
-                  ? "bg-red-500 text-white"
+                  ? "bg-blue-500 text-white"
                   : "bg-gray-300 text-black"
             }`}
                       >

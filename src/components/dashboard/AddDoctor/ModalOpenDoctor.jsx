@@ -183,7 +183,7 @@ function ModalOpenDoctor({ open, onClose, doctor, isEditing }) {
         <div className="sticky top-0 z-10 bg-white p-4 border-b">
           <button
             onClick={onClose}
-            className="absolute top-4 right-4 text-gray-600 hover:text-red-600"
+            className="absolute top-4 right-4 text-gray-600 hover:text-blue-600"
           >
             <FaTimes />
           </button>
@@ -231,10 +231,10 @@ function ModalOpenDoctor({ open, onClose, doctor, isEditing }) {
             onChange={handleChange}
             required
             pattern="\d+" // Only allow numbers
-            className={`border p-2 rounded ${errors.experience ? "border-red-500" : ""}`}
+            className={`border p-2 rounded ${errors.experience ? "border-blue-500" : ""}`}
           />
           {errors.experience && (
-            <span className="text-red-500 text-sm">{errors.experience}</span>
+            <span className="text-blue-500 text-sm">{errors.experience}</span>
           )}
 
           <input
@@ -245,10 +245,10 @@ function ModalOpenDoctor({ open, onClose, doctor, isEditing }) {
             onChange={handleChange}
             required
             pattern="\d+" // Only allow numbers
-            className={`border p-2 rounded ${errors.fees ? "border-red-500" : ""}`}
+            className={`border p-2 rounded ${errors.fees ? "border-blue-500" : ""}`}
           />
           {errors.fees && (
-            <span className="text-red-500 text-sm">{errors.fees}</span>
+            <span className="text-blue-500 text-sm">{errors.fees}</span>
           )}
 
           <input
@@ -260,10 +260,10 @@ function ModalOpenDoctor({ open, onClose, doctor, isEditing }) {
             required
             pattern="\d{10}" // Only allow 10-digit phone numbers
             maxLength={10}
-            className={`border p-2 rounded ${errors.phone ? "border-red-500" : ""}`}
+            className={`border p-2 rounded ${errors.phone ? "border-blue-500" : ""}`}
           />
           {errors.phone && (
-            <span className="text-red-500 text-sm">{errors.phone}</span>
+            <span className="text-blue-500 text-sm">{errors.phone}</span>
           )}
 
           <input
@@ -273,10 +273,10 @@ function ModalOpenDoctor({ open, onClose, doctor, isEditing }) {
             value={formData.email}
             onChange={handleChange}
             required
-            className={`border p-2 rounded ${errors.email ? "border-red-500" : ""}`}
+            className={`border p-2 rounded ${errors.email ? "border-blue-500" : ""}`}
           />
           {errors.email && (
-            <span className="text-red-500 text-sm">{errors.email}</span>
+            <span className="text-blue-500 text-sm">{errors.email}</span>
           )}
 
           <div className="md:col-span-1">
@@ -301,7 +301,7 @@ function ModalOpenDoctor({ open, onClose, doctor, isEditing }) {
                     setPreviewImage(null);
                     setFormData({ ...formData, file: null });
                   }}
-                  className="absolute top-0 right-0 bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center transform translate-x-1/2 -translate-y-1/2 hover:bg-red-700"
+                  className="absolute top-0 right-0 bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center transform translate-x-1/2 -translate-y-1/2 hover:bg-blue-700"
                 >
                   &times;
                 </button>

@@ -18,19 +18,19 @@ const Footer = () => {
             {/* 1st div - Specialty and Treatments */}
             <div className="flex justify-around gap-15 w-1/3 sm:flex-col md:flex-row lg:flex-row space-y-8 sm:space-y-0 transform hover:scale-105 transition duration-300 ease-in-out">
               {/* Speciality Links */}
-               <div className="flex flex-col space-y-2 w-full">
+               <div className="flex flex-col space-y-4 py-10 w-full">
                 <h3 className="text-2xl font-semibold">About Hospital</h3>
                 <p>Our hospital is dedicated to delivering compassionate, evidence-based respiratory care through state-of-the-art diagnostic and treatment technologies. We strive to make advanced services like bronchoscopy, EBUS, and sleep medicine accessible to everyone. Our mission is to educate and empower patients to confidently manage chronic lung conditions with clarity and support.</p>
               </div>
             </div>
 
             {/* 2nd div - Logo and Contact Information */}
-            <div className="flex flex-col items-center space-y-4  sm:w-1/3 transform hover:scale-105 transition duration-300 ease-in-out  lg:border-x-2  py-10 hover:border-x-[#DB8E00]">
+            <div className="flex flex-col items-center space-y-4 sm:w-1/3 transform hover:scale-105 transition duration-300 ease-in-out  lg:border-x-2  py-10 hover:border-x-[#DB8E00]">
               <div className="w-4/5 justify-center">
                 <img
-                  // src="/logo/loonahospitalwhite.png"
+                  src="/logo/RobinlogoRemoveBG.png"
                   alt="DrRobinGupta Logo"
-                  className="w-full"
+                  className="w-20 mx-auto mt-4"
                 />
               </div>
               <div className="space-y-2">
@@ -41,7 +41,7 @@ const Footer = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <FaYoutube className="text-white text-xl hover:text-red-600" />
+                    <FaYoutube className="text-white text-xl hover:text-blue-600" />
                   </Link>
                   <Link
                     to="https://www.facebook.com/p/Dr-Robin-Gupta-Consultant-Pulmonologist-Paras-hospital-Panchkula-100063594323141/"
@@ -55,7 +55,7 @@ const Footer = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <FaInstagram className="text-white text-xl hover:text-red-500" />
+                    <FaInstagram className="text-white text-xl hover:text-blue-500" />
                   </Link>
                 </div>
               </div>
