@@ -40,13 +40,13 @@ const DoctorPage = () => {
           {/* Buttons */}
           <div className="flex gap-4">
             <button
-              onClick={() => navigate("/doctor/vinod-nimbran")}
+              onClick={() => navigate("/about#qualifications")}
               className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md text-sm"
             >
               View Profile
             </button>
             <button
-              onClick={() => alert("OPD Timings: \n 9:00 AM – 1:00 PM (Mon–Sat) \n 2:00 AM – 7:00 PM (Mon–Sat) ")}
+              onClick={() => navigate("/about#qualifications")}
               className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-md text-sm"
             >
               OPD Timings
@@ -59,7 +59,6 @@ const DoctorPage = () => {
 };
 
 export default DoctorPage;
-
 
 // import React, { useState, useEffect } from "react";
 // import { useDispatch, useSelector } from "react-redux";

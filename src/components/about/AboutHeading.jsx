@@ -1,6 +1,39 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 
 const AboutHeading = () => {
+  const location = useLocation();
+  const [selectedTimeSlot, setSelectedTimeSlot] = useState("");
+
+  useEffect(() => {
+
+    if (location.hash === "#qualifications") {
+      const el = document.getElementById("qualifications");
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 100); // Delay ensures DOM is rendered
+      }
+    }
+  }, [location]);
+
+  const doctor = {
+    name: "Dr. Robin Gupta",
+    experience: 12, // in years
+    fees: 800, // consultation fee in INR
+  };
+
+  const slots = {
+    morning: ["9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM"],
+    afternoon: ["2:00 PM", "2:30 PM", "3:00 PM", "4:00 PM"],
+  };
+
+  const handleRedirect = () => {
+    window.open(
+      "https://www.parashospitals.com/panchkula/doctor-near-me/pulmonologist/dr-robin-gupta",
+      "_blank"
+    );
+  };
   return (
     <div className="max-w-5xl mx-auto px-4 py-12">
       <h1 className="text-3xl font-bold text-pink-700 mb-6">
@@ -21,7 +54,7 @@ const AboutHeading = () => {
         alike.
       </p>
 
-      <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+      <h2 className="text-2xl font-semibold text-gray-800 mb-4 " id="qualifications">
         Meet Dr. Robin Gupta – A Leader in Respiratory Medicine
       </h2>
 
@@ -35,16 +68,101 @@ const AboutHeading = () => {
         always up-to-date with the latest advancements in respiratory medicine.
       </p>
 
-      <div className="mb-10 text-gray-700 text-base space-y-6">
-        <div>
-          <h3 className="text-2xl font-semibold text-gray-800 mb-2">
-            Medical Qualification:
-          </h3>
-          <ul className="list-disc list-inside space-y-1">
-            <li>MD in Pulmonology Medicine</li>
-            <li>Fellowship in Intensive Care Medicine</li>
-            <li>FCCP (USA)</li>
-          </ul>
+      <div className="mb-10 text-gray-700 text-base space-y-6" >
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10 text-gray-700 text-base">
+          {/* Left Side - Qualifications */}
+          <div className="space-y-6">
+            {/* Experience & Fees Badges */}
+            <div className="flex flex-col sm:flex-row sm:gap-4 gap-3 sm:justify-start items-center">
+              <div className="bg-blue-50 border border-blue-200 px-5 py-3 rounded-md shadow-sm flex flex-col items-center w-full sm:w-40 text-center">
+                <span className="text-xl flex font-semibold text-blue-700">
+                  {doctor?.experience}
+                  <span className="text-md items-center justify-center flex text-blue-700 ml-1">
+                    Years
+                  </span>
+                </span>
+                <span className="text-sm text-gray-600">Experience</span>
+              </div>
+
+              <div className="bg-green-50 border border-green-200 px-5 py-3 rounded-md shadow-sm flex flex-col items-center w-full sm:w-40 text-center">
+                <span className="text-xl font-semibold text-green-700">
+                  ₹ {doctor?.fees}
+                </span>
+                <span className="text-sm text-gray-600">Consultation Fee</span>
+              </div>
+            </div>
+
+            {/* Medical Qualification Section (separated below) */}
+            <div >
+              <h3 className="text-2xl font-semibold text-gray-800 mb-2">
+                Medical Qualification:
+              </h3>
+              <ul className="list-disc list-inside space-y-1 text-gray-700">
+                <li>MD in Pulmonology Medicine</li>
+                <li>Fellowship in Intensive Care Medicine</li>
+                <li>FCCP (USA)</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Right Side - Slots */}
+          <div>
+            <div className="text-sm font-semibold text-gray-700 mt-1 mb-4">
+              Available Time Slots:
+            </div>
+
+            {/* Morning Slots */}
+            <div className="mb-4">
+              <h4 className="font-semibold text-gray-800 mb-1">
+                Morning Slots:
+              </h4>
+              <div className="flex flex-wrap gap-2">
+                {slots.morning.map((slot, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setSelectedTimeSlot(slot)}
+                    className={`px-3 py-1 rounded-md border ${
+                      selectedTimeSlot === slot
+                        ? "bg-green-600 text-white"
+                        : "border-green-600 text-green-600 hover:bg-green-600 hover:text-white"
+                    }`}
+                  >
+                    {slot}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Afternoon Slots */}
+            <div className="mb-4">
+              <h4 className="font-semibold text-gray-800 mb-1">
+                Afternoon Slots:
+              </h4>
+              <div className="flex flex-wrap gap-2">
+                {slots.afternoon.map((slot, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setSelectedTimeSlot(slot)}
+                    className={`px-3 py-1 rounded-md border ${
+                      selectedTimeSlot === slot
+                        ? "bg-green-600 text-white"
+                        : "border-green-600 text-green-600 hover:bg-green-600 hover:text-white"
+                    }`}
+                  >
+                    {slot}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* External Redirect Button */}
+            <button
+              onClick={handleRedirect}
+              className="mt-6 px-4 py-2 bg-pink-600 hover:bg-pink-700 text-white rounded-md text-sm"
+            >
+              View Profile & Book on Paras Hospital
+            </button>
+          </div>
         </div>
 
         <div>
