@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const VideoPlayHeader = () => {
   return (
-    <header className="relative w-full aspect-video mt-15">
+    <header className="relative w-full aspect-video lg:mt-20 mt-32">
       <video
         autoPlay
         loop
