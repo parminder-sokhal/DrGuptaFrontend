@@ -29,7 +29,7 @@ export default function Dashboard() {
         <nav className="h-full flex flex-col">
           {/* Logo and Close Icon */}
           <div className="p-4 flex items-center justify-between border-b">
-            <img className="w-32" src="/logo/loonalogo.png" alt="logo" />
+            <img className="w-20 h-auto" src="/logo/RobinlogoRemoveBG.png" alt="logo" />
             <button className="sm:hidden text-xl" onClick={closeSidebar}>
               <FaTimes />
             </button>

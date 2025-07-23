@@ -41,7 +41,7 @@ export default function SignIn() {
       <div className="w-full max-w-md bg-white shadow-md rounded-lg p-10">
         <div className="flex items-center space-x-3 mb-6">
           <Link to="/" className="flex items-center space-x-3">
-            <img src="/logo/loonalogo.png" className="h-12" alt="Logo" />
+            <img src="/logo/RobinlogoRemoveBG.png" className="h-12" alt="Logo" />
           </Link>
         </div>
 
