@@ -39,18 +39,18 @@ function LayoutWrapper() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         {/* <Route path="/management" element={<Management />} /> */}
-        <Route path="/doctors" element={<Doctors />} />
-        <Route path="/doctor/:id" element={<DoctorProfile />} />
-        <Route path="/appointment" element={<DoctorAppointment />} />
+        {/* <Route path="/doctors" element={<Doctors />} /> */}
+        {/* <Route path="/doctor/:id" element={<DoctorProfile />} /> */}
+        {/* <Route path="/appointment" element={<DoctorAppointment />} /> */}
         <Route path="/signin" element={<SignIn />} />
 
         {/* Private dashboard route with nested child routes */}
         <Route element={<PrivateRoute />}>
           <Route path="/dashboard" element={<Dashboard />}>
             <Route index element={<WelcomeDashboard />} />
-            <Route path="AddDoctor" element={<AddDoctor />} />
-            <Route path="GetAllPaymentDetails" element={<GetAllPaymentDetails />} />
-            <Route path="GetAllOfflinePayments" element={<GetAllOfflinePayments />} />
+            {/* <Route path="AddDoctor" element={<AddDoctor />} /> */}
+            {/* <Route path="GetAllPaymentDetails" element={<GetAllPaymentDetails />} /> */}
+            {/* <Route path="GetAllOfflinePayments" element={<GetAllOfflinePayments />} /> */}
             <Route path="Links" element={<AddLinks />} />
           </Route>
         </Route>

@@ -118,7 +118,7 @@ const OurServices = () => {
   return (
     <section className="container mx-auto mt-10 mb-20 md:px-18 sm:px-14 lg:px-30">
       <div className="text-center mb-10">
-        <h2 className="text-4xl text-gray-800">Procedure</h2>
+        <h2 className="text-5xl text-gray-800">Procedure</h2>
       </div>
 
       <div className="relative w-full">

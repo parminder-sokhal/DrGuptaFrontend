@@ -1,19 +1,19 @@
-import { FaPhoneAlt } from "react-icons/fa"; // Import the phone icon
+import { FaPhoneAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const VideoPlayHeader = () => {
   return (
-    <header className="relative w-full aspect-video mt-30">
+    <header className="relative w-full aspect-video mt-15">
       <video
         autoPlay
         loop
         playsInline
         muted
         preload="auto"
-        className="w-full h-full object-fit object-center"
+        className="w-full h-full object-fit"
       >
         <source
-          src="https://www.dropbox.com/scl/fi/j1dde2lole25nbn0ex8mu/drrobingupta.mp4?rlkey=f6tbr87ztusnfea7aw5t0t1rv&st=oiv8hukx&dl=1"
+          src="https://dl.dropboxusercontent.com/scl/fi/j1dde2lole25nbn0ex8mu/drrobingupta.mp4?rlkey=f6tbr87ztusnfea7aw5t0t1rv&st=oiv8hukx"
           type="video/mp4"
         />
         Your browser does not support the video tag.

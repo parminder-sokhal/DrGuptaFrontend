@@ -18,14 +18,14 @@ const AboutHeading = () => {
 
   const doctor = {
     name: "Dr. Robin Gupta",
-    experience: 12, // in years
-    fees: 800, // consultation fee in INR
+    experience: 10, // in years
+    fees: 600, // consultation fee in INR
   };
 
   const slots = {
-    morning: ["9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM"],
-    afternoon: ["2:00 PM", "2:30 PM", "3:00 PM", "4:00 PM"],
-    evening: ["5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM"],
+    morning: ["9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM"],
+    afternoon: ["12:30 PM","01:00 PM","01:30 PM","2:00 PM", "2:30 PM", "03:00 PM", "04:00 PM", "04:30 PM"],
+    evening: ["05:30 PM", "06:00 PM", "06:30 PM", "07:00 PM","07:30 PM"],
   };
 
   const handleRedirect = () => {

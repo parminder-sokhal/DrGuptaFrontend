@@ -36,7 +36,7 @@ export default function Dashboard() {
           </div>
           <ul className="flex-1 px-2 overflow-y-auto">
            
-            <SidebarItem
+            {/* <SidebarItem
               icon={<FaUserGraduate />}
               text="Get All Online Payment Details"
               to="/dashboard/GetAllPaymentDetails"
@@ -53,7 +53,7 @@ export default function Dashboard() {
               text="Add Doctor"
               to="/dashboard/AddDoctor"
               active={location.pathname === "/dashboard/AddDoctor"}
-            />
+            /> */}
             <SidebarItem
               icon={<FaUserGraduate />}
               text="Add Links"
