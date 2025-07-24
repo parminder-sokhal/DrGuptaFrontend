@@ -25,6 +25,8 @@ import GetAllPaymentDetails from "./components/dashboard/payment/GetAllPaymentDe
 import GetAllOfflinePayments from "./components/dashboard/payment/GetAllOfflinePayments.jsx";
 import AddLinks from "./components/dashboard/Links/AddLinks.jsx";
 // import Management from "./pages/management/Management.jsx";
+import FormModal from "./pages/form/FormModal.jsx";
+import Forms from "./components/dashboard/form/Forms.jsx";
 
 function LayoutWrapper() {
   const location = useLocation();
@@ -52,6 +54,7 @@ function LayoutWrapper() {
             {/* <Route path="GetAllPaymentDetails" element={<GetAllPaymentDetails />} /> */}
             {/* <Route path="GetAllOfflinePayments" element={<GetAllOfflinePayments />} /> */}
             <Route path="Links" element={<AddLinks />} />
+            <Route path="Forms" element={<Forms />} />
           </Route>
         </Route>
 
@@ -60,6 +63,7 @@ function LayoutWrapper() {
       </Routes>
 
       {!hideLayout && <Footer />}
+      {!hideLayout && <FormModal />}
     </>
   );
 }

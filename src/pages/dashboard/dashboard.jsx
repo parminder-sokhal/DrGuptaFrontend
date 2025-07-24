@@ -29,13 +29,16 @@ export default function Dashboard() {
         <nav className="h-full flex flex-col">
           {/* Logo and Close Icon */}
           <div className="p-4 flex items-center justify-between border-b">
-            <img className="w-20 h-auto" src="/logo/RobinlogoRemoveBG.png" alt="logo" />
+            <img
+              className="w-20 h-auto"
+              src="/logo/RobinlogoRemoveBG.png"
+              alt="logo"
+            />
             <button className="sm:hidden text-xl" onClick={closeSidebar}>
               <FaTimes />
             </button>
           </div>
           <ul className="flex-1 px-2 overflow-y-auto">
-           
             {/* <SidebarItem
               icon={<FaUserGraduate />}
               text="Get All Online Payment Details"
@@ -58,13 +61,21 @@ export default function Dashboard() {
               icon={<FaUserGraduate />}
               text="Add Links"
               to="/dashboard/Links"
+              onClick={closeSidebar}
               active={location.pathname === "/dashboard/Links"}
+            />
+            <SidebarItem
+              icon={<FaUserGraduate />}
+              text="All Enquiry Forms"
+              to="/dashboard/Forms"
+              onClick={closeSidebar}
+              active={location.pathname === "/dashboard/Forms"}
             />
             <li className="py-4 border-t">
               <button
                 onClick={() => {
                   dispatch(logout());
-                  navigate("/"); 
+                  navigate("/");
                 }}
                 className={`flex w-full items-center p-2 rounded-md text-sm font-medium transition-colors text-black hover:text-white hover:bg-blue-600`}
               >
@@ -92,11 +103,12 @@ export default function Dashboard() {
   );
 }
 
-function SidebarItem({ icon, text, to, active }) {
+function SidebarItem({ icon, text, to, active, onClick }) {
   return (
     <li className="my-1">
       <Link
         to={to}
+        onClick={onClick}
         className={`flex items-center p-2 rounded-md text-sm font-medium transition-colors ${
           active ? "bg-blue-500 text-white" : "text-gray-700 hover:bg-blue-100"
         }`}

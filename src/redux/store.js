@@ -4,6 +4,7 @@ import appointmentSlice from "./reducers/appointmentSlice.js";
 import userSlice from "./reducers/userSlice.js";
 import paymentSlice from "./reducers/paymentSlice.js";
 import linksSlice from "./reducers/linksSlice.js";
+import formSlice from "./reducers/formSlice.js";
 
 const store = configureStore({
   reducer: {
@@ -12,6 +13,7 @@ const store = configureStore({
     user: userSlice,
     payment: paymentSlice,
     links: linksSlice,
+    form: formSlice,
   },
 });
 
