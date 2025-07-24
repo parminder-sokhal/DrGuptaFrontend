@@ -85,7 +85,7 @@ function FormModal() {
           </div>
         ) : (
           <>
-            <h2 className="form-title">For Enquiry Contact Us</h2>
+            <h2 className="form-title">For Enquiry</h2>
             <p className="form-subtitle">
               Drop a quick message and we’ll get back to you!
             </p>
