@@ -19,7 +19,7 @@ function Home() {
       <OurApproach />
       {/* <SpecialitiesSlider/>    */}
       <Doctors />
-      <PatientReview />
+      {/* <PatientReview /> */}
       <Treatment />
       {/* <OurFacility/> */}
       <PhotoGallery />
