@@ -353,42 +353,191 @@ function HeaderMain() {
                 <div
                   onMouseLeave={handleNavbarDropdownLeaveservices}
                   onClick={handleNavbarDropdownLeaveservices}
-                  className={`z-50 bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-auto absolute mt-2 transition-all duration-300 ease-in-out transform ${isDropdownNavbarOpenservices ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"
-                    }`}
+                  className={`z-50 bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-auto absolute mt-2 transition-all duration-300 ease-in-out transform ${
+                    isDropdownNavbarOpenservices
+                      ? "opacity-100 scale-100"
+                      : "opacity-0 scale-95 pointer-events-none"
+                  }`}
                 >
-                  <ul className="
+                  <ul
+                    className="
       py-2 text-sm text-black 
       max-h-[300px] overflow-y-auto 
       grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-1 
       px-2 w-full"
                   >
-                    <li><Link to="/ArdsTreatment" className="block px-4 py-2 hover:bg-gray-100">ARDS Treatment</Link></li>
-                    <li><Link to="/AsthmaTreatment" className="block px-4 py-2 hover:bg-gray-100">Asthma Treatment</Link></li>
-                    <li><Link to="/BronchialAsthma" className="block px-4 py-2 hover:bg-gray-100">Bronchial Asthma Treatment</Link></li>
-                    <li><Link to="/ChronicCough" className="block px-4 py-2 hover:bg-gray-100">Chronic Cough Treatment</Link></li>
-                    <li><Link to="/COPD" className="block px-4 py-2 hover:bg-gray-100">COPD</Link></li>
-                    <li><Link to="/DiabetesTreatment" className="block px-4 py-2 hover:bg-gray-100">Diabetes Treatment</Link></li>
-                    <li><Link to="/Fever" className="block px-4 py-2 hover:bg-gray-100">Fever Treatment</Link></li>
-                    <li><Link to="/FluTreatment" className="block px-4 py-2 hover:bg-gray-100">Flu Treatment</Link></li>
-                    
-                    <li><Link to="/GeneralPhysician" className="block px-4 py-2 hover:bg-gray-100">General Physician</Link></li>
-                    <li><Link to="/Hypertension" className="block px-4 py-2 hover:bg-gray-100">Hypertension Treatment</Link></li>
-                    <li><Link to="/InterstitialLung" className="block px-4 py-2 hover:bg-gray-100">Interstitial Lung Disease Treatment</Link></li>
-                    <li><Link to="/LungCancer" className="block px-4 py-2 hover:bg-gray-100">Lung Cancer</Link></li>
-                    <li><Link to="/ObstructiveSleep" className="block px-4 py-2 hover:bg-gray-100">Obstructive Sleep Apnea (OSA)</Link></li>
-                    <li><Link to="/PleuralEffusion" className="block px-4 py-2 hover:bg-gray-100">Pleural Effusion</Link></li>
-                    <li><Link to="/PneumoniaTreatment" className="block px-4 py-2 hover:bg-gray-100">Pneumonia Treatment</Link></li>
-                    <li><Link to="/PreventiveCardiology" className="block px-4 py-2 hover:bg-gray-100">Preventive Cardiology Treatment</Link></li>
-                    <li><Link to="/RespiratoryFailure" className="block px-4 py-2 hover:bg-gray-100">Respiratory Failure Treatment</Link></li>
-                    <li><Link to="/RespiratoryAllergy" className="block px-4 py-2 hover:bg-gray-100">Respiratory Allergy Treatment</Link></li>
-                    <li><Link to="/Sarcoidosis" className="block px-4 py-2 hover:bg-gray-100">Sarcoidosis</Link></li>
-                    <li><Link to="/SleepDisordered" className="block px-4 py-2 hover:bg-gray-100">Sleep Disordered Breathing</Link></li>
-                    <li><Link to="/Tuberculosis" className="block px-4 py-2 hover:bg-gray-100">Tuberculosis (TB) Treatment</Link></li>
-                     
+                    <li>
+                      <Link
+                        to="/ArdsTreatment"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        ARDS Treatment
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/AsthmaTreatment"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Asthma Treatment
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/BronchialAsthma"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Bronchial Asthma Treatment
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/ChronicCough"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Chronic Cough Treatment
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/COPD"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        COPD
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/DiabetesTreatment"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Diabetes Treatment
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/Fever"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Fever Treatment
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/FluTreatment"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Flu Treatment
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/GeneralPhysician"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        General Physician
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/Hypertension"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Hypertension Treatment
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/InterstitialLung"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Interstitial Lung Disease Treatment
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/LungCancer"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Lung Cancer
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/ObstructiveSleep"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Obstructive Sleep Apnea (OSA)
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/PleuralEffusion"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Pleural Effusion
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/PneumoniaTreatment"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Pneumonia Treatment
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/PreventiveCardiology"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Preventive Cardiology Treatment
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/RespiratoryFailure"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Respiratory Failure Treatment
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/RespiratoryAllergy"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Respiratory Allergy Treatment
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/Sarcoidosis"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Sarcoidosis
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/SleepDisordered"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Sleep Disordered Breathing
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/Tuberculosis"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Tuberculosis (TB) Treatment
+                      </Link>
+                    </li>
                   </ul>
                 </div>
               </li>
-
 
               <li onMouseEnter={handleNavbarDropdownHoverservicestwo}>
                 <button
@@ -1072,21 +1221,20 @@ function HeaderMain() {
                   <ul className="py-2 text-sm text-gray-700">
                     <li>
                       <Link
-                        to="/LungCancer"
+                        to="/ArdsTreatment"
                         className="block px-4 py-2 hover:bg-gray-100"
                       >
-                        Lung Cancer
+                        ARDS Treatment
                       </Link>
                     </li>
                     <li>
                       <Link
-                        to="/PneumoniaTreatment"
+                        to="/AsthmaTreatment"
                         className="block px-4 py-2 hover:bg-gray-100"
                       >
-                        Pneumonia Treatment
+                        Asthma Treatment
                       </Link>
                     </li>
-
                     <li>
                       <Link
                         to="/BronchialAsthma"
@@ -1095,76 +1243,12 @@ function HeaderMain() {
                         Bronchial Asthma Treatment
                       </Link>
                     </li>
-
                     <li>
                       <Link
-                        to="/Tuberculosis"
+                        to="/ChronicCough"
                         className="block px-4 py-2 hover:bg-gray-100"
                       >
-                        Tuberculosis (TB) Treatment
-                      </Link>
-                    </li>
-
-                    <li>
-                      <Link
-                        to="/InterstitialLung "
-                        className="block px-4 py-2 hover:bg-gray-100"
-                      >
-                        Interstitial Lung Disease Treatment
-                      </Link>
-                    </li>
-
-                    <li>
-                      <Link
-                        to="/DiabetesTreatment"
-                        className="block px-4 py-2 hover:bg-gray-100"
-                      >
-                        Diabetes Treatment
-                      </Link>
-                    </li>
-
-                    <li>
-                      <Link
-                        to="/Hypertension"
-                        className="block px-4 py-2 hover:bg-gray-100"
-                      >
-                        Hypertension Treatment
-                      </Link>
-                    </li>
-
-                    <li>
-                      <Link
-                        to="/PreventiveCardiology"
-                        className="block px-4 py-2 hover:bg-gray-100"
-                      >
-                        Preventive Cardiology Treatment
-                      </Link>
-                    </li>
-
-                    <li>
-                      <Link
-                        to="/SleepDisordered"
-                        className="block px-4 py-2 hover:bg-gray-100"
-                      >
-                        Sleep Disordered Breathing
-                      </Link>
-                    </li>
-
-                    <li>
-                      <Link
-                        to="/PleuralEffusion"
-                        className="block px-4 py-2 hover:bg-gray-100"
-                      >
-                        Pleural Effusion
-                      </Link>
-                    </li>
-
-                    <li>
-                      <Link
-                        to="/Fever"
-                        className="block px-4 py-2 hover:bg-gray-100"
-                      >
-                        Fever Treatment
+                        Chronic Cough Treatment
                       </Link>
                     </li>
                     <li>
@@ -1177,6 +1261,111 @@ function HeaderMain() {
                     </li>
                     <li>
                       <Link
+                        to="/DiabetesTreatment"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Diabetes Treatment
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/Fever"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Fever Treatment
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/FluTreatment"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Flu Treatment
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/GeneralPhysician"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        General Physician
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/Hypertension"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Hypertension Treatment
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/InterstitialLung"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Interstitial Lung Disease Treatment
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/LungCancer"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Lung Cancer
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/ObstructiveSleep"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Obstructive Sleep Apnea (OSA)
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/PleuralEffusion"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Pleural Effusion
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/PneumoniaTreatment"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Pneumonia Treatment
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/PreventiveCardiology"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Preventive Cardiology Treatment
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/RespiratoryFailure"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Respiratory Failure Treatment
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/RespiratoryAllergy"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Respiratory Allergy Treatment
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
                         to="/Sarcoidosis"
                         className="block px-4 py-2 hover:bg-gray-100"
                       >
@@ -1185,10 +1374,18 @@ function HeaderMain() {
                     </li>
                     <li>
                       <Link
-                        to="/GeneralPhysician"
+                        to="/SleepDisordered"
                         className="block px-4 py-2 hover:bg-gray-100"
                       >
-                        General Physician
+                        Sleep Disordered Breathing
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/Tuberculosis"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Tuberculosis (TB) Treatment
                       </Link>
                     </li>
                   </ul>
