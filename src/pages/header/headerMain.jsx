@@ -146,7 +146,7 @@ function HeaderMain() {
                 </button>
               </li> */}
 
-              <li onMouseEnter={handleNavbarDropdownHoverservices}>
+              {/* <li onMouseEnter={handleNavbarDropdownHoverservices}>
                 <button
                   onClick={toggleNavbarDropdownservices}
                   className="flex items-center justify-between w-full py-2 px-3 text-black hover:bg-gray-100 md:hover:bg-transparent md:p-0"
@@ -189,6 +189,32 @@ function HeaderMain() {
                         Pneumonia Treatment
                       </Link>
                     </li>
+                    <li>
+                      <Link
+                        to="/ArdsTreatment"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        ARDS Treatment
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/ChronicCough"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Chronic Cough Treatment
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/AsthmaTreatment"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Asthma Treatment
+                      </Link>
+                    </li>
+
+                    
 
                     <li>
                       <Link
@@ -296,7 +322,73 @@ function HeaderMain() {
                     </li>
                   </ul>
                 </div>
+              </li> */}
+
+              {/* above is your code for drop down below is my code done by avikam ..you can remove it if you dont like 
+              
+              also you have to add routes for the phone 
+              */}
+
+              <li onMouseEnter={handleNavbarDropdownHoverservices}>
+                <button
+                  onClick={toggleNavbarDropdownservices}
+                  className="flex items-center justify-between w-full py-2 px-3 text-black hover:bg-gray-100 md:hover:bg-transparent md:p-0"
+                >
+                  Treatments
+                  <svg
+                    className={`w-2.5 h-2.5 ms-2.5 transition-transform duration-200 ${isDropdownNavbarOpenservices ? "rotate-180" : ""}`}
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </button>
+
+                <div
+                  onMouseLeave={handleNavbarDropdownLeaveservices}
+                  onClick={handleNavbarDropdownLeaveservices}
+                  className={`z-50 bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-auto absolute mt-2 transition-all duration-300 ease-in-out transform ${isDropdownNavbarOpenservices ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"
+                    }`}
+                >
+                  <ul className="
+      py-2 text-sm text-black 
+      max-h-[300px] overflow-y-auto 
+      grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-1 
+      px-2 w-full"
+                  >
+                    <li><Link to="/ArdsTreatment" className="block px-4 py-2 hover:bg-gray-100">ARDS Treatment</Link></li>
+                    <li><Link to="/AsthmaTreatment" className="block px-4 py-2 hover:bg-gray-100">Asthma Treatment</Link></li>
+                    <li><Link to="/BronchialAsthma" className="block px-4 py-2 hover:bg-gray-100">Bronchial Asthma Treatment</Link></li>
+                    <li><Link to="/ChronicCough" className="block px-4 py-2 hover:bg-gray-100">Chronic Cough Treatment</Link></li>
+                    <li><Link to="/COPD" className="block px-4 py-2 hover:bg-gray-100">COPD</Link></li>
+                    <li><Link to="/DiabetesTreatment" className="block px-4 py-2 hover:bg-gray-100">Diabetes Treatment</Link></li>
+                    <li><Link to="/Fever" className="block px-4 py-2 hover:bg-gray-100">Fever Treatment</Link></li>
+                    <li><Link to="/FluTreatment" className="block px-4 py-2 hover:bg-gray-100">Flu Treatment</Link></li>
+                    
+                    <li><Link to="/GeneralPhysician" className="block px-4 py-2 hover:bg-gray-100">General Physician</Link></li>
+                    <li><Link to="/Hypertension" className="block px-4 py-2 hover:bg-gray-100">Hypertension Treatment</Link></li>
+                    <li><Link to="/InterstitialLung" className="block px-4 py-2 hover:bg-gray-100">Interstitial Lung Disease Treatment</Link></li>
+                    <li><Link to="/LungCancer" className="block px-4 py-2 hover:bg-gray-100">Lung Cancer</Link></li>
+                    <li><Link to="/ObstructiveSleep" className="block px-4 py-2 hover:bg-gray-100">Obstructive Sleep Apnea (OSA)</Link></li>
+                    <li><Link to="/PleuralEffusion" className="block px-4 py-2 hover:bg-gray-100">Pleural Effusion</Link></li>
+                    <li><Link to="/PneumoniaTreatment" className="block px-4 py-2 hover:bg-gray-100">Pneumonia Treatment</Link></li>
+                    <li><Link to="/PreventiveCardiology" className="block px-4 py-2 hover:bg-gray-100">Preventive Cardiology Treatment</Link></li>
+                    <li><Link to="/RespiratoryFailure" className="block px-4 py-2 hover:bg-gray-100">Respiratory Failure Treatment</Link></li>
+                    <li><Link to="/RespiratoryAllergy" className="block px-4 py-2 hover:bg-gray-100">Respiratory Allergy Treatment</Link></li>
+                    <li><Link to="/Sarcoidosis" className="block px-4 py-2 hover:bg-gray-100">Sarcoidosis</Link></li>
+                    <li><Link to="/SleepDisordered" className="block px-4 py-2 hover:bg-gray-100">Sleep Disordered Breathing</Link></li>
+                    <li><Link to="/Tuberculosis" className="block px-4 py-2 hover:bg-gray-100">Tuberculosis (TB) Treatment</Link></li>
+                     
+                  </ul>
+                </div>
               </li>
+
 
               <li onMouseEnter={handleNavbarDropdownHoverservicestwo}>
                 <button
@@ -1282,7 +1374,7 @@ function HeaderMain() {
               <li>
                 <Link
                   to="/"
-                   onClick={toggleMobileMenu}
+                  onClick={toggleMobileMenu}
                   className="block py-2 px-3 text-black hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-800 md:p-0"
                 >
                   Blog

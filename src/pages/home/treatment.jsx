@@ -19,7 +19,13 @@ import Fever from '../../components/header/treatments/Fever.jsx';
 import COPD from '../../components/header/treatments/COPD.jsx';
 import Sarcoidosis from '../../components/header/treatments/Sarcoidosis.jsx';
 import GeneralPhysician from '../../components/header/treatments/GeneralPhysician.jsx';
-
+import Asthma from '../../components/header/treatments/Asthma.jsx';
+import ArdsTreatment from '../../components/header/treatments/ArdsTreatment.jsx';
+import ChronicCough from '../../components/header/treatments/ChronicCough.jsx';
+import FluTreatment from '../../components/header/treatments/FluTreatment.jsx';
+import ObstructiveSleep from '../../components/header/treatments/ObstructiveSleep.jsx';
+import RespiratoryFailure from '../../components/header/treatments/RespiratoryFailure.jsx';
+import RespiratoryAllergy from '../../components/header/treatments/RespiratoryAllergy.jsx';
 
 
 // Procedures
@@ -54,7 +60,7 @@ const TreatmentRoutes = (
     <Route path="/EBUSTBNA" element={<EBUSTBNA />} />
     <Route path="/FENO" element={<FENO />} />
     <Route path="/TrachealStenting" element={<TrachealStenting />} />
-  
+
     {/* Treatements */}
     <Route path="/LungCancer" element={<LungCancer />} />
     <Route path="/PneumoniaTreatment" element={<PneumoniaTreatment />} />
@@ -70,7 +76,14 @@ const TreatmentRoutes = (
     <Route path="/COPD" element={<COPD />} />
     <Route path="/Sarcoidosis" element={<Sarcoidosis />} />
     <Route path="/GeneralPhysician" element={<GeneralPhysician />} />
-  
+    <Route path="/AsthmaTreatment" element={<Asthma />} />
+    <Route path="/ArdsTreatment" element={<ArdsTreatment />} />
+    <Route path="/ChronicCough" element={<ChronicCough />} />
+    <Route path="/FluTreatment" element={<FluTreatment />} />
+    <Route path="/ObstructiveSleep" element={<ObstructiveSleep />} />
+    <Route path="/RespiratoryFailure" element={<RespiratoryFailure />} />
+    <Route path="/RespiratoryAllergy" element={<RespiratoryAllergy />} />
+
 
   </>
 );

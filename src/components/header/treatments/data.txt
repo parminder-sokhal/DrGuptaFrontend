@@ -1,0 +1,26 @@
+const data = {
+  bgImage: "", // Add a relevant image URL if available
+  sidebarLinks: [
+    { title: "ARDS Treatment", link: "/ArdsTreatment" },
+    { title: "Asthma Treatment", link: "/AsthmaTreatment" },
+    { title: "Bronchial Asthma Treatment", link: "/BronchialAsthma" },
+    { title: "Chronic Cough Treatment", link: "/ChronicCough" },
+    { title: "Chronic Obstructive Pulmonary Disease(COPD)", link: "/COPD" },
+    { title: "Diabetes Treatment", link: "/DiabetesTreatment" },
+    { title: "Fever Treatment", link: "/Fever" },
+    { title: "Flu Treatment", link: "/FluTreatment" },
+    { title: "General Physician", link: "/GeneralPhysician" },
+    { title: "Hypertension Treatment", link: "/Hypertension" },
+    { title: "Interstitial Lung Disease Treatment", link: "/InterstitialLung" },
+    { title: "Lung Cancer Treatment", link: "/LungCancer" },
+    { title: "Obstructive Sleep Apnea (OSA)", link: "/ObstructiveSleep" },
+    { title: "Pleural Effusion", link: "/PleuralEffusion" },
+    { title: "Pneumonia Treatment", link: "/PneumoniaTreatment" },
+    { title: "Preventive Cardiology Treatment", link: "/PreventiveCardiology" },
+    { title: "Respiratory Failure Treatment", link: "/RespiratoryFailure" },
+    { title: "Respiratory Allergy Treatment", link: "/RespiratoryAllergy" },
+    { title: "Sarcoidosis", link: "/Sarcoidosis" },
+    { title: "Sleep Disordered Breathing", link: "/SleepDisordered" },
+    { title: "Tuberculosis (TB) Treatment", link: "/Tuberculosis" },
+  ],
+};
