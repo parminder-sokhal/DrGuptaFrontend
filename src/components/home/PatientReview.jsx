@@ -13,7 +13,7 @@ const PatientReview = () => {
     }
 
     const blockRedirects = setInterval(() => {
-      const widget = document.querySelector(".elfsight-app-4349afad-0d01-4757-96bd-31aa89aaae1c");
+      const widget = document.querySelector(".elfsight-app-e7ea834d-1cd0-4821-b478-4b6fd2445124");
       if (widget) {
         const links = widget.querySelectorAll("a");
         links.forEach((a) => {
@@ -33,10 +33,10 @@ const PatientReview = () => {
         <h2 className="text-3xl sm:text-4xl font-bold mb-4">Our Google Reviews</h2>
       </div>
 
-      {/* Elfsight Widget */}
+      {/* Elfsight Widget (Updated) */}
       <div className="flex justify-center overflow-x-auto">
         <div
-          className="elfsight-app-8cd96e7b-be6c-4bc0-a915-c1185cd7217d max-w-full"
+          className="elfsight-app-e7ea834d-1cd0-4821-b478-4b6fd2445124 max-w-full"
           data-elfsight-app-lazy
         ></div>
       </div>
@@ -45,4 +45,3 @@ const PatientReview = () => {
 };
 
 export default PatientReview;
-          

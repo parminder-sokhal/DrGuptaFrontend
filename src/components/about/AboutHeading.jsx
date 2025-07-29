@@ -23,9 +23,26 @@ const AboutHeading = () => {
   };
 
   const slots = {
-    morning: ["9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM"],
-    afternoon: ["12:30 PM","01:00 PM","01:30 PM","2:00 PM", "2:30 PM", "03:00 PM", "04:00 PM", "04:30 PM"],
-    evening: ["05:30 PM", "06:00 PM", "06:30 PM", "07:00 PM","07:30 PM"],
+    morning: [
+      "9:00 AM",
+      "9:30 AM",
+      "10:00 AM",
+      "10:30 AM",
+      "11:00 AM",
+      "11:30 AM",
+      "12:00 PM",
+    ],
+    afternoon: [
+      "12:30 PM",
+      "01:00 PM",
+      "01:30 PM",
+      "2:00 PM",
+      "2:30 PM",
+      "03:00 PM",
+      "04:00 PM",
+      "04:30 PM",
+    ],
+    evening: ["05:30 PM", "06:00 PM", "06:30 PM", "07:00 PM", "07:30 PM"],
   };
 
   const handleRedirect = () => {
@@ -54,10 +71,7 @@ const AboutHeading = () => {
         alike.
       </p>
 
-      <h2
-        className="text-2xl font-semibold text-gray-800 mb-4 "
-        
-      >
+      <h2 className="text-2xl font-semibold text-gray-800 mb-4 ">
         Meet Dr. Robin Gupta – A Leader in Respiratory Medicine
       </h2>
 
@@ -97,6 +111,23 @@ const AboutHeading = () => {
               <li>
                 Distinguished Service Award for Advancement in Pulmonology
               </li>
+            </ul>
+          </div>
+
+          <div className="mt-6">
+            <h3 className="text-2xl font-semibold text-gray-800 mb-2">
+              Memberships:
+            </h3>
+            <ul className="list-disc list-inside space-y-1">
+              <li>European Respiratory Society</li>
+              <li>ACCP</li>
+              <li>American Thoracic Society</li>
+              <li>Indian Chest Society</li>
+              <li>Association of Physicians of India</li>
+              <li>Indian Association for Study of Lung Cancer</li>
+              <li>National College of Chest Physicians</li>
+              <li>Respiratory Education Society</li>
+              <li>Executive Member – SCCM Panchkula</li>
             </ul>
           </div>
 
