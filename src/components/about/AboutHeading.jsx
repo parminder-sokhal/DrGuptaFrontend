@@ -52,10 +52,20 @@ const AboutHeading = () => {
     );
   };
   return (
-    <div className="max-w-6xl mx-auto px-4 py-12">
-      <h1 className="text-3xl font-bold text-pink-700 mb-6">
-        About Dr. Robin Gupta – Your Trusted Pulmonologist in Panchkula
-      </h1>
+    <div className="max-w-6xl mx-auto px-4 py-10">
+      <div className="py-2">
+        <h1 className="text-3xl sm:text-5xl font-bold text-gray-800 mb-2">
+          Dr. Robin Gupta <br />
+        </h1>
+        <h2 className="text-2xl sm:text-2xl text-pink-700">
+          Senior consultant, Pulmonology, Paras Health Panchkula. <br />
+        </h2>
+        <h2 className="text-xl text-pink-700">
+          MD , FICM, FCCP (USA) More than 12 yrs experience, worked at premium
+          hospitals - GMCH-32, Fortis and has immense experience of handling
+          difficult respiratory cases
+        </h2>
+      </div>
 
       <p className="text-gray-700 text-lg mb-6">
         Dr. Robin Gupta is a highly esteemed pulmonologist with over a decade of
