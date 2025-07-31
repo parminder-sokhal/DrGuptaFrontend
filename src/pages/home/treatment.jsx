@@ -40,7 +40,8 @@ import Pleurodesis from '../../components/header/procedures/Pleurodesis.jsx';
 import EBUSTBNA from '../../components/header/procedures/EBUSTBNA.jsx';
 import FENO from '../../components/header/procedures/FENO.jsx';
 import TrachealStenting from '../../components/header/procedures/TrachealStenting.jsx';
-
+import BronchialArtery from '../../components/header/procedures/BronchialArtery.jsx';
+import BiPAPCPAP from '../../components/header/procedures/BiPAPCPAP.jsx';
 
 
 
@@ -60,6 +61,10 @@ const TreatmentRoutes = (
     <Route path="/EBUSTBNA" element={<EBUSTBNA />} />
     <Route path="/FENO" element={<FENO />} />
     <Route path="/TrachealStenting" element={<TrachealStenting />} />
+
+    <Route path="/BronchialArtery" element={<BronchialArtery />} />
+    <Route path="/BiPAPCPAP" element={<BiPAPCPAP />} />
+
 
     {/* Treatements */}
     <Route path="/LungCancer" element={<LungCancer />} />

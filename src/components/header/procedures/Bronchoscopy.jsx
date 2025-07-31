@@ -16,6 +16,15 @@ const data = {
     { title: "EBUS-TBNA", link: "/EBUSTBNA" },
     { title: "FENO (Breath Test)", link: "/FENO" },
     { title: "Tracheal Stenting", link: "/TrachealStenting" },
+    { title: "Bronchial Artery Embolization", link: "/BronchialArtery" },
+    { title: "BiPAP & CPAP", link: "/BiPAPCPAP" },
+    { title: "Chest Drain Insertion", link: "/ChestDrain" },
+    { title: "DLCO", link: "/DLCO" },
+    { title: "Forced Oscillometry Technique", link: "/ForcedOscillometry" },
+    { title: "Immunotherapy", link: "/Immunotherapy" },
+    { title: "Pleural Procedures", link: "/PleuralProcedures" },
+    { title: "Respiratory Vaccines", link: "/RespiratoryVaccines" },
+    { title: "Polysomnography (Sleep Study)", link: "/Polysomnography" },
   ],
 };
 

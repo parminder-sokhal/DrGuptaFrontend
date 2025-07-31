@@ -663,6 +663,88 @@ function HeaderMain() {
                         Tracheal Stenting
                       </Link>
                     </li>
+
+                    <li>
+                      <Link
+                        to="/BronchialArtery"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Bronchial Artery Embolization
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/BiPAPCPAP"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        BiPAP & CPAP
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/ChestDrain"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Chest Drain Insertion
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/DLCO"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        DLCO
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/ForcedOscillometry"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Forced Oscillometry Technique
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/Immunotherapy"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Immunotherapy
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/PleuralProcedures"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Pleural Procedures
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/RespiratoryVaccines"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Respiratory Vaccines
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/Polysomnography"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Polysomnography (Sleep Study)
+                      </Link>
+                    </li>
+
                   </ul>
                 </div>
               </li>
@@ -1513,6 +1595,88 @@ function HeaderMain() {
                         Tracheal Stenting
                       </Link>
                     </li>
+
+                    <li>
+                      <Link
+                        to="/BronchialArtery"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Bronchial Artery Embolization
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/BiPAPCPAP"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        BiPAP & CPAP
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/ChestDrain"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Chest Drain Insertion
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/DLCO"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        DLCO
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/ForcedOscillometry"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Forced Oscillometry Technique
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/Immunotherapy"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Immunotherapy
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/PleuralProcedures"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Pleural Procedures
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/RespiratoryVaccines"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Respiratory Vaccines
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/Polysomnography"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Polysomnography (Sleep Study)
+                      </Link>
+                    </li>
+
                   </ul>
                 </div>
               </li>
