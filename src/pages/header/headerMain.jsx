@@ -563,6 +563,226 @@ function HeaderMain() {
                 <div
                   onMouseLeave={handleNavbarDropdownLeaveservicestwo}
                   onClick={handleNavbarDropdownLeaveservicestwo}
+                  className={`z-50 bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-auto absolute mt-2 transition-all duration-300 ease-in-out transform ${
+                    isDropdownNavbarOpenservicestwo
+                      ? "opacity-100 scale-100"
+                      : "opacity-0 scale-95 pointer-events-none"
+                  }`}
+                >
+                  <ul
+                    className="
+      py-2 text-sm text-black 
+      max-h-[300px] overflow-y-auto 
+      grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-1 
+      px-2 w-full"
+                  >
+                    <li>
+                      <Link
+                        to="/AllergyTestingImmunotherapy"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Allergy Testing & Immunotherapy
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/Bronchoscopy"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Bronchoscopy
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/Thoracoscopy"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Thoracoscopy
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/PulmonaryFunction"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Pulmonary Function Testing
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/IntercostalDrainage "
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Intercostal Drainage Tube Insertion
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/LungBiopsy"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Lung Biopsy
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/PleuralBiopsy"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Pleural Biopsy
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/Pleurodesis"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Pleurodesis
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/EBUSTBNA"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        EBUS-TBNA
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/FENO"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        FENO(Breath Test)
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/TrachealStenting"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Tracheal Stenting
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/BronchialArtery"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Bronchial Artery Embolization
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/BiPAPCPAP"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        BiPAP & CPAP
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/ChestDrain"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Chest Drain Insertion
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/DLCO"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        DLCO
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/ForcedOscillometry"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Forced Oscillometry Technique
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/Immunotherapy"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Immunotherapy
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/PleuralProcedures"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Pleural Procedures
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/RespiratoryVaccines"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Respiratory Vaccines
+                      </Link>
+                    </li>
+
+                    <li>
+                      <Link
+                        to="/Polysomnography"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Polysomnography (Sleep Study)
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+
+              {/* <li onMouseEnter={handleNavbarDropdownHoverservicestwo}>
+                <button
+                  onClick={toggleNavbarDropdownservicestwo}
+                  className="flex items-center justify-between w-full py-2 px-3 text-black hover:bg-gray-100 md:hover:bg-transparent md:p-0"
+                >
+                  Procedures
+                  <svg
+                    className={`w-2.5 h-2.5 ms-2.5 transition-transform duration-200 ${isDropdownNavbarOpenservicestwo ? "rotate-180" : ""}`}
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </button>
+
+                <div
+                  onMouseLeave={handleNavbarDropdownLeaveservicestwo}
+                  onClick={handleNavbarDropdownLeaveservicestwo}
                   className={`z-50 bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-auto px-2 absolute mt-2 ${isDropdownNavbarOpenservicestwo ? "block" : "hidden"}`}
                 >
                   <ul className="py-2 text-sm text-black">
@@ -744,10 +964,9 @@ function HeaderMain() {
                         Polysomnography (Sleep Study)
                       </Link>
                     </li>
-
                   </ul>
                 </div>
-              </li>
+              </li> */}
 
               <li onMouseEnter={handleNavbarDropdownHover}>
                 <button
@@ -1676,7 +1895,6 @@ function HeaderMain() {
                         Polysomnography (Sleep Study)
                       </Link>
                     </li>
-
                   </ul>
                 </div>
               </li>
