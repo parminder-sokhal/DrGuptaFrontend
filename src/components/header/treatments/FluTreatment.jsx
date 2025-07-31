@@ -2,7 +2,7 @@ import { FaAngleRight } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 const data = {
-  bgImage: "", // You can replace this with a flu-related image
+  bgImage: "/img/Flu.jpeg", // You can replace this with a flu-related image
   sidebarLinks: [
     { title: "ARDS Treatment", link: "/ArdsTreatment" },
     { title: "Asthma Treatment", link: "/AsthmaTreatment" },
