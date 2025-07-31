@@ -1,10 +1,10 @@
 import React from "react";
 import { FaAngleRight } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import trachealImage from '../../../assets/procedures/tracheal.jpg';
+
 
 const data = {
-  bgImage: trachealImage, // Replace with tracheal stenting image if available
+  bgImage: "/img/BronchialArtery.jpg",
   sidebarLinks: [
     { title: "Allergy Testing & Immunotherapy", link: "/AllergyTestingImmunotherapy" },
     { title: "Bronchoscopy", link: "/Bronchoscopy" },
@@ -29,7 +29,7 @@ const data = {
   ],
 };
 
-const TrachealStenting = () => {
+const BronchialArtery = () => {
   return (
     <div className="w-full min-h-screen bg-white font-sans">
       <div
@@ -39,57 +39,58 @@ const TrachealStenting = () => {
 
       <div className="px-10 lg:px-40 py-10">
         <h1 className="text-3xl font-bold mb-8 text-gray-800">
-          <strong>Tracheal Stenting</strong>
+          <strong>Bronchial Artery Embolization (BAE)</strong>
         </h1>
 
         <div className="flex flex-col lg:flex-row gap-8 text-gray-700">
           <div className="lg:w-3/4 space-y-6">
             <h2 className="text-xl font-bold">Overview</h2>
             <p>
-              Tracheal stenting is a minimally invasive procedure used to treat narrowing (stenosis) or obstruction of the trachea (windpipe). It involves placing a stent — a small, expandable tube — within the airway to help maintain patency and improve breathing.
-            </p>
-
-            <h2 className="text-xl font-bold">Key Highlights</h2>
-
-            <h3 className="text-lg font-semibold">Procedure</h3>
-            <p>
-              The stent placement is typically performed using a flexible bronchoscope inserted through the mouth or nose and advanced into the trachea. Once the narrowed segment is visualized, the stent — made of either metal or silicone — is carefully deployed and expanded to support the airway and restore airflow.
-            </p>
-
-            <h3 className="text-lg font-semibold">Types of Stents</h3>
-            <ul className="list-disc pl-6">
-              <li><strong>Self-Expandable Metallic Stents (SEMS):</strong> Often used for malignant or more rigid obstructions.</li>
-              <li><strong>Silicone Stents:</strong> Preferred in certain benign conditions due to ease of removal and less tissue reaction.</li>
-            </ul>
-            <p>
-              The selection depends on the patient's anatomy, location and severity of the obstruction, and the underlying condition.
+              Bronchial artery embolization (BAE) is a minimally invasive procedure used to treat conditions involving excessive bleeding (hemoptysis) from the bronchial arteries. It’s a preferred alternative when surgery poses higher risks.
             </p>
 
             <h2 className="text-xl font-bold">Indications</h2>
             <ul className="list-disc pl-6">
-              <li>Tumor-related airway obstruction</li>
-              <li>Benign tracheal stenosis</li>
-              <li>Tracheomalacia (airway collapse)</li>
-              <li>Post-surgical or post-radiation strictures</li>
+              <li>Hemoptysis due to bronchitis, tuberculosis, or lung cancer</li>
+              <li>Pulmonary arteriovenous malformations (AVMs)</li>
+              <li>Reducing blood supply to lung tumors</li>
             </ul>
+
+            <h2 className="text-xl font-bold">Procedure</h2>
+            <p>
+              <strong>Preparation:</strong> Patients are typically advised to fast and will have a consultation with an interventional radiologist beforehand.
+            </p>
+            <p>
+              <strong>Anesthesia:</strong> The procedure is done under local anesthesia with sedation.
+            </p>
+            <p>
+              <strong>Accessing the Arteries:</strong> A catheter is inserted (commonly through the groin or wrist) and guided to the bronchial arteries using fluoroscopy.
+            </p>
+            <p>
+              <strong>Embolization:</strong> Small particles or coils are injected to block the bleeding artery.
+            </p>
+            <p>
+              <strong>Recovery:</strong> Patients are monitored for complications and can often go home the same day or after a short hospital stay.
+            </p>
 
             <h2 className="text-xl font-bold">Benefits</h2>
             <ul className="list-disc pl-6">
-              <li>Rapid relief of breathing difficulties</li>
-              <li>Avoidance or delay of more invasive surgery</li>
-              <li>Improved quality of life in both palliative and therapeutic scenarios</li>
+              <li>Minimally invasive with faster recovery</li>
+              <li>Effective in controlling bleeding</li>
+              <li>Preserves surrounding lung function</li>
             </ul>
 
-            <h2 className="text-xl font-bold">Potential Complications</h2>
-            <p>While generally safe, tracheal stenting may lead to:</p>
+            <h2 className="text-xl font-bold">Risks and Considerations</h2>
             <ul className="list-disc pl-6">
-              <li>Stent migration or displacement</li>
-              <li>Stent fracture or granulation tissue formation</li>
-              <li>Mucous plugging or infection</li>
-              <li>Airway irritation or bleeding</li>
+              <li>Allergic reaction to contrast dye</li>
+              <li>Infection at catheter site</li>
+              <li>Unintended embolization of healthy tissue</li>
+              <li>Temporary chest pain</li>
             </ul>
+
+            <h2 className="text-xl font-bold">Conclusion</h2>
             <p>
-              Continuous follow-up and bronchoscopic surveillance are essential to manage these risks effectively.
+              Bronchial artery embolization is a safe and effective treatment for managing life-threatening hemoptysis and other lung conditions. Patients should consult with a specialist to determine the best treatment plan based on their individual needs.
             </p>
           </div>
 
@@ -113,4 +114,4 @@ const TrachealStenting = () => {
   );
 };
 
-export default TrachealStenting;
+export default BronchialArtery;

@@ -6,23 +6,26 @@ import allergyImage from "../../../assets/procedures/allergy.jpg";
 const data = {
   bgImage: allergyImage,
   sidebarLinks: [
-    {
-      title: "Allergy Testing & Immunotherapy",
-      link: "/AllergyTestingImmunotherapy",
-    },
+    { title: "Allergy Testing & Immunotherapy", link: "/AllergyTestingImmunotherapy" },
     { title: "Bronchoscopy", link: "/Bronchoscopy" },
     { title: "Thoracoscopy", link: "/Thoracoscopy" },
     { title: "Pulmonary Function Testing", link: "/PulmonaryFunction" },
-    {
-      title: "Intercostal Drainage Tube Insertion",
-      link: "/IntercostalDrainage",
-    },
+    { title: "Intercostal Drainage Tube Insertion", link: "/IntercostalDrainage" },
     { title: "Lung Biopsy", link: "/LungBiopsy" },
     { title: "Pleural Biopsy", link: "/PleuralBiopsy" },
     { title: "Pleurodesis", link: "/Pleurodesis" },
     { title: "EBUS-TBNA", link: "/EBUSTBNA" },
     { title: "FENO (Breath Test)", link: "/FENO" },
     { title: "Tracheal Stenting", link: "/TrachealStenting" },
+    { title: "Bronchial Artery Embolization", link: "/BronchialArtery" },
+    { title: "BiPAP & CPAP", link: "/BiPAPCPAP" },
+    { title: "Chest Drain Insertion", link: "/ChestDrain" },
+    { title: "DLCO", link: "/DLCO" },
+    { title: "Forced Oscillometry Technique", link: "/ForcedOscillometry" },
+    { title: "Immunotherapy", link: "/Immunotherapy" },
+    { title: "Pleural Procedures", link: "/PleuralProcedures" },
+    { title: "Respiratory Vaccines", link: "/RespiratoryVaccines" },
+    { title: "Polysomnography (Sleep Study)", link: "/Polysomnography" },
   ],
 };
 
