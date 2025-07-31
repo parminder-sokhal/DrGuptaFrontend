@@ -42,6 +42,13 @@ import FENO from '../../components/header/procedures/FENO.jsx';
 import TrachealStenting from '../../components/header/procedures/TrachealStenting.jsx';
 import BronchialArtery from '../../components/header/procedures/BronchialArtery.jsx';
 import BiPAPCPAP from '../../components/header/procedures/BiPAPCPAP.jsx';
+import ChestDrain from '../../components/header/procedures/ChestDrain.jsx';
+import DLCO from '../../components/header/procedures/DLCO.jsx';
+import ForcedOscillometry from '../../components/header/procedures/ForcedOscillometry.jsx';
+import Immunotherapy from '../../components/header/procedures/Immunotherapy.jsx';
+import PleuralProcedures from '../../components/header/procedures/PleuralProcedures.jsx';
+import RespiratoryVaccines from '../../components/header/procedures/RespiratoryVaccines.jsx';
+import Polysomnography from '../../components/header/procedures/Polysomnography.jsx';
 
 
 
@@ -64,6 +71,13 @@ const TreatmentRoutes = (
 
     <Route path="/BronchialArtery" element={<BronchialArtery />} />
     <Route path="/BiPAPCPAP" element={<BiPAPCPAP />} />
+    <Route path="/ChestDrain" element={<ChestDrain />} />
+    <Route path="/DLCO" element={<DLCO />} />
+    <Route path="/ForcedOscillometry" element={<ForcedOscillometry />} />
+    <Route path="/Immunotherapy" element={<Immunotherapy />} />
+    <Route path="/PleuralProcedures" element={<PleuralProcedures />} />
+    <Route path="/RespiratoryVaccines" element={<RespiratoryVaccines />} />
+    <Route path="/Polysomnography" element={<Polysomnography />} />
 
 
     {/* Treatements */}

@@ -3,7 +3,7 @@ import { FaAngleRight } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 const data = {
-  bgImage: "", // Add a relevant image URL if available
+  bgImage: "/img/Asthma.jpeg", // Add a relevant image URL if available
   sidebarLinks: [
     { title: "ARDS Treatment", link: "/ArdsTreatment" },
     { title: "Asthma Treatment", link: "/AsthmaTreatment" },
