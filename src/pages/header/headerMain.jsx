@@ -111,6 +111,10 @@ function HeaderMain() {
               className="h-16"
               alt="Dr.RobinGupta Logo"
             />
+            <span className="lg:text-4xl text-2xl font-bold text-red-600">
+              Dr. Robin Gupta
+            </span>
+
           </Link>
 
           {/* Desktop Navbar */}
@@ -757,7 +761,6 @@ function HeaderMain() {
                   </ul>
                 </div>
               </li>
-
 
               {/* <li onMouseEnter={handleNavbarDropdownHoverservicestwo}>
                 <button

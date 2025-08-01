@@ -9,30 +9,45 @@
     <!-- Razorpay Script -->
     <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
     
-    <!-- Font Awesome for WhatsApp Icon -->
+    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- WhatsApp Floating Button Styles -->
+    <!-- Floating Button Styles -->
     <style>
-      .whatsapp-float {
+      .whatsapp-float,
+      .phone-float {
         position: fixed;
         width: 60px;
         height: 60px;
-        bottom: 20px;
         right: 20px;
-        background-color: #25D366;
         color: #fff;
         border-radius: 50%;
         text-align: center;
         box-shadow: 2px 2px 3px #999;
         z-index: 1000;
-      }
-      .whatsapp-float i {
-        margin-top: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         font-size: 30px;
+        transition: background-color 0.3s;
       }
+
+      .whatsapp-float {
+        bottom: 20px;
+        background-color: #25D366;
+      }
+
       .whatsapp-float:hover {
         background-color: #128C7E;
+      }
+
+      .phone-float {
+        bottom: 90px; /* 20px (gap) + 60px (button height) + 10px extra spacing */
+        background-color: #007BFF;
+      }
+
+      .phone-float:hover {
+        background-color: #0056b3;
       }
     </style>
   </head>
@@ -40,6 +55,11 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+
+    <!-- Phone Floating Button -->
+    <a href="tel:+919888505080" class="phone-float" aria-label="Call Phone Number">
+      <i class="fas fa-phone"></i>
+    </a>
 
     <!-- WhatsApp Floating Button -->
     <a href="https://wa.me/919888505080" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">

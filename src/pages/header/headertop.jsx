@@ -20,7 +20,7 @@ const Headertop = () => {
               to="tel:+919888505080"
             className="flex items-center space-x-2 hover:text-[#DB8E00]"
           >
-            <FaPhoneAlt className="text-xl" />
+            <FaPhoneAlt className="text-xl" /> 
           </Link>
           <Link
             to="mailto:drrobingmc@yahoo.com"
@@ -28,13 +28,16 @@ const Headertop = () => {
           >
             <FaEnvelope className="text-xl" />
           </Link>
+          
           <Link
-            to="https://www.instagram.com/thepulmodrs?utm_source=ig_web_button_share_sheet&igsh=ZmE2MmYwY3g5bG1j"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaInstagram className="text-white text-xl hover:text-[#DB8E00]" />
-          </Link>
+              to="https://maps.app.goo.gl/VGXqSRZAQTNdRBZ86"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center space-x-2 hover:text-[#DB8E00]"
+            >
+              <FaMapMarkerAlt className="text-xl" />
+            
+            </Link>
         </div>
 
         {/* Right Section: Desktop View - Full Contact Info and Social Icons */}

@@ -18,39 +18,23 @@ const AboutHeading = () => {
 
   const doctor = {
     name: "Dr. Robin Gupta",
-    experience: 10, // in years
-    fees: 600, // consultation fee in INR
+    experience: 12, // in years
   };
 
-  const slots = {
-    morning: [
-      "9:00 AM",
-      "9:30 AM",
-      "10:00 AM",
-      "10:30 AM",
-      "11:00 AM",
-      "11:30 AM",
-      "12:00 PM",
-    ],
-    afternoon: [
-      "12:30 PM",
-      "01:00 PM",
-      "01:30 PM",
-      "2:00 PM",
-      "2:30 PM",
-      "03:00 PM",
-      "04:00 PM",
-      "04:30 PM",
-    ],
-    evening: ["05:30 PM", "06:00 PM", "06:30 PM", "07:00 PM", "07:30 PM"],
-  };
-
-  const handleRedirect = () => {
+  const handleRedirectParas = () => {
     window.open(
       "https://www.parashospitals.com/panchkula/doctor-near-me/pulmonologist/dr-robin-gupta",
       "_blank"
     );
   };
+
+  const handleRedirectClinic = () => {
+    window.open(
+      "https://book.healthplix.com/dr-robin-gupta-pulmonologist-chest-care-clin",
+      "_blank"
+    );
+  };
+
   return (
     <div className="max-w-6xl mx-auto px-4 py-10">
       <div className="py-2">
@@ -236,9 +220,9 @@ const AboutHeading = () => {
 
         {/* RIGHT SIDE – Experience, Fees, and Slot Booking */}
         <div className="w-full lg:w-2/5 space-y-6" id="qualifications">
-          {/* Experience & Fees Badges */}
-          <div className="flex flex-col sm:flex-row sm:gap-4 gap-3 sm:justify-start items-center">
-            <div className="bg-blue-50 border border-blue-200 px-5 py-3 rounded-md shadow-sm flex flex-col items-center w-full sm:w-40 text-center">
+          {/* Experience Badge */}
+          <div className="flex justify-start items-center">
+            <div className="bg-blue-50 border border-blue-200 px-5 py-3 rounded-md shadow-sm flex flex-col items-center w-2/3 text-center">
               <span className="text-xl flex font-semibold text-blue-700">
                 {doctor?.experience}
                 <span className="text-md items-center justify-center flex text-blue-700 ml-1">
@@ -247,97 +231,52 @@ const AboutHeading = () => {
               </span>
               <span className="text-sm text-gray-600">Experience</span>
             </div>
-
-            <div className="bg-green-50 border border-green-200 px-5 py-3 rounded-md shadow-sm flex flex-col items-center w-full sm:w-40 text-center">
-              <span className="text-xl font-semibold text-green-700">
-                ₹ {doctor?.fees}
-              </span>
-              <span className="text-sm text-gray-600">Consultation Fee</span>
-            </div>
           </div>
 
-          {/* Paras Hospital Slots Section */}
+          {/* Paras Hospital Section */}
           <div className="mb-6">
             <div className="text-base font-bold text-blue-700 mb-2">
-              Available Time Slots – Paras Hospital Visit
+              Available Time – Paras Hospital Visit
             </div>
 
             <div className="mb-4">
               <h4 className="font-semibold text-gray-800 mb-1">
-                Morning Slots:
+                Morning Timing:{" "}
+                <span className="font-normal">9 AM to 12 PM</span>
               </h4>
-              <div className="flex flex-wrap gap-2">
-                {slots.morning.map((slot, index) => (
-                  <button
-                    key={`morning-${index}`}
-                    onClick={() => setSelectedTimeSlot(slot)}
-                    className={`px-3 py-1 rounded-md border ${
-                      selectedTimeSlot === slot
-                        ? "bg-blue-600 text-white"
-                        : "border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
-                    }`}
-                  >
-                    {slot}
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            <div className="mb-4">
               <h4 className="font-semibold text-gray-800 mb-1">
-                Afternoon Slots:
+                Afternoon Timing:{" "}
+                <span className="font-normal">12:30 PM to 4:30 PM</span>
               </h4>
-              <div className="flex flex-wrap gap-2">
-                {slots.afternoon.map((slot, index) => (
-                  <button
-                    key={`afternoon-${index}`}
-                    onClick={() => setSelectedTimeSlot(slot)}
-                    className={`px-3 py-1 rounded-md border ${
-                      selectedTimeSlot === slot
-                        ? "bg-blue-600 text-white"
-                        : "border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
-                    }`}
-                  >
-                    {slot}
-                  </button>
-                ))}
-              </div>
             </div>
 
             <button
-              onClick={handleRedirect}
-              className="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-md text-sm"
+              onClick={handleRedirectParas}
+              className="mt-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-md text-sm"
             >
               View Profile & Book on Paras Hospital
             </button>
           </div>
 
-          {/* Clinic Slots Section */}
+          {/* Clinic Section */}
           <div className="mt-10 pt-6 border-t border-gray-300">
             <div className="text-base font-bold text-blue-700 mb-2">
-              Evening Slots – For Clinic Visit (Dr. Robin’s Chest Clinic)
+              Evening Timing – For Clinic Visit (Dr. Robin’s Chest Clinic)
             </div>
 
             <div className="mb-4">
               <h4 className="font-semibold text-gray-800 mb-1">
-                Evening Slots:
+                Evening Timing:{" "}
+                <span className="font-normal">5:30 PM to 7:30 PM</span>
               </h4>
-              <div className="flex flex-wrap gap-2">
-                {slots.evening.map((slot, index) => (
-                  <button
-                    key={`evening-${index}`}
-                    onClick={() => setSelectedTimeSlot(slot)}
-                    className={`px-3 py-1 rounded-md border ${
-                      selectedTimeSlot === slot
-                        ? "bg-blue-600 text-white"
-                        : "border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
-                    }`}
-                  >
-                    {slot}
-                  </button>
-                ))}
-              </div>
             </div>
+
+            <button
+              onClick={handleRedirectClinic}
+              className="mt-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-md text-sm"
+            >
+              Book Appointment at Clinic
+            </button>
           </div>
         </div>
       </div>
