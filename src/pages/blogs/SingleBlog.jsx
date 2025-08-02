@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { getBlogById } from "../../redux/actions/blogsAction";
 import { useDispatch, useSelector } from "react-redux";
+import { IoMdArrowDropright } from "react-icons/io";
 
 const SingleBlog = () => {
   const { id } = useParams();
@@ -39,34 +40,28 @@ const SingleBlog = () => {
       <div className="mt-10 space-y-10">
         {blog?.content?.map((section, index) => (
           <div key={index}>
-            <h2 className="text-2xl font-semibold text-blue-700 mb-2">
+            <h2 className="text-2xl font-semibold text-purple-700 mb-2">
               {section.sectionTitle}
             </h2>
             <p className="text-gray-800 text-md mb-2">{section.paragraph}</p>
-            {section.bulletPoints?.length > 0 && (
-              <ul className="list-disc ml-5 text-gray-700 space-y-1">
-                {section.bulletPoints.map((point, i) => (
-                  <li key={i}>{point}</li>
-                ))}
-              </ul>
-            )}
+            {Array.isArray(section.bulletPoints) &&
+              section.bulletPoints.some((point) => point.trim() !== "") && (
+                <div className="space-y-2 ml-1">
+                  {section.bulletPoints
+                    .filter((point) => point.trim() !== "")
+                    .map((point, i) => (
+                      <div
+                        key={i}
+                        className="flex items-start gap-2 text-gray-700"
+                      >
+                        <IoMdArrowDropright  className="mt-1 text-blue-600" />
+                        <span>{point}</span>
+                      </div>
+                    ))}
+                </div>
+              )}
           </div>
         ))}
-      </div>
-
-      {/* Tags or Additional Info */}
-      <div className="mt-12 border-t pt-6">
-        <h3 className="text-lg font-semibold text-gray-700 mb-2">Tags</h3>
-        <div className="flex flex-wrap gap-2">
-          {blog?.tags?.map((tag, i) => (
-            <span
-              key={i}
-              className="px-3 py-1 text-sm bg-blue-100 text-blue-700 rounded-full"
-            >
-              {tag.replace(/[\[\]"]/g, "")}
-            </span>
-          ))}
-        </div>
       </div>
     </div>
   );

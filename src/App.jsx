@@ -29,6 +29,7 @@ import FormModal from "./pages/form/FormModal.jsx";
 import Forms from "./components/dashboard/form/Forms.jsx";
 import Blogs from "./pages/blogs/Blogs.jsx";
 import SingleBlog from "./pages/blogs/SingleBlog.jsx";
+import AddBlogs from "./components/dashboard/blogs/AddBlogs.jsx";
 
 function LayoutWrapper() {
   const location = useLocation();
@@ -54,6 +55,7 @@ function LayoutWrapper() {
         <Route element={<PrivateRoute />}>
           <Route path="/dashboard" element={<Dashboard />}>
             <Route index element={<WelcomeDashboard />} />
+            <Route path="Blogs" element={<AddBlogs />} />
             {/* <Route path="AddDoctor" element={<AddDoctor />} /> */}
             {/* <Route path="GetAllPaymentDetails" element={<GetAllPaymentDetails />} /> */}
             {/* <Route path="GetAllOfflinePayments" element={<GetAllOfflinePayments />} /> */}

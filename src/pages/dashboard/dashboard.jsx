@@ -59,6 +59,13 @@ export default function Dashboard() {
             /> */}
             <SidebarItem
               icon={<FaUserGraduate />}
+              text="Add Blogs"
+              to="/dashboard/Blogs"
+              onClick={closeSidebar}
+              active={location.pathname === "/dashboard/Blogs"}
+            />
+            <SidebarItem
+              icon={<FaUserGraduate />}
               text="Add Links"
               to="/dashboard/Links"
               onClick={closeSidebar}
