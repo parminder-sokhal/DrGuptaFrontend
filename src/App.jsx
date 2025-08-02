@@ -27,6 +27,8 @@ import AddLinks from "./components/dashboard/Links/AddLinks.jsx";
 // import Management from "./pages/management/Management.jsx";
 import FormModal from "./pages/form/FormModal.jsx";
 import Forms from "./components/dashboard/form/Forms.jsx";
+import Blogs from "./pages/blogs/Blogs.jsx";
+import SingleBlog from "./pages/blogs/SingleBlog.jsx";
 
 function LayoutWrapper() {
   const location = useLocation();
@@ -40,6 +42,8 @@ function LayoutWrapper() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/blog/:id" element={<SingleBlog />} />
         {/* <Route path="/management" element={<Management />} /> */}
         {/* <Route path="/doctors" element={<Doctors />} /> */}
         {/* <Route path="/doctor/:id" element={<DoctorProfile />} /> */}
