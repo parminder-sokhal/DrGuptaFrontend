@@ -72,7 +72,7 @@ const Headertop = () => {
               className="flex items-center space-x-2 hover:text-[#DB8E00]"
             >
               <FaMapMarkerAlt className="text-xl" />
-              <span>Paras Hospital Dr. Robin Gupta</span>
+              <span>Paras Hospital | Dr. Robin Gupta</span>
             </Link>
           </div>
 

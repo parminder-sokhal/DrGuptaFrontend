@@ -8,12 +8,14 @@ const Blogs = () => {
   const navigate = useNavigate();
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredBlogs, setFilteredBlogs] = useState([]);
+  const [expanded, setExpanded] = useState({}); // Track expanded subtitles
 
   const { publishedBlogs, loading, error } = useSelector((state) => state.blog);
 
   useEffect(() => {
     dispatch(getPublishedBlogs());
   }, [dispatch]);
+
   useEffect(() => {
     if (!searchTerm.trim()) {
       setFilteredBlogs(publishedBlogs);
@@ -27,10 +29,19 @@ const Blogs = () => {
     }
   }, [searchTerm, publishedBlogs]);
 
+  const toggleExpand = (id) => {
+    setExpanded((prev) => ({ ...prev, [id]: !prev[id] }));
+  };
+
+  const truncateText = (text, length = 150) => {
+    if (!text) return "";
+    return text.length > length ? text.substring(0, length) + "..." : text;
+  };
+
   return (
     <div className="container mx-auto mt-20 px-6 sm:px-10 md:px-14 lg:px-20 py-10">
       <div className="py-10 flex flex-row items-center justify-between">
-        <h1 className="sm:text-7xl text-3xl font-semibold text-blue-600 text-start">
+        <h1 className="sm:text-6xl text-3xl font-semibold text-blue-500 text-start">
           Blogs
         </h1>
         <input
@@ -63,15 +74,29 @@ const Blogs = () => {
 
               <div className="flex flex-col flex-grow justify-between p-4">
                 <div>
-                  <h2 className="text-xl font-semibold mb-1">{blog.title}</h2>
-                  <p className="text-gray-600 text-sm mb-3">{blog.subTitle}</p>
+                  <h2 className="text-2xl font-semibold mb-1">{blog.title}</h2>
+
+                  {/* Subtitle with read more/less */}
+                  <p className="text-gray-600 text-sm mb-1">
+                    {expanded[blog._id]
+                      ? blog.subTitle
+                      : truncateText(blog.subTitle, 150)}
+                  </p>
+                  {blog.subTitle.length > 150 && (
+                    <button
+                      onClick={() => toggleExpand(blog._id)}
+                      className="text-blue-600 text-xs hover:underline"
+                    >
+                      {expanded[blog._id] ? "Read less" : "Read more"}
+                    </button>
+                  )}
                 </div>
 
                 <button
                   onClick={() => navigate(`/blog/${blog._id}`)}
-                  className="mt-4 text-sm py-2 bg-green-500 text-white rounded-sm hover:bg-green-600 transition"
+                  className="mt-4 text-sm py-2 bg-green-600 text-white rounded-sm hover:bg-green-700 transition"
                 >
-                  Read More
+                  Read Full Blog
                 </button>
               </div>
             </div>

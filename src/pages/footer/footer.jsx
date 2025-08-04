@@ -60,9 +60,8 @@ const Footer = () => {
             <h3 className="text-xl font-semibold mb-4">Contact Info</h3>
             <div className="space-y-4">
               <Link
-                to="https://maps.app.goo.gl/AR1WvaZ6PN"
+                to="https://maps.app.goo.gl/fXcS6u2SSWCmME3e6"
                 target="_blank"
-                rel="noopener noreferrer"
                 className="flex items-center space-x-2 hover:text-black"
               >
                 <FaMapMarkerAlt className="text-lg" />
@@ -73,7 +72,6 @@ const Footer = () => {
               <Link
                 to="https://maps.app.goo.gl/ehutqjqNhS6fcEWj7"
                 target="_blank"
-                rel="noopener noreferrer"
                 className="flex items-center space-x-2 hover:text-black"
               >
                 <FaMapMarkerAlt className="text-lg" />
