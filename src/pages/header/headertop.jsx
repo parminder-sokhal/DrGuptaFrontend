@@ -17,10 +17,10 @@ const Headertop = () => {
         {/* Left Section: Mobile View */}
         <div className="flex items-center space-x-6 text-sm sm:block md:flex lg:hidden">
           <Link
-              to="tel:+919888505080"
+            to="tel:+919888505080"
             className="flex items-center space-x-2 hover:text-[#DB8E00]"
           >
-            <FaPhoneAlt className="text-xl" /> 
+            <FaPhoneAlt className="text-xl" />
           </Link>
           <Link
             to="mailto:drrobingmc@yahoo.com"
@@ -28,16 +28,15 @@ const Headertop = () => {
           >
             <FaEnvelope className="text-xl" />
           </Link>
-          
+
           <Link
-              to="https://maps.app.goo.gl/VGXqSRZAQTNdRBZ86"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center space-x-2 hover:text-[#DB8E00]"
-            >
-              <FaMapMarkerAlt className="text-xl" />
-            
-            </Link>
+            to="https://maps.app.goo.gl/VGXqSRZAQTNdRBZ86"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center space-x-2 hover:text-[#DB8E00]"
+          >
+            <FaMapMarkerAlt className="text-xl" />
+          </Link>
         </div>
 
         {/* Right Section: Desktop View - Full Contact Info and Social Icons */}
@@ -64,9 +63,16 @@ const Headertop = () => {
               className="flex items-center space-x-2 hover:text-[#DB8E00]"
             >
               <FaMapMarkerAlt className="text-xl" />
-              <span>
-                 Dr Robin's Chest Clinic, DSS 272, Sector 20, Panchkula
-              </span>
+              <span>Dr Robin's Chest Clinic</span>
+            </Link>
+            <Link
+              to="https://maps.app.goo.gl/ehutqjqNhS6fcEWj7"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center space-x-2 hover:text-[#DB8E00]"
+            >
+              <FaMapMarkerAlt className="text-xl" />
+              <span>Paras Hospital Dr. Robin Gupta</span>
             </Link>
           </div>
 
@@ -101,7 +107,7 @@ const Headertop = () => {
             to="/about#qualifications"
             className="bg-white text-black px-1.5 py-1 rounded-sm text-sm hover:bg-[#DB8E00] transition-all whitespace-nowrap"
           >
-            OPD Timing
+            Book Appointment
           </Link>
         </div>
       </div>

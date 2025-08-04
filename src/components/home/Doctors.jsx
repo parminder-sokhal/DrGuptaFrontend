@@ -49,7 +49,7 @@ const DoctorPage = () => {
               onClick={() => navigate("/about#qualifications")}
               className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-md sm:text-lg"
             >
-              OPD Timings
+              Book Appointment
             </button>
           </div>
         </div>

@@ -1045,7 +1045,7 @@ function HeaderMain() {
               to="/about#qualifications"
               className="px-4 py-2 bg-blue-800 text-white rounded-lg hover:bg-blue-700 transition duration-300"
             >
-              OPD Timing
+              Book Appointment
             </Link>
           </div>
 

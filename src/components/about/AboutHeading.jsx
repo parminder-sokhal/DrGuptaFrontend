@@ -131,6 +131,12 @@ const AboutHeading = () => {
 
           <ul className="list-disc list-inside text-gray-700 mb-6 space-y-4 text-base">
             <li>
+              <strong>Interventional pulmonology:</strong> provides specialized
+              care for the diagnosis and management of asthma and allergies,
+              focusing on controlling symptoms, improving lung function, and
+              enhancing quality of life.
+            </li>
+            <li>
               <strong>Diagnosis and Management of Asthma and Allergies:</strong>{" "}
               Specialized care to control symptoms, improve lung function, and
               enhance quality of life.

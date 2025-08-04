@@ -70,6 +70,17 @@ const Footer = () => {
                   Dr Robin's Chest Clinic, DSS 272, Sector 20, Panchkula
                 </span>
               </Link>
+              <Link
+                to="https://maps.app.goo.gl/ehutqjqNhS6fcEWj7"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 hover:text-black"
+              >
+                <FaMapMarkerAlt className="text-lg" />
+                <span>
+                 Dr. Robin Gupta | Paras Hospital - Panchkula
+                </span>
+              </Link>
 
               <Link
                 to="tel:+919872334233"
