@@ -30,7 +30,7 @@ const Headertop = () => {
           </Link>
 
           <Link
-            to="https://maps.app.goo.gl/VGXqSRZAQTNdRBZ86"
+            to="https://maps.app.goo.gl/fXcS6u2SSWCmME3e6"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center space-x-2 hover:text-[#DB8E00]"
@@ -57,7 +57,7 @@ const Headertop = () => {
               <span>drrobingmc@yahoo.com</span>
             </Link>
             <Link
-              to="https://maps.app.goo.gl/VGXqSRZAQTNdRBZ86"
+              to="https://maps.app.goo.gl/fXcS6u2SSWCmME3e6"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-2 hover:text-[#DB8E00]"

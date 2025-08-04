@@ -137,14 +137,14 @@ const AboutHeading = () => {
               enhancing quality of life.
             </li>
             <li>
-              <strong>Diagnosis and Management of Asthma and Allergies:</strong>{" "}
+              <strong>Diagnosis and Management of Asthma and Allergies:</strong>
               Specialized care to control symptoms, improve lung function, and
               enhance quality of life.
             </li>
             <li>
               <strong>
                 Chronic Obstructive Pulmonary Disease (COPD) Treatment:
-              </strong>{" "}
+              </strong>
               Comprehensive COPD care including medication, lifestyle guidance,
               and long-term management strategies.
             </li>
