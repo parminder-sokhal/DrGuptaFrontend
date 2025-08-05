@@ -165,6 +165,7 @@ function ModalOpenBlog({ open, onClose, blog, isEditing }) {
         </div>
 
         <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-4 p-4">
+          <label className="block mb-1 font-medium">Title</label>
           <input
             type="text"
             name="title"
@@ -174,6 +175,7 @@ function ModalOpenBlog({ open, onClose, blog, isEditing }) {
             required
             className="border p-2 rounded"
           />
+          <label className="block mb-1 font-medium">Subtitle</label>
           <input
             type="text"
             name="subTitle"
@@ -185,22 +187,17 @@ function ModalOpenBlog({ open, onClose, blog, isEditing }) {
           />
 
           <div>
-            <label className="block mb-1 font-medium">Status</label>
-            <Select
-              options={statusOptions}
-              value={statusOptions.find((opt) => opt.value === formData.status)}
-              onChange={handleStatusChange}
-            />
-          </div>
-
-          <div>
             <label className="block mb-1 font-medium">Upload Image</label>
+            <span className="text-sm text-gray-500">
+              Recommended image format: JPG, PNG, or GIF. Maximum file size:-
+              <b>less than 1MB</b>
+            </span>
             <input
               type="file"
               name="file"
               accept="image/*"
               onChange={handleChange}
-              className="w-full"
+              className="w-full text-blue-700"
             />
             {previewImage && (
               <div className="mt-2 relative w-32 h-32">

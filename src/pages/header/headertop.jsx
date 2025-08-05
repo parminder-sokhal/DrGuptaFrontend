@@ -15,7 +15,7 @@ const Headertop = () => {
     <header className="bg-[#102A83] text-white h-10 py-2 px-4 fixed top-0 left-0 w-full z-50">
       <div className="container mx-auto flex items-center justify-around space-x-4">
         {/* Left Section: Mobile View */}
-        <div className="flex items-center space-x-6 text-sm sm:block md:flex lg:hidden">
+        <div className="flex items-center space-x-6 text-sm sm:flex md:flex lg:hidden">
           <Link
             to="tel:+919888505080"
             className="flex items-center space-x-2 hover:text-[#DB8E00]"
@@ -102,7 +102,7 @@ const Headertop = () => {
         </div>
 
         {/* Book Appointment Button (Visible only on sm and md, hidden on lg and above) */}
-        <div className="sm:block md:flex lg:hidden items-center justify-center space-x-4">
+        <div className="sm:flex md:flex lg:hidden items-center justify-center space-x-4">
           <Link
             to="/about#qualifications"
             className="bg-white text-black px-1.5 py-1 rounded-sm text-sm hover:bg-[#DB8E00] transition-all whitespace-nowrap"
