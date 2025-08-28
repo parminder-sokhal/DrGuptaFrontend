@@ -5,13 +5,31 @@
     <link rel="icon" href="/logo/Robinlogo1.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dr. Robin Gupta</title>
-    
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-WNF5XCZ2");
+    </script>
+    <!-- End Google Tag Manager -->
+
     <!-- Razorpay Script -->
     <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-    
+
     <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
     <!-- Floating Button Styles -->
     <style>
       .whatsapp-float,
@@ -34,16 +52,16 @@
 
       .whatsapp-float {
         bottom: 20px;
-        background-color: #25D366;
+        background-color: #25d366;
       }
 
       .whatsapp-float:hover {
-        background-color: #128C7E;
+        background-color: #128c7e;
       }
 
       .phone-float {
         bottom: 90px; /* 20px (gap) + 60px (button height) + 10px extra spacing */
-        background-color: #007BFF;
+        background-color: #007bff;
       }
 
       .phone-float:hover {
@@ -53,16 +71,36 @@
   </head>
 
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-WNF5XCZ2"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
 
     <!-- Phone Floating Button -->
-    <a href="tel:+919888505080" class="phone-float" aria-label="Call Phone Number">
+    <a
+      href="tel:+919888505080"
+      class="phone-float"
+      aria-label="Call Phone Number"
+    >
       <i class="fas fa-phone"></i>
     </a>
 
     <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/919888505080" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <a
+      href="https://wa.me/919888505080"
+      class="whatsapp-float"
+      target="_blank"
+      aria-label="Chat on WhatsApp"
+    >
       <i class="fab fa-whatsapp"></i>
     </a>
   </body>
