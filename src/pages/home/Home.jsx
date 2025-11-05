@@ -23,8 +23,8 @@ function Home() {
       <Treatment />
       {/* <OurFacility/> */}
       <PhotoGallery />
-      {/* <TrendingYoutube/> */}
-      {/* <InstagramSlider/> */}
+      <TrendingYoutube/>
+      <InstagramSlider/>
     </>
   );
 }

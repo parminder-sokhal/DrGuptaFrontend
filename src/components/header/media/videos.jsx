@@ -28,7 +28,7 @@ function Videos() {
 
   return (
     <>
-      <div className="flex justify-center w-full mt-34 sm:h-92 h-52 bg-cover bg-no-repeat bg-center bg-[url('/pictures/Background.jpeg')]">
+      <div className="flex justify-center w-full mt-34 sm:h-92 h-52 bg-cover bg-no-repeat bg-center bg-[url('/img/image.png')]">
         <span className="flex justify-center items-center sm:text-8xl text-5xl font-semibold text-white">
           Video Gallery
         </span>
@@ -60,7 +60,7 @@ function Videos() {
                         loading="lazy"
                       />
                       <div className="absolute inset-0 flex items-center justify-center bg-opacity-50 transition duration-300">
-                        <FaYoutube className="text-blue-600 text-6xl" />
+                        <FaYoutube className="text-red-600 text-6xl" />
                       </div>
                     </div>
                   ) : (

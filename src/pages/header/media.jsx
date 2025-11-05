@@ -8,8 +8,8 @@ import Insta from '../../components/header/media/insta';
 const media = (
   <>
     <Route path="/pictures" element={<Pictures />} />
-    {/* <Route path="/Youtube" element={<Videos />} /> */}
-    {/* <Route path="/Instagram" element={<Insta />} /> */}
+    <Route path="/Youtube" element={<Videos />} />
+    <Route path="/Instagram" element={<Insta />} />
   </>
 );
 
